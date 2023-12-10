@@ -1,10 +1,14 @@
+"use client";
 import React from "react";
-import SignUpForm from "../../../component/form/SignUpForm";
+import UserInfoForm from "../../../component/form/UserInfoForm";
+import { Box } from "@chakra-ui/react";
 
 const page = () => {
   return (
     <>
-      <SignUpForm />
+      <Box width={"100%"}>
+        <UserInfoForm />
+      </Box>
     </>
   );
 };

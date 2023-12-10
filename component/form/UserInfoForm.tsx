@@ -1,0 +1,111 @@
+"use client";
+import { useForm } from "react-hook-form";
+import {
+  Box,
+  ButtonGroup,
+  Flex,
+  FormControl,
+  FormLabel,
+  HStack,
+  Heading,
+  Text,
+  useRadio,
+  useRadioGroup,
+} from "@chakra-ui/react";
+import { useParams } from "next/navigation";
+import MainInput from "../input/MainInput";
+import MainButton from "../button/MainButton";
+
+function RadioCard(props: any) {
+  const { getInputProps, getRadioProps } = useRadio(props);
+
+  const input = getInputProps();
+  const checkbox = getRadioProps();
+
+  return (
+    <Box as="label" w={"100%"} textAlign={"center"}>
+      <input {...input} />
+      <Box
+        {...checkbox}
+        cursor="pointer"
+        borderWidth="1px"
+        borderRadius="md"
+        boxShadow="md"
+        _checked={{
+          bg: "teal.600",
+          color: "white",
+          borderColor: "teal.600",
+        }}
+        _focus={{
+          boxShadow: "outline",
+        }}
+        px={5}
+        py={3}
+      >
+        {props.children}
+      </Box>
+    </Box>
+  );
+}
+
+const UserInfoForm = () => {
+  const params = useParams();
+
+  const options = ["남성", "여성"];
+
+  const { getRootProps, getRadioProps } = useRadioGroup({
+    name: "gender",
+    onChange: console.log,
+  });
+
+  const group = getRootProps();
+
+  return (
+    <>
+      <Flex flexDir={"column"} w={"90%"} margin={"0 auto"}>
+        <Box as="section">
+          <Text as={"h2"} color={"#787878"} fontSize={"17px"}>
+            반가워요!
+          </Text>
+          <Heading
+            as={"h1"}
+            color={"#000000"}
+            fontSize={"24px"}
+            fontWeight={"semibold"}
+          >
+            기본정보를 입력해주세요
+          </Heading>
+        </Box>
+        <Flex as={"form"} flexDir={"column"} w={"100%"}>
+          <FormControl isRequired>
+            <FormLabel fontSize={"15px"} color={"#5C5C5C"}>
+              이름
+            </FormLabel>
+            <MainInput placeholder="이름을 입력해주세요." w={"100%"} />
+          </FormControl>
+          <FormControl>
+            <FormLabel fontSize={"15px"} color={"#5C5C5C"}>
+              성별
+            </FormLabel>
+            <HStack {...group}>
+              {options.map((value) => {
+                const radio = getRadioProps({ value });
+                return (
+                  <RadioCard key={value} {...radio}>
+                    {value}
+                  </RadioCard>
+                );
+              })}
+            </HStack>
+          </FormControl>
+          <ButtonGroup>
+            <MainButton w={"100%"} h={"52px"}>
+              다음으로
+            </MainButton>
+          </ButtonGroup>
+        </Flex>
+      </Flex>
+    </>
+  );
+};
+export default UserInfoForm;
