@@ -29,8 +29,6 @@ const SignUpForm = () => {
 
   const router = useRouter();
 
-  //   const { signUpHandler, isLoading } = useSignUp(token);
-
   /**회원가입 form 제출시 */
   const onSubmit = async (data: any) => {
     const year = Number(data.birth?.slice(0, 4));
@@ -46,8 +44,6 @@ const SignUpForm = () => {
       phone: data.phone_number,
       pick: Number(data.pick),
     };
-
-    // await signUpHandler(signUpInform);
   };
 
   return (
