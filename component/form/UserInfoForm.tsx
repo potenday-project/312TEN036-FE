@@ -30,14 +30,13 @@ function RadioCard(props: any) {
         cursor="pointer"
         borderWidth="1px"
         borderRadius="md"
+        fontSize={"15px"}
+        fontWeight={"semibold"}
         boxShadow="md"
         _checked={{
-          bg: "teal.600",
+          bg: "#000000",
           color: "white",
-          borderColor: "teal.600",
-        }}
-        _focus={{
-          boxShadow: "outline",
+          borderColor: "#000000",
         }}
         px={5}
         py={3}
@@ -50,9 +49,10 @@ function RadioCard(props: any) {
 
 interface UserInfoFormPropsType {
   setFunnel: React.Dispatch<React.SetStateAction<string>>;
+  setProgress: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const UserInfoForm = ({ setFunnel }: UserInfoFormPropsType) => {
+const UserInfoForm = ({ setFunnel, setProgress }: UserInfoFormPropsType) => {
   const params = useParams();
 
   const options = ["남성", "여성"];
@@ -85,7 +85,11 @@ const UserInfoForm = ({ setFunnel }: UserInfoFormPropsType) => {
             <FormLabel fontSize={"15px"} color={"#5C5C5C"}>
               이름
             </FormLabel>
-            <MainInput placeholder="이름을 입력해주세요." w={"100%"} />
+            <MainInput
+              placeholder="이름을 입력해주세요."
+              w={"100%"}
+              h={"48px"}
+            />
           </FormControl>
           <FormControl>
             <FormLabel fontSize={"15px"} color={"#5C5C5C"}>
@@ -112,7 +116,10 @@ const UserInfoForm = ({ setFunnel }: UserInfoFormPropsType) => {
           <MainButton
             w={"100%"}
             h={"52px"}
-            onClick={() => setFunnel("userPhysics")}
+            onClick={() => {
+              setFunnel("userPhysics");
+              setProgress((oldState) => oldState + 33.3);
+            }}
           >
             다음으로
           </MainButton>
