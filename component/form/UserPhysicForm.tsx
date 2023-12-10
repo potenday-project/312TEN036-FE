@@ -1,5 +1,4 @@
 import React from "react";
-import MainInput from "../input/MainInput";
 import MainButton from "../button/MainButton";
 import {
   Box,
@@ -18,9 +17,13 @@ import {
 
 interface UserPhysicsFormPropsType {
   setFunnel: React.Dispatch<React.SetStateAction<string>>;
+  setProgress: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const UserPhysicForm = ({ setFunnel }: UserPhysicsFormPropsType) => {
+const UserPhysicForm = ({
+  setFunnel,
+  setProgress,
+}: UserPhysicsFormPropsType) => {
   return (
     <Flex flexDir={"column"} w={"90%"} margin={"0 auto"}>
       <Box as="section">
@@ -84,7 +87,10 @@ const UserPhysicForm = ({ setFunnel }: UserPhysicsFormPropsType) => {
         <MainButton
           w={"100%"}
           h={"52px"}
-          onClick={() => setFunnel("userPhysics")}
+          onClick={() => {
+            setFunnel("userAgreement");
+            setProgress((oldState) => oldState + 33.3);
+          }}
         >
           다음으로
         </MainButton>

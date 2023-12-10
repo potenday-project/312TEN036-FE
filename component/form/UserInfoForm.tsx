@@ -38,9 +38,6 @@ function RadioCard(props: any) {
           color: "white",
           borderColor: "#000000",
         }}
-        // _focus={{
-        //   boxShadow: "outline",
-        // }}
         px={5}
         py={3}
       >
@@ -52,9 +49,10 @@ function RadioCard(props: any) {
 
 interface UserInfoFormPropsType {
   setFunnel: React.Dispatch<React.SetStateAction<string>>;
+  setProgress: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const UserInfoForm = ({ setFunnel }: UserInfoFormPropsType) => {
+const UserInfoForm = ({ setFunnel, setProgress }: UserInfoFormPropsType) => {
   const params = useParams();
 
   const options = ["남성", "여성"];
@@ -118,7 +116,10 @@ const UserInfoForm = ({ setFunnel }: UserInfoFormPropsType) => {
           <MainButton
             w={"100%"}
             h={"52px"}
-            onClick={() => setFunnel("userPhysics")}
+            onClick={() => {
+              setFunnel("userPhysics");
+              setProgress((oldState) => oldState + 33.3);
+            }}
           >
             다음으로
           </MainButton>
