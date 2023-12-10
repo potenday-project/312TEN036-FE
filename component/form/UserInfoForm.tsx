@@ -85,7 +85,11 @@ const UserInfoForm = ({ setFunnel }: UserInfoFormPropsType) => {
             <FormLabel fontSize={"15px"} color={"#5C5C5C"}>
               이름
             </FormLabel>
-            <MainInput placeholder="이름을 입력해주세요." w={"100%"} />
+            <MainInput
+              placeholder="이름을 입력해주세요."
+              w={"100%"}
+              h={"48px"}
+            />
           </FormControl>
           <FormControl>
             <FormLabel fontSize={"15px"} color={"#5C5C5C"}>

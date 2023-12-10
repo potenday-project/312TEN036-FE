@@ -9,6 +9,7 @@ const MainInput = ({ h, w, placeholder }: InputProps) => {
       border={"1px solid #BCBCBC"}
       borderRadius={"12px"}
       placeholder={placeholder}
+      focusBorderColor={"black"}
     />
   );
 };
