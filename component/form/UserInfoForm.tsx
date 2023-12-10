@@ -30,15 +30,17 @@ function RadioCard(props: any) {
         cursor="pointer"
         borderWidth="1px"
         borderRadius="md"
+        fontSize={"15px"}
+        fontWeight={"semibold"}
         boxShadow="md"
         _checked={{
-          bg: "teal.600",
+          bg: "#000000",
           color: "white",
-          borderColor: "teal.600",
+          borderColor: "#000000",
         }}
-        _focus={{
-          boxShadow: "outline",
-        }}
+        // _focus={{
+        //   boxShadow: "outline",
+        // }}
         px={5}
         py={3}
       >
