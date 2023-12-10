@@ -48,7 +48,11 @@ function RadioCard(props: any) {
   );
 }
 
-const UserInfoForm = () => {
+interface UserInfoFormPropsType {
+  setFunnel: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const UserInfoForm = ({ setFunnel }: UserInfoFormPropsType) => {
   const params = useParams();
 
   const options = ["남성", "여성"];
@@ -76,7 +80,7 @@ const UserInfoForm = () => {
             기본정보를 입력해주세요
           </Heading>
         </Box>
-        <Flex as={"form"} flexDir={"column"} w={"100%"}>
+        <HStack as={"form"} flexDir={"column"} w={"100%"} spacing={5}>
           <FormControl isRequired>
             <FormLabel fontSize={"15px"} color={"#5C5C5C"}>
               이름
@@ -98,12 +102,21 @@ const UserInfoForm = () => {
               })}
             </HStack>
           </FormControl>
-          <ButtonGroup>
-            <MainButton w={"100%"} h={"52px"}>
-              다음으로
-            </MainButton>
-          </ButtonGroup>
-        </Flex>
+        </HStack>
+        <ButtonGroup
+          width={"90%"}
+          pos={"fixed"}
+          bottom={"30px"}
+          margin={"0 auto"}
+        >
+          <MainButton
+            w={"100%"}
+            h={"52px"}
+            onClick={() => setFunnel("userPhysics")}
+          >
+            다음으로
+          </MainButton>
+        </ButtonGroup>
       </Flex>
     </>
   );

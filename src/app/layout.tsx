@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
 import { ChakraLayout } from "@/app/ChakraLayout";
 import QueryLayout from "./QueryLayout";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" suppressHydrationWarning>
+      <body suppressHydrationWarning={true}>
         <QueryLayout>
           <ChakraLayout>{children}</ChakraLayout>
         </QueryLayout>

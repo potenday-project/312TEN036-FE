@@ -3,7 +3,11 @@ import React from "react";
 import MainInput from "../input/MainInput";
 import MainButton from "../button/MainButton";
 
-const UserPhysicForm = () => {
+interface UserPhysicsFormPropsType {
+  setFunnel: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const UserPhysicForm = ({ setFunnel }: UserPhysicsFormPropsType) => {
   return (
     <Flex as={"form"} flexDir={"column"}>
       <MainInput w={"100%"} />
