@@ -53,8 +53,6 @@ interface UserInfoFormPropsType {
 }
 
 const UserInfoForm = ({ setFunnel, setProgress }: UserInfoFormPropsType) => {
-  const params = useParams();
-
   const options = ["남성", "여성"];
 
   const { getRootProps, getRadioProps } = useRadioGroup({

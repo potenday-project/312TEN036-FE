@@ -7,7 +7,6 @@ import dynamic from "next/dynamic";
 const ChakraProvider = dynamic(() =>
   import("@chakra-ui/provider").then((mod) => mod.ChakraProvider)
 );
-import localFont from "next/font/local";
 
 // const BMJUA = localFont({
 //   src: [
