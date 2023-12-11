@@ -9,6 +9,7 @@ const MainButton = ({ children, w, h, onClick }: ButtonProps) => {
       borderRadius={"12px"}
       w={w}
       h={h}
+      maxW={"390px"}
       onClick={onClick}
     >
       {children}

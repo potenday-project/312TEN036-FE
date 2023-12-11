@@ -14,11 +14,17 @@ const Page = () => {
       <Progress
         bgColor={"#D9D9D9"}
         // colorScheme="black"
-        size="sm"
+        size="xs"
         isAnimated={true}
         value={progress}
       />
-      <Box width={"100%"} h={"100%"}>
+      <Box
+        width={"100%"}
+        h={"100%"}
+        maxW={"390px"}
+        padding={"70px 0px"}
+        margin={"0 auto"}
+      >
         {funnel === "userInfo" && (
           <UserInfoForm setFunnel={setFunnel} setProgress={setProgress} />
         )}
