@@ -8,6 +8,7 @@ const MainButton = ({
   onClick,
   alignSelf,
   isDisabled,
+  type,
 }: ButtonProps) => {
   return (
     <Button
@@ -20,6 +21,7 @@ const MainButton = ({
       onClick={onClick}
       alignSelf={alignSelf}
       isDisabled={isDisabled}
+      type={type}
     >
       {children}
     </Button>

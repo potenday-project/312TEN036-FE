@@ -5,10 +5,12 @@ import { Flex, Progress } from "@chakra-ui/react";
 import { useFunnel } from "../../../utils/hooks/useFunnel";
 import UserPhysicForm from "../../../component/form/UserPhysicForm";
 import UserAgreementForm from "../../../component/form/UserAgreementForm";
+import { SubmitHandler, useForm } from "react-hook-form";
 
 const Page = () => {
   const [progress, setProgress] = useState<number>(33.3);
   const { funnel, setFunnel } = useFunnel("userInfo");
+
   return (
     <>
       <Progress
@@ -19,7 +21,6 @@ const Page = () => {
         value={progress}
       />
       <Flex
-        as={"main"}
         flexDir={"column"}
         w={"100%"}
         h={"99vh"}

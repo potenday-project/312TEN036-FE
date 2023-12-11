@@ -1,7 +1,12 @@
 import { Input, InputProps, border } from "@chakra-ui/react";
 import React from "react";
+import { UseFormRegisterReturn } from "react-hook-form";
 
-const MainInput = ({ h, w, placeholder }: InputProps) => {
+interface MainInputPropsType extends InputProps {
+  register: UseFormRegisterReturn;
+}
+
+const MainInput = ({ h, w, placeholder, register }: MainInputPropsType) => {
   return (
     <Input
       h={h}
@@ -10,6 +15,7 @@ const MainInput = ({ h, w, placeholder }: InputProps) => {
       borderRadius={"12px"}
       placeholder={placeholder}
       focusBorderColor={"black"}
+      {...register}
     />
   );
 };

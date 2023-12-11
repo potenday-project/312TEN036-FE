@@ -13,6 +13,7 @@ import {
   InputRightElement,
   Text,
 } from "@chakra-ui/react";
+import { SubmitHandler, useForm } from "react-hook-form";
 
 interface UserPhysicsFormPropsType {
   setFunnel: React.Dispatch<React.SetStateAction<string>>;
@@ -23,6 +24,20 @@ const UserPhysicForm = ({
   setFunnel,
   setProgress,
 }: UserPhysicsFormPropsType) => {
+  interface PhysicsFormType {
+    age: number;
+    height: number;
+    weight: number;
+    targetWeight: number;
+  }
+
+  const { handleSubmit, register } = useForm<PhysicsFormType>();
+
+  const onSubmit: SubmitHandler<PhysicsFormType> = (data) => {
+    console.log(data);
+    setFunnel("userAgreement");
+    setProgress((oldState) => oldState + 33.3);
+  };
   return (
     <>
       <Box as="section" alignSelf={"flex-start"}>
@@ -40,6 +55,7 @@ const UserPhysicForm = ({
       </Box>
       <HStack
         as={"form"}
+        onSubmit={handleSubmit(onSubmit)}
         flexDir={"column"}
         w={"100%"}
         spacing={5}
@@ -53,7 +69,12 @@ const UserPhysicForm = ({
             <InputLeftElement color={"#C6C6C6"} h={"48px"}>
               만
             </InputLeftElement>
-            <Input type="number" h={"48px"} focusBorderColor={"black"} />
+            <Input
+              {...register("age", { required: true })}
+              type="number"
+              h={"48px"}
+              focusBorderColor={"black"}
+            />
             <InputRightElement color={"#C6C6C6"} h={"48px"}>
               세
             </InputRightElement>
@@ -65,7 +86,12 @@ const UserPhysicForm = ({
             키
           </FormLabel>
           <InputGroup>
-            <Input type="number" h={"48px"} focusBorderColor={"black"} />
+            <Input
+              {...register("height", { required: true })}
+              type="number"
+              h={"48px"}
+              focusBorderColor={"black"}
+            />
             <InputRightElement color={"#C6C6C6"} h={"48px"}>
               cm
             </InputRightElement>
@@ -76,7 +102,12 @@ const UserPhysicForm = ({
             체중
           </FormLabel>
           <InputGroup>
-            <Input type="number" h={"48px"} focusBorderColor={"black"} />
+            <Input
+              {...register("weight", { required: true })}
+              type="number"
+              h={"48px"}
+              focusBorderColor={"black"}
+            />
             <InputRightElement color={"#C6C6C6"} h={"48px"}>
               kg
             </InputRightElement>
@@ -87,31 +118,29 @@ const UserPhysicForm = ({
             목표 체중
           </FormLabel>
           <InputGroup>
-            <Input type="number" h={"48px"} focusBorderColor={"black"} />
+            <Input
+              {...register("targetWeight", { required: true })}
+              type="number"
+              h={"48px"}
+              focusBorderColor={"black"}
+            />
             <InputRightElement color={"#C6C6C6"} h={"48px"}>
               kg
             </InputRightElement>
           </InputGroup>
         </FormControl>
-      </HStack>
-      <ButtonGroup
-        width={"100%"}
-        pos={"absolute"}
-        bottom={"30px"}
-        margin={"0 auto"}
-        justifyContent={"center"}
-      >
-        <MainButton
-          w={"100%"}
-          h={"52px"}
-          onClick={() => {
-            setFunnel("userAgreement");
-            setProgress((oldState) => oldState + 33.3);
-          }}
+        <ButtonGroup
+          width={"100%"}
+          pos={"absolute"}
+          bottom={"30px"}
+          margin={"0 auto"}
+          justifyContent={"center"}
         >
-          다음으로
-        </MainButton>
-      </ButtonGroup>
+          <MainButton w={"100%"} h={"52px"} type="submit">
+            다음으로
+          </MainButton>
+        </ButtonGroup>
+      </HStack>
     </>
   );
 };

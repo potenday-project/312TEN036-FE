@@ -1,9 +1,7 @@
 "use client";
 import {
   Box,
-  Button,
   ButtonGroup,
-  Flex,
   FormControl,
   FormLabel,
   HStack,
@@ -14,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import MainInput from "../input/MainInput";
 import MainButton from "../button/MainButton";
+import { SubmitHandler, useForm } from "react-hook-form";
 
 function RadioCard(props: any) {
   const { getInputProps, getRadioProps } = useRadio(props);
@@ -54,10 +53,21 @@ interface UserInfoFormPropsType {
 const UserInfoForm = ({ setFunnel, setProgress }: UserInfoFormPropsType) => {
   const options = ["남성", "여성"];
 
-  const { getRootProps, getRadioProps } = useRadioGroup({
+  const { getRootProps, getRadioProps, value } = useRadioGroup({
     name: "gender",
-    onChange: console.log,
   });
+
+  interface SignUpFormType {
+    userName: string;
+  }
+
+  const { handleSubmit, register } = useForm<SignUpFormType>();
+
+  const onSubmit: SubmitHandler<SignUpFormType> = (data) => {
+    console.log(data, value);
+    setFunnel("userPhysics");
+    setProgress((oldState) => oldState + 33.3);
+  };
 
   const group = getRootProps();
 
@@ -78,6 +88,7 @@ const UserInfoForm = ({ setFunnel, setProgress }: UserInfoFormPropsType) => {
       </Box>
       <HStack
         as={"form"}
+        onSubmit={handleSubmit(onSubmit)}
         flexDir={"column"}
         w={"100%"}
         spacing={5}
@@ -87,7 +98,12 @@ const UserInfoForm = ({ setFunnel, setProgress }: UserInfoFormPropsType) => {
           <FormLabel fontSize={"15px"} color={"#5C5C5C"}>
             이름
           </FormLabel>
-          <MainInput placeholder="이름을 입력해주세요." w={"100%"} h={"48px"} />
+          <MainInput
+            register={{ ...register("userName", { required: true }) }}
+            placeholder="이름을 입력해주세요."
+            w={"100%"}
+            h={"48px"}
+          />
         </FormControl>
         <FormControl>
           <FormLabel fontSize={"15px"} color={"#5C5C5C"}>
@@ -104,25 +120,23 @@ const UserInfoForm = ({ setFunnel, setProgress }: UserInfoFormPropsType) => {
             })}
           </HStack>
         </FormControl>
-      </HStack>
-      <ButtonGroup
-        width={"100%"}
-        pos={"absolute"}
-        bottom={"30px"}
-        margin={"0 auto"}
-        justifyContent={"center"}
-      >
-        <MainButton
-          w={"100%"}
-          h={"52px"}
-          onClick={() => {
-            setFunnel("userPhysics");
-            setProgress((oldState) => oldState + 33.3);
-          }}
+        <ButtonGroup
+          width={"100%"}
+          pos={"absolute"}
+          bottom={"30px"}
+          margin={"0 auto"}
+          justifyContent={"center"}
         >
-          다음으로
-        </MainButton>
-      </ButtonGroup>
+          <MainButton
+            w={"100%"}
+            h={"52px"}
+            type="submit"
+            isDisabled={value === ""}
+          >
+            다음으로
+          </MainButton>
+        </ButtonGroup>
+      </HStack>
     </>
   );
 };
