@@ -10,8 +10,6 @@ interface MainFunnelPropsType {
 }
 
 const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
-  const router = useRouter();
-
   return (
     <>
       <Image
@@ -47,10 +45,11 @@ const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
       </Box>
 
       <ButtonGroup
-        width={"90%"}
+        width={"100%"}
         pos={"fixed"}
         bottom={"30px"}
         margin={"0 auto"}
+        justifyContent={"center"}
       >
         <MainButton
           w={"100%"}

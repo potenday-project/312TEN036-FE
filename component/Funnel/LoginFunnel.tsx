@@ -16,13 +16,13 @@ const LoginFunnel = () => {
       />
 
       <ButtonGroup
-        width={"90%"}
+        width={"100%"}
         pos={"fixed"}
-        bottom={"50px"}
+        bottom={"30px"}
         margin={"0 auto"}
-        display={"flex"}
+        justifyContent={"center"}
+        alignItems={"center"}
         flexDir={"column"}
-        textAlign={"center"}
         gap={"10px"}
       >
         <MainButton w={"100%"} h={"52px"} onClick={() => {}}>

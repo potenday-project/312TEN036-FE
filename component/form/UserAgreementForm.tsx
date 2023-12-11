@@ -19,8 +19,8 @@ const UserAgreementForm = ({ setFunnel }: UserAgreementFormPropsType) => {
   const isIndeterminate = checkedItems.some(Boolean) && !allChecked;
 
   return (
-    <Flex flexDir={"column"} w={"90%"} margin={"0 auto"}>
-      <Box as="section">
+    <>
+      <Box as="section" alignSelf={"flex-start"}>
         <Heading
           as={"h1"}
           color={"#000000"}
@@ -105,16 +105,17 @@ const UserAgreementForm = ({ setFunnel }: UserAgreementFormPropsType) => {
       </VStack>
 
       <ButtonGroup
-        width={"90%"}
-        pos={"fixed"}
+        width={"100%"}
+        pos={"absolute"}
         bottom={"30px"}
         margin={"0 auto"}
+        justifyContent={"center"}
       >
         <MainButton w={"100%"} h={"52px"}>
           동의하고 시작하기
         </MainButton>
       </ButtonGroup>
-    </Flex>
+    </>
   );
 };
 

@@ -10,8 +10,11 @@ export default function Home() {
     <Flex
       as={"main"}
       flexDir={"column"}
-      w={"90%"}
+      w={"100%"}
+      pos={"relative"}
+      maxW={"390px"}
       height={"100vh"}
+      padding={"60px 22px"}
       margin={"0 auto"}
       justifyContent={"center"}
       alignItems={"center"}

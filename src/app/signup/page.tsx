@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import UserInfoForm from "../../../component/form/UserInfoForm";
-import { Box, Progress, extendTheme } from "@chakra-ui/react";
+import { Flex, Progress } from "@chakra-ui/react";
 import { useFunnel } from "../../../utils/hooks/useFunnel";
 import UserPhysicForm from "../../../component/form/UserPhysicForm";
 import UserAgreementForm from "../../../component/form/UserAgreementForm";
@@ -18,12 +18,16 @@ const Page = () => {
         isAnimated={true}
         value={progress}
       />
-      <Box
-        width={"100%"}
-        h={"100%"}
+      <Flex
+        as={"main"}
+        flexDir={"column"}
+        w={"100%"}
+        h={"99vh"}
+        pos={"relative"}
         maxW={"390px"}
-        padding={"70px 0px"}
+        padding={"60px 22px"}
         margin={"0 auto"}
+        alignItems={"center"}
       >
         {funnel === "userInfo" && (
           <UserInfoForm setFunnel={setFunnel} setProgress={setProgress} />
@@ -34,7 +38,7 @@ const Page = () => {
         {funnel === "userAgreement" && (
           <UserAgreementForm setFunnel={setFunnel} />
         )}
-      </Box>
+      </Flex>
     </>
   );
 };

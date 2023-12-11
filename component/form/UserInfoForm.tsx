@@ -1,7 +1,7 @@
 "use client";
-import { useForm } from "react-hook-form";
 import {
   Box,
+  Button,
   ButtonGroup,
   Flex,
   FormControl,
@@ -12,7 +12,6 @@ import {
   useRadio,
   useRadioGroup,
 } from "@chakra-ui/react";
-import { useParams } from "next/navigation";
 import MainInput from "../input/MainInput";
 import MainButton from "../button/MainButton";
 
@@ -28,11 +27,11 @@ function RadioCard(props: any) {
       <Box
         {...checkbox}
         cursor="pointer"
-        borderWidth="1px"
-        borderRadius="md"
+        borderRadius={"12px"}
+        border={"1px solid #BCBCBC"}
         fontSize={"15px"}
         fontWeight={"semibold"}
-        boxShadow="md"
+        color={"#C6C6C6"}
         _checked={{
           bg: "#000000",
           color: "white",
@@ -64,65 +63,66 @@ const UserInfoForm = ({ setFunnel, setProgress }: UserInfoFormPropsType) => {
 
   return (
     <>
-      <Flex flexDir={"column"} w={"90%"} margin={"0 auto"}>
-        <Box as="section">
-          <Text as={"h2"} color={"#787878"} fontSize={"17px"}>
-            반가워요!
-          </Text>
-          <Heading
-            as={"h1"}
-            color={"#000000"}
-            fontSize={"24px"}
-            fontWeight={"semibold"}
-          >
-            기본정보를 입력해주세요
-          </Heading>
-        </Box>
-        <HStack as={"form"} flexDir={"column"} w={"100%"} spacing={5}>
-          <FormControl isRequired>
-            <FormLabel fontSize={"15px"} color={"#5C5C5C"}>
-              이름
-            </FormLabel>
-            <MainInput
-              placeholder="이름을 입력해주세요."
-              w={"100%"}
-              h={"48px"}
-            />
-          </FormControl>
-          <FormControl>
-            <FormLabel fontSize={"15px"} color={"#5C5C5C"}>
-              성별
-            </FormLabel>
-            <HStack {...group}>
-              {options.map((value) => {
-                const radio = getRadioProps({ value });
-                return (
-                  <RadioCard key={value} {...radio}>
-                    {value}
-                  </RadioCard>
-                );
-              })}
-            </HStack>
-          </FormControl>
-        </HStack>
-        <ButtonGroup
-          width={"90%"}
-          pos={"fixed"}
-          bottom={"30px"}
-          margin={"0 auto"}
+      <Box as="section" alignSelf={"flex-start"}>
+        <Heading
+          as={"h1"}
+          color={"#000000"}
+          fontSize={"24px"}
+          fontWeight={"semibold"}
         >
-          <MainButton
-            w={"100%"}
-            h={"52px"}
-            onClick={() => {
-              setFunnel("userPhysics");
-              setProgress((oldState) => oldState + 33.3);
-            }}
-          >
-            다음으로
-          </MainButton>
-        </ButtonGroup>
-      </Flex>
+          기본정보를 입력해주세요
+        </Heading>
+        <Text as={"h2"} color={"#787878"} fontSize={"17px"} lineHeight={2}>
+          성별에 맞는 대사량기준으로 알려드려요
+        </Text>
+      </Box>
+      <HStack
+        as={"form"}
+        flexDir={"column"}
+        w={"100%"}
+        spacing={5}
+        padding={"30px 0"}
+      >
+        <FormControl>
+          <FormLabel fontSize={"15px"} color={"#5C5C5C"}>
+            이름
+          </FormLabel>
+          <MainInput placeholder="이름을 입력해주세요." w={"100%"} h={"48px"} />
+        </FormControl>
+        <FormControl>
+          <FormLabel fontSize={"15px"} color={"#5C5C5C"}>
+            성별
+          </FormLabel>
+          <HStack {...group}>
+            {options.map((value) => {
+              const radio = getRadioProps({ value });
+              return (
+                <RadioCard key={value} {...radio}>
+                  {value}
+                </RadioCard>
+              );
+            })}
+          </HStack>
+        </FormControl>
+      </HStack>
+      <ButtonGroup
+        width={"100%"}
+        pos={"absolute"}
+        bottom={"30px"}
+        margin={"0 auto"}
+        justifyContent={"center"}
+      >
+        <MainButton
+          w={"100%"}
+          h={"52px"}
+          onClick={() => {
+            setFunnel("userPhysics");
+            setProgress((oldState) => oldState + 33.3);
+          }}
+        >
+          다음으로
+        </MainButton>
+      </ButtonGroup>
     </>
   );
 };
