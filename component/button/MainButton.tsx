@@ -1,7 +1,14 @@
 import { Button, ButtonProps } from "@chakra-ui/react";
 import React from "react";
 
-const MainButton = ({ children, w, h, onClick, alignSelf }: ButtonProps) => {
+const MainButton = ({
+  children,
+  w,
+  h,
+  onClick,
+  alignSelf,
+  isDisabled,
+}: ButtonProps) => {
   return (
     <Button
       bgColor={"#000000"}
@@ -12,6 +19,7 @@ const MainButton = ({ children, w, h, onClick, alignSelf }: ButtonProps) => {
       maxW={"390px"}
       onClick={onClick}
       alignSelf={alignSelf}
+      isDisabled={isDisabled}
     >
       {children}
     </Button>

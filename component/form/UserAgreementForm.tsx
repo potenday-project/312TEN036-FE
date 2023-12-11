@@ -18,6 +18,7 @@ const UserAgreementForm = ({ setFunnel }: UserAgreementFormPropsType) => {
   const allChecked = checkedItems.every(Boolean);
   const isIndeterminate = checkedItems.some(Boolean) && !allChecked;
 
+  console.log();
   return (
     <>
       <Box as="section" alignSelf={"flex-start"}>
@@ -111,7 +112,11 @@ const UserAgreementForm = ({ setFunnel }: UserAgreementFormPropsType) => {
         margin={"0 auto"}
         justifyContent={"center"}
       >
-        <MainButton w={"100%"} h={"52px"}>
+        <MainButton
+          w={"100%"}
+          h={"52px"}
+          isDisabled={checkedItems.filter((ele) => ele).length !== 3}
+        >
           동의하고 시작하기
         </MainButton>
       </ButtonGroup>
