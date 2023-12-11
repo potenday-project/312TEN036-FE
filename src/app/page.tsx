@@ -1,69 +1,26 @@
 "use client";
-import { Box, ButtonGroup, Flex, Heading, Text } from "@chakra-ui/react";
-import MainButton from "../../component/button/MainButton";
-import { useRouter } from "next/navigation";
-import Image from "next/image";
+import { Flex } from "@chakra-ui/react";
+import { useFunnel } from "../../utils/hooks/useFunnel";
+import MainFunnel from "../../component/Funnel/MainFunnel";
+import LoginFunnel from "../../component/Funnel/LoginFunnel";
 
 export default function Home() {
-  const router = useRouter();
+  const { funnel, setFunnel } = useFunnel("main");
   return (
     <Flex
       as={"main"}
       flexDir={"column"}
-      w={"90%"}
+      w={"100%"}
+      pos={"relative"}
+      maxW={"390px"}
       height={"100vh"}
+      padding={"60px 22px"}
       margin={"0 auto"}
       justifyContent={"center"}
       alignItems={"center"}
     >
-      <Image
-        src={"https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg"}
-        alt="식선생"
-        width={100}
-        height={100}
-      />
-      <Box as="section" paddingBottom={"100px"}>
-        <Heading
-          as={"h1"}
-          color={"#000000"}
-          fontSize={"24px"}
-          fontWeight={"semibold"}
-          textAlign={"center"}
-          lineHeight={10}
-          padding={"15px"}
-        >
-          살빼려면
-          <br />
-          오늘 얼마만큼 운동해야하지?
-        </Heading>
-        <Text
-          as={"h2"}
-          color={"#787878"}
-          fontSize={"17px"}
-          textAlign={"center"}
-          lineHeight={7}
-        >
-          오늘 먹은 음식을 식선생에게 외쳐보세요! <br />
-          필요 운동량과 안찌는 식단을 한번에 알려드려요
-        </Text>
-      </Box>
-
-      <ButtonGroup
-        width={"90%"}
-        pos={"fixed"}
-        bottom={"30px"}
-        margin={"0 auto"}
-      >
-        <MainButton
-          w={"100%"}
-          h={"52px"}
-          onClick={() => {
-            router.push("/signup");
-          }}
-        >
-          다음으로
-        </MainButton>
-      </ButtonGroup>
+      {funnel === "main" && <MainFunnel setFunnel={setFunnel} />}
+      {funnel === "login" && <LoginFunnel />}
     </Flex>
   );
 }
