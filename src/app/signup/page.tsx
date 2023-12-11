@@ -8,7 +8,7 @@ import UserAgreementForm from "../../../component/form/UserAgreementForm";
 
 const Page = () => {
   const [progress, setProgress] = useState<number>(33.3);
-  const { funnel, setFunnel } = useFunnel();
+  const { funnel, setFunnel } = useFunnel("userInfo");
   return (
     <>
       <Progress
