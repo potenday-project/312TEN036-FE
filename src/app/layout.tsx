@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="ko" style={{ height: "100%" }} suppressHydrationWarning>
       <body suppressHydrationWarning={true}>
         <QueryLayout>
           <ChakraLayout>{children}</ChakraLayout>
