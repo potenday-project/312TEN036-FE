@@ -3,7 +3,6 @@ import MainButton from "../button/MainButton";
 import {
   Box,
   ButtonGroup,
-  Flex,
   FormControl,
   FormLabel,
   HStack,
@@ -14,6 +13,7 @@ import {
   InputRightElement,
   Text,
 } from "@chakra-ui/react";
+import { SubmitHandler, useForm } from "react-hook-form";
 
 interface UserPhysicsFormPropsType {
   setFunnel: React.Dispatch<React.SetStateAction<string>>;
@@ -24,12 +24,23 @@ const UserPhysicForm = ({
   setFunnel,
   setProgress,
 }: UserPhysicsFormPropsType) => {
+  interface PhysicsFormType {
+    age: number;
+    height: number;
+    weight: number;
+    targetWeight: number;
+  }
+
+  const { handleSubmit, register } = useForm<PhysicsFormType>();
+
+  const onSubmit: SubmitHandler<PhysicsFormType> = (data) => {
+    console.log(data);
+    setFunnel("userAgreement");
+    setProgress((oldState) => oldState + 33.3);
+  };
   return (
-    <Flex flexDir={"column"} w={"90%"} margin={"0 auto"}>
-      <Box as="section">
-        <Text as={"h2"} color={"#787878"} fontSize={"17px"}>
-          거의 다 왔어요!
-        </Text>
+    <>
+      <Box as="section" alignSelf={"flex-start"}>
         <Heading
           as={"h1"}
           color={"#000000"}
@@ -38,9 +49,19 @@ const UserPhysicForm = ({
         >
           신체정보를 입력해주세요
         </Heading>
+        <Text as={"h2"} color={"#787878"} fontSize={"17px"} lineHeight={2}>
+          개인 맞춤으로 알려드려요
+        </Text>
       </Box>
-      <HStack as={"form"} flexDir={"column"} w={"100%"} spacing={5}>
-        <FormControl isRequired>
+      <HStack
+        as={"form"}
+        onSubmit={handleSubmit(onSubmit)}
+        flexDir={"column"}
+        w={"100%"}
+        spacing={5}
+        padding={"30px 0"}
+      >
+        <FormControl>
           <FormLabel fontSize={"15px"} color={"#5C5C5C"}>
             나이
           </FormLabel>
@@ -48,54 +69,79 @@ const UserPhysicForm = ({
             <InputLeftElement color={"#C6C6C6"} h={"48px"}>
               만
             </InputLeftElement>
-            <Input type="number" h={"48px"} focusBorderColor={"black"} />
+            <Input
+              {...register("age", { required: true })}
+              type="number"
+              h={"48px"}
+              focusBorderColor={"black"}
+            />
             <InputRightElement color={"#C6C6C6"} h={"48px"}>
               세
             </InputRightElement>
           </InputGroup>
         </FormControl>
 
-        <FormControl isRequired>
+        <FormControl>
           <FormLabel fontSize={"15px"} color={"#5C5C5C"}>
             키
           </FormLabel>
           <InputGroup>
-            <Input type="number" h={"48px"} focusBorderColor={"black"} />
+            <Input
+              {...register("height", { required: true })}
+              type="number"
+              h={"48px"}
+              focusBorderColor={"black"}
+            />
             <InputRightElement color={"#C6C6C6"} h={"48px"}>
               cm
             </InputRightElement>
           </InputGroup>
         </FormControl>
-        <FormControl isRequired>
+        <FormControl>
           <FormLabel fontSize={"15px"} color={"#5C5C5C"}>
             체중
           </FormLabel>
           <InputGroup>
-            <Input type="number" h={"48px"} focusBorderColor={"black"} />
+            <Input
+              {...register("weight", { required: true })}
+              type="number"
+              h={"48px"}
+              focusBorderColor={"black"}
+            />
             <InputRightElement color={"#C6C6C6"} h={"48px"}>
               kg
             </InputRightElement>
           </InputGroup>
         </FormControl>
-      </HStack>
-      <ButtonGroup
-        width={"90%"}
-        pos={"fixed"}
-        bottom={"30px"}
-        margin={"0 auto"}
-      >
-        <MainButton
-          w={"100%"}
-          h={"52px"}
-          onClick={() => {
-            setFunnel("userAgreement");
-            setProgress((oldState) => oldState + 33.3);
-          }}
+        <FormControl>
+          <FormLabel fontSize={"15px"} color={"#5C5C5C"}>
+            목표 체중
+          </FormLabel>
+          <InputGroup>
+            <Input
+              {...register("targetWeight", { required: true })}
+              type="number"
+              h={"48px"}
+              focusBorderColor={"black"}
+            />
+            <InputRightElement color={"#C6C6C6"} h={"48px"}>
+              kg
+            </InputRightElement>
+          </InputGroup>
+        </FormControl>
+        <ButtonGroup
+          width={"100%"}
+          pos={"absolute"}
+          bottom={"30px"}
+          margin={"0 auto"}
+          justifyContent={"center"}
         >
-          다음으로
-        </MainButton>
-      </ButtonGroup>
-    </Flex>
+          <MainButton w={"100%"} h={"52px"} type="submit">
+            다음으로
+          </MainButton>
+        </ButtonGroup>
+      </HStack>
+    </>
   );
 };
 
