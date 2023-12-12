@@ -2,11 +2,7 @@
 import React from "react";
 
 const ProgressBar = () => {
-  return (
-    <>
-      <Progress colorScheme="green" size="sm" value={progress} />
-    </>
-  );
+  return <></>;
 };
 
 export default ProgressBar;

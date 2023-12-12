@@ -1,4 +1,4 @@
-import { Box, Divider, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Divider, Flex, Heading, Text, VStack } from "@chakra-ui/react";
 import ChattingMsgCard from "../card/ChattingMsgCard";
 import UserChattingMsgCard from "./UserChattingMsgCard";
 import DietChattingMsgCart from "./DietChattingMsgCard";
@@ -31,7 +31,12 @@ const ChattingRoom = () => {
           </Text>
           <Divider padding={"4.5px 0"} color={"#ECECEC"} />
         </Box>
-        <Box>
+        <VStack
+          w={"100%"}
+          alignItems={"flex-start"}
+          spacing={"16px"}
+          marginTop={"10px"}
+        >
           <ChattingMsgCard>반갑습니다 00님</ChattingMsgCard>
           <ChattingMsgCard>
             자, 오늘은 어떤 음식을 드셨나요?
@@ -47,7 +52,7 @@ const ChattingRoom = () => {
           </UserChattingMsgCard>
 
           <DietChattingMsgCart />
-        </Box>
+        </VStack>
         <ChattingInput />
       </Flex>
     </>

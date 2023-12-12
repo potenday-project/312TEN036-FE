@@ -8,7 +8,7 @@ const ChattingMsgCard = ({ children }: CardProps) => {
         bgColor={"#F5F5F9"}
         width={"max-content"}
         shadow={"none"}
-        margin={"10px 0px 10px 22px"}
+        margin={"0px 0px 0px 22px"}
       >
         <CardBody
           color={"#2F2F2F"}
