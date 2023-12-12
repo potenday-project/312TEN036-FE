@@ -13,6 +13,7 @@ import {
 import MainInput from "../input/MainInput";
 import MainButton from "../button/MainButton";
 import { SubmitHandler, useForm } from "react-hook-form";
+import { UserInfoType } from "@/app/signup/page";
 
 function RadioCard(props: any) {
   const { getInputProps, getRadioProps } = useRadio(props);
@@ -48,9 +49,14 @@ function RadioCard(props: any) {
 interface UserInfoFormPropsType {
   setFunnel: React.Dispatch<React.SetStateAction<string>>;
   setProgress: React.Dispatch<React.SetStateAction<number>>;
+  setUserInfo: React.Dispatch<React.SetStateAction<UserInfoType>>;
 }
 
-const UserInfoForm = ({ setFunnel, setProgress }: UserInfoFormPropsType) => {
+const UserInfoForm = ({
+  setFunnel,
+  setProgress,
+  setUserInfo,
+}: UserInfoFormPropsType) => {
   const options = ["남성", "여성"];
 
   const { getRootProps, getRadioProps, value } = useRadioGroup({
@@ -65,6 +71,7 @@ const UserInfoForm = ({ setFunnel, setProgress }: UserInfoFormPropsType) => {
 
   const onSubmit: SubmitHandler<SignUpFormType> = (data) => {
     console.log(data, value);
+
     setFunnel("userPhysics");
     setProgress((oldState) => oldState + 33.3);
   };

@@ -14,29 +14,26 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { SubmitHandler, useForm } from "react-hook-form";
+import { useRouter } from "next/navigation";
 
 interface UserPhysicsFormPropsType {
-  setFunnel: React.Dispatch<React.SetStateAction<string>>;
   setProgress: React.Dispatch<React.SetStateAction<number>>;
 }
+interface PhysicsFormType {
+  age: number;
+  height: number;
+  weight: number;
+  targetWeight: number;
+}
 
-const UserPhysicForm = ({
-  setFunnel,
-  setProgress,
-}: UserPhysicsFormPropsType) => {
-  interface PhysicsFormType {
-    age: number;
-    height: number;
-    weight: number;
-    targetWeight: number;
-  }
-
+const UserPhysicForm = () => {
+  const router = useRouter();
   const { handleSubmit, register } = useForm<PhysicsFormType>();
 
   const onSubmit: SubmitHandler<PhysicsFormType> = (data) => {
     console.log(data);
-    setFunnel("userAgreement");
-    setProgress((oldState) => oldState + 33.3);
+    // setProgress((oldState) => oldState + 33.3);
+    router.push("/main");
   };
   return (
     <>
