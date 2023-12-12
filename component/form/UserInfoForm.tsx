@@ -49,14 +49,9 @@ function RadioCard(props: any) {
 interface UserInfoFormPropsType {
   setFunnel: React.Dispatch<React.SetStateAction<string>>;
   setProgress: React.Dispatch<React.SetStateAction<number>>;
-  setUserInfo: React.Dispatch<React.SetStateAction<UserInfoType>>;
 }
 
-const UserInfoForm = ({
-  setFunnel,
-  setProgress,
-  setUserInfo,
-}: UserInfoFormPropsType) => {
+const UserInfoForm = ({ setFunnel, setProgress }: UserInfoFormPropsType) => {
   const options = ["남성", "여성"];
 
   const { getRootProps, getRadioProps, value } = useRadioGroup({
