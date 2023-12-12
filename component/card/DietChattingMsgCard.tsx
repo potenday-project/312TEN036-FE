@@ -18,7 +18,7 @@ const DietChattingMsgCart = ({}: CardProps) => {
         w={"312px"}
         bgColor={"#F5F5F9"}
         shadow={"none"}
-        margin={"10px 0px 10px 22px"}
+        margin={"0px 0px 0px 22px"}
       >
         <CardHeader padding={"14px 16px 0 16px"}>
           <Flex justifyContent={"space-between"} textAlign={"center"}>

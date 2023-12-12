@@ -3,6 +3,7 @@ import { Flex, Text } from "@chakra-ui/react";
 import ChattingRoom from "../../../component/card/ChattingRoom";
 import DietStateCard from "../../../component/card/DietStateCard";
 import { useRouter } from "next/navigation";
+import TheHeader from "../../../component/header/TheHeader";
 
 const Page = () => {
   const router = useRouter();
@@ -19,20 +20,12 @@ const Page = () => {
         bgColor={"#D9D9D9"}
         alignItems={"center"}
       >
-        <Flex
-          as={"header"}
-          position={"fixed"}
-          top={"0"}
-          justifyContent={"space-between"}
-          padding={"4px 22px"}
-          bgColor={"#D9D9D9"}
-          w={"100%"}
-        >
+        <TheHeader>
           <Text>로고</Text>
           <Text onClick={() => router.push("/mypage")} cursor={"pointer"}>
             마이페이지
           </Text>
-        </Flex>
+        </TheHeader>
         <DietStateCard />
         <ChattingRoom />
       </Flex>

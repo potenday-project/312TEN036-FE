@@ -7,9 +7,10 @@ const UserChattingMsgCard = ({ children }: CardProps) => {
         bgColor={"#F5F5F9"}
         width={"max-content"}
         shadow={"none"}
-        margin={"10px 22px 20px 0px"}
+        margin={"0px 22px 0px 0px"}
         float={"right"}
         fontSize={"18px"}
+        alignSelf={"flex-end"}
       >
         <CardBody
           color={"#2F2F2F"}
