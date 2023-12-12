@@ -1,66 +1,41 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: build fe-docker image
+name: Build and Push
 
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
-  # Single deploy job since we're just deploying
-  build-and-push:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        
-      - name: Setup docker build
-        uses: docker/setup-buildx-action@v2
-        
-      - name: set npnm
-        uses: pnpm/action-setup@v2
-        
-      - name: set Node.js
-        uses: actions/upload-pages-artifact@v2
-        with:
-          # Upload entire repository
-          path: '.'
-          
-      - name: Login to Container Registry
-        uses: docker/login-action@v2.1.0
-        with:
-          registry: harbor.example.com
-          username: ${{ secrets.HARBOR_USERNAME }}
-          password: ${{ secrets.HARBOR_TOKEN }}
+  build:
 
-      - name: Build and push to Container Registry
-        uses: docker/build-push-action@v4.0.0
-        with:
-          context: .
-          push: true
-          pull: true
-          tags: ${{ steps.meta.outputs.tags }}
-          build-args: |
-            APP_ENV=${{ inputs.environment }}
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3.0.0
       
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v3
+    - name: Login to NCP Container Registry
+      uses: docker/login-action@v3.0.0
+      with:
+        registry: ${{ secrets.NCP_CONTAINER_REGISTRY }}
+        username: ${{ secrets.NCP_ACCESS_KEY }}
+        password: ${{ secrets.NCP_SECRET_KEY }}
+        
+    - name: build and push
+      uses: docker/build-push-action@v3
+      with:
+        context: .
+        file: ./Dockerfile
+        push: true
+        tags: ${{ secrets.NCP_CONTAINER_REGISTRY }}/fastapi-be:latest 
+        cache-from: type=registry,ref=${{ secrets.NCP_CONTAINER_REGISTRY }}/fastapi-be:latest 
+        cache-to: type=inline
+        
+
+          
+
+    
