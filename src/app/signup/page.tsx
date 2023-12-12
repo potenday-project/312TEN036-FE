@@ -7,9 +7,26 @@ import UserPhysicForm from "../../../component/form/UserPhysicForm";
 import UserAgreementForm from "../../../component/form/UserAgreementForm";
 import { SubmitHandler, useForm } from "react-hook-form";
 
+export interface UserInfoType {
+  userName: string;
+  gender: string;
+  age: number;
+  height: number;
+  weight: number;
+  targetWeight: number;
+}
+
 const Page = () => {
   const [progress, setProgress] = useState<number>(33.3);
-  const { funnel, setFunnel } = useFunnel("userInfo");
+  const [userInfo, setUserInfo] = useState<UserInfoType>({
+    userName: "",
+    gender: "",
+    age: 0,
+    height: 0,
+    weight: 0,
+    targetWeight: 0,
+  });
+  const { funnel, setFunnel } = useFunnel("userAgreement");
 
   return (
     <>
@@ -20,6 +37,7 @@ const Page = () => {
         isAnimated={true}
         value={progress}
       />
+
       <Flex
         flexDir={"column"}
         w={"100%"}
@@ -30,14 +48,18 @@ const Page = () => {
         margin={"0 auto"}
         alignItems={"center"}
       >
+        {funnel === "userAgreement" && (
+          <UserAgreementForm setFunnel={setFunnel} setProgress={setProgress} />
+        )}
         {funnel === "userInfo" && (
-          <UserInfoForm setFunnel={setFunnel} setProgress={setProgress} />
+          <UserInfoForm
+            setFunnel={setFunnel}
+            setProgress={setProgress}
+            setUserInfo={setUserInfo}
+          />
         )}
         {funnel === "userPhysics" && (
           <UserPhysicForm setFunnel={setFunnel} setProgress={setProgress} />
-        )}
-        {funnel === "userAgreement" && (
-          <UserAgreementForm setFunnel={setFunnel} />
         )}
       </Flex>
     </>
