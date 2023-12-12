@@ -11,6 +11,7 @@ const DietStateCard = () => {
         color={"#FFFFFF"}
         padding={"22px"}
         flexDir={"row"}
+        borderRadius={"12px"}
       >
         <HStack display={"flex"} margin={"0 auto"} w={"100%"} spacing={"18px"}>
           <Box w={"20%"}>

@@ -1,12 +1,13 @@
 "use client";
-import { Flex } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import ChattingRoom from "../../../component/card/ChattingRoom";
 import DietStateCard from "../../../component/card/DietStateCard";
+import { useRouter } from "next/navigation";
 
 const Page = () => {
+  const router = useRouter();
   return (
     <>
-      <Flex as={"header"}></Flex>
       <Flex
         flexDir={"column"}
         w={"100%"}
@@ -18,6 +19,20 @@ const Page = () => {
         bgColor={"#D9D9D9"}
         alignItems={"center"}
       >
+        <Flex
+          as={"header"}
+          position={"fixed"}
+          top={"0"}
+          justifyContent={"space-between"}
+          padding={"4px 22px"}
+          bgColor={"#D9D9D9"}
+          w={"100%"}
+        >
+          <Text>로고</Text>
+          <Text onClick={() => router.push("/mypage")} cursor={"pointer"}>
+            마이페이지
+          </Text>
+        </Flex>
         <DietStateCard />
         <ChattingRoom />
       </Flex>

@@ -2,6 +2,7 @@ import { Box, Divider, Flex, Heading, Text } from "@chakra-ui/react";
 import ChattingMsgCard from "../card/ChattingMsgCard";
 import UserChattingMsgCard from "./UserChattingMsgCard";
 import DietChattingMsgCart from "./DietChattingMsgCard";
+import ChattingInput from "../input/ChattingInput";
 
 const ChattingRoom = () => {
   return (
@@ -47,6 +48,7 @@ const ChattingRoom = () => {
 
           <DietChattingMsgCart />
         </Box>
+        <ChattingInput />
       </Flex>
     </>
   );
