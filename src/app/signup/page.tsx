@@ -5,7 +5,6 @@ import { Flex, Progress } from "@chakra-ui/react";
 import { useFunnel } from "../../../utils/hooks/useFunnel";
 import UserPhysicForm from "../../../component/form/UserPhysicForm";
 import UserAgreementForm from "../../../component/form/UserAgreementForm";
-import { SubmitHandler, useForm } from "react-hook-form";
 
 export interface UserInfoType {
   userName: string;
@@ -58,9 +57,7 @@ const Page = () => {
             setUserInfo={setUserInfo}
           />
         )}
-        {funnel === "userPhysics" && (
-          <UserPhysicForm setFunnel={setFunnel} setProgress={setProgress} />
-        )}
+        {funnel === "userPhysics" && <UserPhysicForm />}
       </Flex>
     </>
   );
