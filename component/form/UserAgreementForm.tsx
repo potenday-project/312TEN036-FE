@@ -11,14 +11,17 @@ import MainButton from "../button/MainButton";
 
 interface UserAgreementFormPropsType {
   setFunnel: React.Dispatch<React.SetStateAction<string>>;
+  setProgress: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const UserAgreementForm = ({ setFunnel }: UserAgreementFormPropsType) => {
+const UserAgreementForm = ({
+  setFunnel,
+  setProgress,
+}: UserAgreementFormPropsType) => {
   const [checkedItems, setCheckedItems] = useState([false, false, false]);
   const allChecked = checkedItems.every(Boolean);
   const isIndeterminate = checkedItems.some(Boolean) && !allChecked;
 
-  console.log();
   return (
     <>
       <Box as="section" alignSelf={"flex-start"}>
@@ -116,8 +119,12 @@ const UserAgreementForm = ({ setFunnel }: UserAgreementFormPropsType) => {
           w={"100%"}
           h={"52px"}
           isDisabled={checkedItems.filter((ele) => ele).length !== 3}
+          onClick={() => {
+            setFunnel("userInfo");
+            setProgress((oldState) => oldState + 33.3);
+          }}
         >
-          동의하고 시작하기
+          다음으로
         </MainButton>
       </ButtonGroup>
     </>
