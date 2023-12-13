@@ -35,13 +35,11 @@ jobs:
         cache-from: type=registry,ref=${{ secrets.NCP_CONTAINER_REGISTRY }}/nextjs-fe:${{ github.sha }} 
         cache-to: type=inline
 
-    - name: Checkout External Github
-      uses: actions/checkout@v3
-      with:
-        repository: gracepark0120/sikseonsang
-        path: ${{ secrets.GIT_URL }}
+  
+  push:
 
-    
+    runs-on: ubuntu-latest
+    steps:
     - name: change docker image name
       run: |
         git config --global user.name "${{ secrets.GIT_USERNAME }}"
