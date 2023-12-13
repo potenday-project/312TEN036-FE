@@ -1,5 +1,6 @@
 import { Box, Card, HStack, Text } from "@chakra-ui/react";
 import Image from "next/image";
+import HealthMountainIcon from "../icon/HealthMountainIcon";
 
 const DietStateCard = () => {
   return (
@@ -14,16 +15,7 @@ const DietStateCard = () => {
         borderRadius={"12px"}
       >
         <HStack display={"flex"} margin={"0 auto"} w={"100%"} spacing={"18px"}>
-          <Box w={"20%"}>
-            <Image
-              src={
-                "https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg"
-              }
-              alt="식선생"
-              width={70}
-              height={70}
-            />
-          </Box>
+          <HealthMountainIcon />
           <Box w={"70%"}>
             <Text>
               식단을 입력하시면

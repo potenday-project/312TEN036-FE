@@ -40,7 +40,7 @@ const Page = () => {
       <Flex
         flexDir={"column"}
         w={"100%"}
-        h={"99vh"}
+        h={"100vh"}
         pos={"relative"}
         maxW={"390px"}
         padding={"60px 22px"}

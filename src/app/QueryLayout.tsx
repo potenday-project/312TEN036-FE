@@ -34,7 +34,7 @@ export default function QueryLayout({ children }: PropsWithChildren) {
   return (
     <QueryClientProvider client={queryClient}>
       {children}
-      {product && <ReactQueryDevtools initialIsOpen={false} />}
+      {/* {product && <ReactQueryDevtools initialIsOpen={false} />} */}
     </QueryClientProvider>
   );
 }

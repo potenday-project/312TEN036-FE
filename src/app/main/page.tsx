@@ -4,6 +4,7 @@ import ChattingRoom from "../../../component/card/ChattingRoom";
 import DietStateCard from "../../../component/card/DietStateCard";
 import { useRouter } from "next/navigation";
 import TheHeader from "../../../component/header/TheHeader";
+import UserIcon from "../../../component/icon/UserIcon";
 
 const Page = () => {
   const router = useRouter();
@@ -23,7 +24,7 @@ const Page = () => {
         <TheHeader>
           <Text>로고</Text>
           <Text onClick={() => router.push("/mypage")} cursor={"pointer"}>
-            마이페이지
+            <UserIcon />
           </Text>
         </TheHeader>
         <DietStateCard />
