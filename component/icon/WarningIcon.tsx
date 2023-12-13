@@ -72,7 +72,7 @@ const WarningIcon = () => {
           <path
             d="M14.0069 15.2678H4.625"
             stroke="url(#paint13_linear_268_5555)"
-            stroke-width="0.5"
+            strokeWidth="0.5"
           />
         </g>
         <defs>
@@ -83,9 +83,9 @@ const WarningIcon = () => {
             width="13.0713"
             height="10.6893"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -118,9 +118,9 @@ const WarningIcon = () => {
             width="1.53613"
             height="4.10718"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -153,9 +153,9 @@ const WarningIcon = () => {
             width="3.44531"
             height="3.44507"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -188,9 +188,9 @@ const WarningIcon = () => {
             width="3.44531"
             height="3.44507"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -223,9 +223,9 @@ const WarningIcon = () => {
             width="10.3818"
             height="1.5"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -245,8 +245,8 @@ const WarningIcon = () => {
             y2="12.0536"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#F8312F" />
-            <stop offset="1" stop-color="#FF5BA6" />
+            <stop stopColor="#F8312F" />
+            <stop offset="1" stopColor="#FF5BA6" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_268_5555"
@@ -256,9 +256,9 @@ const WarningIcon = () => {
             y2="16.3929"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#9186A2" />
-            <stop offset="0.173" stop-color="#A88EC7" />
-            <stop offset="1" stop-color="#EEE0FF" />
+            <stop stopColor="#9186A2" />
+            <stop offset="0.173" stopColor="#A88EC7" />
+            <stop offset="1" stopColor="#EEE0FF" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_268_5555"
@@ -268,8 +268,8 @@ const WarningIcon = () => {
             y2="16.3929"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#DCD5E7" />
-            <stop offset="1" stop-color="#DCD5E7" stop-opacity="0" />
+            <stop stopColor="#DCD5E7" />
+            <stop offset="1" stopColor="#DCD5E7" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_268_5555"
@@ -279,8 +279,8 @@ const WarningIcon = () => {
             y2="17.2768"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#CC8BFF" />
-            <stop offset="1" stop-color="#CC8BFF" stop-opacity="0" />
+            <stop stopColor="#CC8BFF" />
+            <stop offset="1" stopColor="#CC8BFF" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint4_linear_268_5555"
@@ -290,8 +290,8 @@ const WarningIcon = () => {
             y2="15.3888"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#D8CFD4" />
-            <stop offset="1" stop-color="#D8CFD4" stop-opacity="0" />
+            <stop stopColor="#D8CFD4" />
+            <stop offset="1" stopColor="#D8CFD4" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint5_linear_268_5555"
@@ -301,8 +301,8 @@ const WarningIcon = () => {
             y2="8.91961"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFF8FF" />
-            <stop offset="1" stop-color="#FFF8FF" stop-opacity="0" />
+            <stop stopColor="#FFF8FF" />
+            <stop offset="1" stopColor="#FFF8FF" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint6_linear_268_5555"
@@ -312,8 +312,8 @@ const WarningIcon = () => {
             y2="1.92857"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#F19E41" />
-            <stop offset="1" stop-color="#FFF657" />
+            <stop stopColor="#F19E41" />
+            <stop offset="1" stopColor="#FFF657" />
           </linearGradient>
           <linearGradient
             id="paint7_linear_268_5555"
@@ -323,8 +323,8 @@ const WarningIcon = () => {
             y2="0.687214"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFF053" />
-            <stop offset="1" stop-color="#FFF053" stop-opacity="0" />
+            <stop stopColor="#FFF053" />
+            <stop offset="1" stopColor="#FFF053" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint8_linear_268_5555"
@@ -334,8 +334,8 @@ const WarningIcon = () => {
             y2="3.23357"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#EE8228" />
-            <stop offset="1" stop-color="#EE8228" stop-opacity="0" />
+            <stop stopColor="#EE8228" />
+            <stop offset="1" stopColor="#EE8228" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint9_linear_268_5555"
@@ -345,8 +345,8 @@ const WarningIcon = () => {
             y2="4.17078"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#F19E41" />
-            <stop offset="1" stop-color="#FFF657" />
+            <stop stopColor="#F19E41" />
+            <stop offset="1" stopColor="#FFF657" />
           </linearGradient>
           <linearGradient
             id="paint10_linear_268_5555"
@@ -356,8 +356,8 @@ const WarningIcon = () => {
             y2="3.00142"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.2" stop-color="#FFF45D" />
-            <stop offset="1" stop-color="#FFF45D" stop-opacity="0" />
+            <stop offset="0.2" stopColor="#FFF45D" />
+            <stop offset="1" stopColor="#FFF45D" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint11_linear_268_5555"
@@ -367,8 +367,8 @@ const WarningIcon = () => {
             y2="4.54942"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#F56A34" />
-            <stop offset="1" stop-color="#F56A34" stop-opacity="0" />
+            <stop stopColor="#F56A34" />
+            <stop offset="1" stopColor="#F56A34" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint12_linear_268_5555"
@@ -378,8 +378,8 @@ const WarningIcon = () => {
             y2="3.14413"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#F19E41" />
-            <stop offset="1" stop-color="#FFF657" />
+            <stop stopColor="#F19E41" />
+            <stop offset="1" stopColor="#FFF657" />
           </linearGradient>
           <linearGradient
             id="paint13_linear_268_5555"
@@ -389,9 +389,9 @@ const WarningIcon = () => {
             y2="-nan"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#F2E8FF" stop-opacity="0" />
-            <stop offset="0.803" stop-color="#F2E8FF" />
-            <stop offset="1" stop-color="#F2E8FF" stop-opacity="0" />
+            <stop stopColor="#F2E8FF" stopOpacity="0" />
+            <stop offset="0.803" stopColor="#F2E8FF" />
+            <stop offset="1" stopColor="#F2E8FF" stopOpacity="0" />
           </linearGradient>
         </defs>
       </svg>

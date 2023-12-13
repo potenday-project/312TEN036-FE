@@ -66,7 +66,7 @@ const RunningIcon = () => {
         <g filter="url(#n)">
           <path
             fill="#FFC538"
-            fill-rule="evenodd"
+            fillRule="evenodd"
             d="M12.777 6.137a1.387 1.387 0 0 0-1.404-.215l-2.015.82-.65-1.597 2.015-.82a3.112 3.112 0 0 1 3.15.48l2.248 1.88a.488.488 0 0 1 .064.684l-.477.58a.488.488 0 0 1-.69.064l-2.24-1.876Z"
             clip-rule="evenodd"
           />
@@ -142,7 +142,7 @@ const RunningIcon = () => {
         <g filter="url(#C)">
           <path
             stroke="url(#D)"
-            stroke-width=".3"
+            strokeWidth=".3"
             d="m12.473 13.637.294.855a.3.3 0 0 0 .326.2l3.422-.493"
           />
         </g>
@@ -223,7 +223,7 @@ const RunningIcon = () => {
         <path fill="url(#V)" d="m7.72 3.32.15-1.08a.545.545 0 0 1-.15 1.08Z" />
         <path
           fill="#87014D"
-          fill-rule="evenodd"
+          fillRule="evenodd"
           d="M6.58 3.661a.094.094 0 0 1 0 .132.929.929 0 0 1-.52.228.094.094 0 0 1-.019-.186.742.742 0 0 0 .407-.176.094.094 0 0 1 .067-.026c.024 0 .048.01.065.028Z"
           clip-rule="evenodd"
         />
@@ -247,7 +247,7 @@ const RunningIcon = () => {
           <path
             stroke="#BC5F4E"
             stroke-linecap="round"
-            stroke-width=".3"
+            strokeWidth=".3"
             d="M6.224 1.95c.096 0 .307 0 .462.111"
           />
         </g>
@@ -260,8 +260,8 @@ const RunningIcon = () => {
             gradientTransform="rotate(27.371 -11.58 5.478) scale(5.9646 2.16932)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".655" stop-color="#D38D2E" stop-opacity="0" />
-            <stop offset="1" stop-color="#D38D2E" />
+            <stop offset=".655" stopColor="#D38D2E" stopOpacity="0" />
+            <stop offset="1" stopColor="#D38D2E" />
           </radialGradient>
           <radialGradient
             id="c"
@@ -271,8 +271,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(5.25 3.82031 -4.2743 5.87389 1.738 5.28)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".757" stop-color="#B7733E" stop-opacity="0" />
-            <stop offset=".956" stop-color="#B7733E" />
+            <stop offset=".757" stopColor="#B7733E" stopOpacity="0" />
+            <stop offset=".956" stopColor="#B7733E" />
           </radialGradient>
           <radialGradient
             id="d"
@@ -282,8 +282,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(-.64454 .9375 -.36847 -.25333 1.808 6.698)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".418" stop-color="#FEA724" />
-            <stop offset="1" stop-color="#FEA724" stop-opacity="0" />
+            <stop offset=".418" stopColor="#FEA724" />
+            <stop offset="1" stopColor="#FEA724" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="e"
@@ -293,8 +293,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(.44252 .15235 -.7176 2.08442 .65 6.816)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFD05B" />
-            <stop offset="1" stop-color="#FFD05B" stop-opacity="0" />
+            <stop stopColor="#FFD05B" />
+            <stop offset="1" stopColor="#FFD05B" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="f"
@@ -304,8 +304,8 @@ const RunningIcon = () => {
             gradientTransform="rotate(143.499 .007 3.274) scale(.72892 .87042)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#E9B636" />
-            <stop offset="1" stop-color="#E9B636" stop-opacity="0" />
+            <stop stopColor="#E9B636" />
+            <stop offset="1" stopColor="#E9B636" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="h"
@@ -315,8 +315,8 @@ const RunningIcon = () => {
             gradientTransform="rotate(-103.261 8.836 2.124) scale(3.99721 2.28812)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".175" stop-color="#346ECE" />
-            <stop offset="1" stop-color="#346ECE" stop-opacity="0" />
+            <stop offset=".175" stopColor="#346ECE" />
+            <stop offset="1" stopColor="#346ECE" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="i"
@@ -326,8 +326,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(.44303 4.24219 -1.61158 .1683 6.568 7.906)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#63A0DB" />
-            <stop offset="1" stop-color="#347CDB" stop-opacity="0" />
+            <stop stopColor="#63A0DB" />
+            <stop offset="1" stopColor="#347CDB" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="j"
@@ -337,8 +337,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(-1.80469 .53906 -1.0897 -3.64812 10.832 8.516)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#598FC9" />
-            <stop offset="1" stop-color="#598FC9" stop-opacity="0" />
+            <stop stopColor="#598FC9" />
+            <stop offset="1" stopColor="#598FC9" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="k"
@@ -348,8 +348,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(1.20476 -.54382 .66149 1.46544 8.795 6.706)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".238" stop-color="#2B71E5" />
-            <stop offset="1" stop-color="#2B71E5" stop-opacity="0" />
+            <stop offset=".238" stopColor="#2B71E5" />
+            <stop offset="1" stopColor="#2B71E5" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="l"
@@ -359,8 +359,8 @@ const RunningIcon = () => {
             gradientTransform="rotate(149.421 3.244 4.367) scale(.89838 .94631)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#529CEA" />
-            <stop offset="1" stop-color="#529CEA" stop-opacity="0" />
+            <stop stopColor="#529CEA" />
+            <stop offset="1" stopColor="#529CEA" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="m"
@@ -370,8 +370,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(.76465 .35157 -.36917 .80292 14.18 7.602)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FC9D34" />
-            <stop offset=".906" stop-color="#E17E4B" />
+            <stop stopColor="#FC9D34" />
+            <stop offset=".906" stopColor="#E17E4B" />
           </radialGradient>
           <radialGradient
             id="p"
@@ -381,8 +381,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(.96094 .14063 -.23746 1.62267 7.503 5.96)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5AA7EA" />
-            <stop offset="1" stop-color="#5AA7EA" stop-opacity="0" />
+            <stop stopColor="#5AA7EA" />
+            <stop offset="1" stopColor="#5AA7EA" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="q"
@@ -392,8 +392,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(-.65625 .31641 -.49439 -1.02538 11.019 4.824)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".164" stop-color="#4DB0FB" />
-            <stop offset="1" stop-color="#4DB0FB" stop-opacity="0" />
+            <stop offset=".164" stopColor="#4DB0FB" />
+            <stop offset="1" stopColor="#4DB0FB" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="t"
@@ -403,8 +403,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(-3.48988 7.00574 -2.03914 -1.01579 8.563 14.34)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".183" stop-color="#EC8B4B" />
-            <stop offset="1" stop-color="#EC8B4B" stop-opacity="0" />
+            <stop offset=".183" stopColor="#EC8B4B" />
+            <stop offset="1" stopColor="#EC8B4B" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="u"
@@ -414,8 +414,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(-1.3701 3.6192 -1.00415 -.38014 8.433 14.315)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#D77364" />
-            <stop offset="1" stop-color="#D77364" stop-opacity="0" />
+            <stop stopColor="#D77364" />
+            <stop offset="1" stopColor="#D77364" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="y"
@@ -425,8 +425,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(.67099 -.22265 .36976 1.11431 .95 19.46)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#64628C" />
-            <stop offset="1" stop-color="#64628C" stop-opacity="0" />
+            <stop stopColor="#64628C" />
+            <stop offset="1" stopColor="#64628C" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="B"
@@ -436,8 +436,8 @@ const RunningIcon = () => {
             gradientTransform="rotate(60.945 -6.57 16.874) scale(1.68913 .77018)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#F3953D" />
-            <stop offset="1" stop-color="#F3953D" stop-opacity="0" />
+            <stop stopColor="#F3953D" />
+            <stop offset="1" stopColor="#F3953D" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="I"
@@ -447,8 +447,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(1.82813 3.5625 -1.27582 .6547 10.76 12.57)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".329" stop-color="#746484" />
-            <stop offset="1" stop-color="#827483" stop-opacity="0" />
+            <stop offset=".329" stopColor="#746484" />
+            <stop offset="1" stopColor="#827483" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="J"
@@ -458,8 +458,8 @@ const RunningIcon = () => {
             gradientTransform="rotate(51.34 -7.467 14.4) scale(3.45168 13.1365)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".554" stop-color="#917EA3" stop-opacity="0" />
-            <stop offset="1" stop-color="#917EA3" />
+            <stop offset=".554" stopColor="#917EA3" stopOpacity="0" />
+            <stop offset="1" stopColor="#917EA3" />
           </radialGradient>
           <radialGradient
             id="K"
@@ -469,8 +469,8 @@ const RunningIcon = () => {
             gradientTransform="rotate(-65.12 16.466 .702) scale(1.80292 5.99758)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#885FA7" />
-            <stop offset="1" stop-color="#9583A6" stop-opacity="0" />
+            <stop stopColor="#885FA7" />
+            <stop offset="1" stopColor="#9583A6" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="L"
@@ -480,8 +480,8 @@ const RunningIcon = () => {
             gradientTransform="rotate(146.503 4.096 7.286) scale(1.84764 1.75748)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#AFA8B2" />
-            <stop offset="1" stop-color="#9B92A1" stop-opacity="0" />
+            <stop stopColor="#AFA8B2" />
+            <stop offset="1" stopColor="#9B92A1" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="N"
@@ -491,8 +491,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(1.42969 -.67969 .08537 .17958 8.136 11.316)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".207" stop-color="#9C959A" />
-            <stop offset="1" stop-color="#9C959A" stop-opacity="0" />
+            <stop offset=".207" stopColor="#9C959A" />
+            <stop offset="1" stopColor="#9C959A" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="O"
@@ -502,8 +502,8 @@ const RunningIcon = () => {
             gradientTransform="rotate(62.714 .16 5.919) scale(.51126 .65111)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".332" stop-color="#FFBF42" />
-            <stop offset="1" stop-color="#EBA544" />
+            <stop offset=".332" stopColor="#FFBF42" />
+            <stop offset="1" stopColor="#EBA544" />
           </radialGradient>
           <radialGradient
             id="R"
@@ -513,8 +513,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(-.63281 -.03516 .04286 -.77153 8 2.752)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".156" stop-color="#FFAB1D" />
-            <stop offset="1" stop-color="#FFAB1D" stop-opacity="0" />
+            <stop offset=".156" stopColor="#FFAB1D" />
+            <stop offset="1" stopColor="#FFAB1D" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="T"
@@ -524,8 +524,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(-2.57812 2.34377 -2.65768 -2.92341 9.408 .756)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".363" stop-color="#FFBC2B" />
-            <stop offset="1" stop-color="#FFA629" />
+            <stop offset=".363" stopColor="#FFBC2B" />
+            <stop offset="1" stopColor="#FFA629" />
           </radialGradient>
           <radialGradient
             id="U"
@@ -535,8 +535,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(-.08788 -.97852 2.07485 -.18634 8.934 3.903)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".064" stop-color="#B28146" />
-            <stop offset="1" stop-color="#EF9926" stop-opacity="0" />
+            <stop offset=".064" stopColor="#B28146" />
+            <stop offset="1" stopColor="#EF9926" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="V"
@@ -546,8 +546,8 @@ const RunningIcon = () => {
             gradientTransform="rotate(115.703 3.292 3.896) scale(.78358 1.2733)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".04" stop-color="#FFD040" />
-            <stop offset="1" stop-color="#FEAD30" />
+            <stop offset=".04" stopColor="#FFD040" />
+            <stop offset="1" stopColor="#FEAD30" />
           </radialGradient>
           <radialGradient
             id="W"
@@ -557,8 +557,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(.20508 0 0 .39844 6.23 2.808)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".895" stop-color="#916A62" />
-            <stop offset="1" stop-color="#824D44" />
+            <stop offset=".895" stopColor="#916A62" />
+            <stop offset="1" stopColor="#824D44" />
           </radialGradient>
           <radialGradient
             id="X"
@@ -568,8 +568,8 @@ const RunningIcon = () => {
             gradientTransform="matrix(.1875 0 0 .40576 6.104 2.824)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#666361" />
-            <stop offset=".813" stop-color="#565352" />
+            <stop stopColor="#666361" />
+            <stop offset=".813" stopColor="#565352" />
           </radialGradient>
           <linearGradient
             id="a"
@@ -579,8 +579,8 @@ const RunningIcon = () => {
             y2="4.741"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#DFA741" />
-            <stop offset="1" stop-color="#EFC441" />
+            <stop stopColor="#DFA741" />
+            <stop offset="1" stopColor="#EFC441" />
           </linearGradient>
           <linearGradient
             id="g"
@@ -590,8 +590,8 @@ const RunningIcon = () => {
             y2="11.629"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#4091EC" />
-            <stop offset="1" stop-color="#337FE1" />
+            <stop stopColor="#4091EC" />
+            <stop offset="1" stopColor="#337FE1" />
           </linearGradient>
           <linearGradient
             id="o"
@@ -601,8 +601,8 @@ const RunningIcon = () => {
             y2="4.906"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#2C6BD5" />
-            <stop offset="1" stop-color="#2F89F4" stop-opacity="0" />
+            <stop stopColor="#2C6BD5" />
+            <stop offset="1" stopColor="#2F89F4" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="r"
@@ -612,8 +612,8 @@ const RunningIcon = () => {
             y2="19.625"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFC235" />
-            <stop offset="1" stop-color="#FFC443" />
+            <stop stopColor="#FFC235" />
+            <stop offset="1" stopColor="#FFC443" />
           </linearGradient>
           <linearGradient
             id="s"
@@ -623,8 +623,8 @@ const RunningIcon = () => {
             y2="17.391"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFD558" />
-            <stop offset="1" stop-color="#FFD558" stop-opacity="0" />
+            <stop stopColor="#FFD558" />
+            <stop offset="1" stopColor="#FFD558" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="w"
@@ -634,8 +634,8 @@ const RunningIcon = () => {
             y2="20.018"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#443088" />
-            <stop offset="1" stop-color="#534F8C" stop-opacity="0" />
+            <stop stopColor="#443088" />
+            <stop offset="1" stopColor="#534F8C" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="x"
@@ -645,8 +645,8 @@ const RunningIcon = () => {
             y2="20.223"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#4C438D" />
-            <stop offset="1" stop-color="#4C438D" stop-opacity="0" />
+            <stop stopColor="#4C438D" />
+            <stop offset="1" stopColor="#4C438D" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="A"
@@ -656,8 +656,8 @@ const RunningIcon = () => {
             y2="15.055"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFB657" />
-            <stop offset="1" stop-color="#FFB657" stop-opacity="0" />
+            <stop stopColor="#FFB657" />
+            <stop offset="1" stopColor="#FFB657" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="D"
@@ -667,8 +667,8 @@ const RunningIcon = () => {
             y2="14.305"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFCC43" />
-            <stop offset="1" stop-color="#FFCC43" stop-opacity="0" />
+            <stop stopColor="#FFCC43" />
+            <stop offset="1" stopColor="#FFCC43" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="E"
@@ -678,8 +678,8 @@ const RunningIcon = () => {
             y2="14.07"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".024" stop-color="#444367" />
-            <stop offset="1" stop-color="#444367" stop-opacity="0" />
+            <stop offset=".024" stopColor="#444367" />
+            <stop offset="1" stopColor="#444367" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="F"
@@ -689,8 +689,8 @@ const RunningIcon = () => {
             y2="14.814"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#5A418F" />
-            <stop offset="1" stop-color="#5A418F" stop-opacity="0" />
+            <stop stopColor="#5A418F" />
+            <stop offset="1" stopColor="#5A418F" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="G"
@@ -700,8 +700,8 @@ const RunningIcon = () => {
             y2="14.984"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".213" stop-color="#5E5D8F" />
-            <stop offset="1" stop-color="#484083" stop-opacity="0" />
+            <stop offset=".213" stopColor="#5E5D8F" />
+            <stop offset="1" stopColor="#484083" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="M"
@@ -711,8 +711,8 @@ const RunningIcon = () => {
             y2="12.121"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#908582" />
-            <stop offset="1" stop-color="#908582" stop-opacity="0" />
+            <stop stopColor="#908582" />
+            <stop offset="1" stopColor="#908582" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="Q"
@@ -722,8 +722,8 @@ const RunningIcon = () => {
             y2="3.438"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFC33E" />
-            <stop offset="1" stop-color="#FFC247" />
+            <stop stopColor="#FFC33E" />
+            <stop offset="1" stopColor="#FFC247" />
           </linearGradient>
           <linearGradient
             id="Y"
@@ -733,8 +733,8 @@ const RunningIcon = () => {
             y2="2.611"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#fff" />
-            <stop offset="1" stop-color="#fff" stop-opacity="0" />
+            <stop stopColor="#fff" />
+            <stop offset="1" stopColor="#fff" stopOpacity="0" />
           </linearGradient>
           <filter
             id="n"
@@ -742,7 +742,7 @@ const RunningIcon = () => {
             height="4.33"
             x="8.708"
             y="3.796"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
           >
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
@@ -768,7 +768,7 @@ const RunningIcon = () => {
             height="2.384"
             x=".949"
             y="18.822"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
           >
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
@@ -794,7 +794,7 @@ const RunningIcon = () => {
             height="3.071"
             x="10.851"
             y="13.086"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
           >
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
@@ -820,7 +820,7 @@ const RunningIcon = () => {
             height="1.856"
             x="12.031"
             y="13.288"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
           >
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
@@ -840,7 +840,7 @@ const RunningIcon = () => {
             height="4.569"
             x="10.233"
             y="10.128"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
           >
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
@@ -866,7 +866,7 @@ const RunningIcon = () => {
             height="3.937"
             x="5.471"
             y="1.104"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
           >
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
@@ -892,7 +892,7 @@ const RunningIcon = () => {
             height="4.109"
             x="5.146"
             y="-.129"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
           >
             <feFlood flood-opacity="0" result="BackgroundImageFix" />
@@ -931,7 +931,7 @@ const RunningIcon = () => {
             height=".487"
             x="6.073"
             y="1.799"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
           >
             <feFlood flood-opacity="0" result="BackgroundImageFix" />

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { ChakraLayout } from "@/app/ChakraLayout";
 import QueryLayout from "./QueryLayout";
-import { Box } from "@chakra-ui/react";
 
 export const metadata: Metadata = {
   title: "Create Next App",

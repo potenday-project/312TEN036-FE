@@ -1,12 +1,4 @@
-import {
-  Box,
-  Divider,
-  Flex,
-  HStack,
-  Heading,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Divider, Flex, HStack, Heading, Text, VStack } from "@chakra-ui/react";
 import ChattingMsgCard from "../card/ChattingMsgCard";
 import UserChattingMsgCard from "./UserChattingMsgCard";
 import DietChattingMsgCart from "./DietChattingMsgCard";
@@ -61,7 +53,7 @@ const ChattingRoom = () => {
             <br />
             아침, 점심, 저녁 메뉴를 알려주세요
             <Text as={"h2"} color={"#787878"} fontSize={"16px"} lineHeight={2}>
-              ex) 아침은 00 점심은 00 저녁은 00을 먹었어
+              {"ex) 아침은 00 점심은 00 저녁은 00을 먹었어"}
             </Text>
           </ChattingMsgCard>
 

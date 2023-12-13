@@ -68,8 +68,8 @@ const HealthMountainIcon = () => {
           <path
             d="M6.3291 14.931L7.94104 15.5973C8.21296 15.6974 8.55659 16.0573 8.59311 16.5849C8.63235 17.1416 8.23867 17.5894 7.99109 17.743"
             stroke="url(#paint13_linear_268_5127)"
-            stroke-width="1.01465"
-            stroke-linecap="round"
+            strokeWidth="1.01465"
+            strokeLinecap="round"
           />
         </g>
         <path
@@ -170,8 +170,8 @@ const HealthMountainIcon = () => {
           <path
             d="M52.6709 14.931L51.059 15.5973C50.787 15.6974 50.4434 16.0573 50.4069 16.5849C50.3677 17.1416 50.7613 17.5894 51.0089 17.743"
             stroke="url(#paint35_linear_268_5127)"
-            stroke-width="1.01465"
-            stroke-linecap="round"
+            strokeWidth="1.01465"
+            strokeLinecap="round"
           />
         </g>
         <path
@@ -228,8 +228,8 @@ const HealthMountainIcon = () => {
           <path
             d="M30.5264 4.93884L42.3591 20.6405"
             stroke="#7CC383"
-            stroke-width="2.42722"
-            stroke-linecap="round"
+            strokeWidth="2.42722"
+            strokeLinecap="round"
           />
         </g>
         <path
@@ -330,9 +330,9 @@ const HealthMountainIcon = () => {
             width="19.487"
             height="15.3252"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -365,9 +365,9 @@ const HealthMountainIcon = () => {
             width="10.6751"
             height="7.24996"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -386,9 +386,9 @@ const HealthMountainIcon = () => {
             width="4.63509"
             height="5.17964"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -407,9 +407,9 @@ const HealthMountainIcon = () => {
             width="1.97038"
             height="2.10172"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -428,9 +428,9 @@ const HealthMountainIcon = () => {
             width="8.73697"
             height="8.73673"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -449,9 +449,9 @@ const HealthMountainIcon = () => {
             width="6.04589"
             height="12.8724"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -470,9 +470,9 @@ const HealthMountainIcon = () => {
             width="19.487"
             height="15.3252"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -505,9 +505,9 @@ const HealthMountainIcon = () => {
             width="10.6751"
             height="7.24996"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -526,9 +526,9 @@ const HealthMountainIcon = () => {
             width="4.63509"
             height="5.17964"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -547,9 +547,9 @@ const HealthMountainIcon = () => {
             width="1.97038"
             height="2.10172"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -568,9 +568,9 @@ const HealthMountainIcon = () => {
             width="8.73697"
             height="8.73673"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -589,9 +589,9 @@ const HealthMountainIcon = () => {
             width="6.04589"
             height="12.8724"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -610,9 +610,9 @@ const HealthMountainIcon = () => {
             width="20.3278"
             height="24.1971"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -631,9 +631,9 @@ const HealthMountainIcon = () => {
             width="1.55174"
             height="5.27696"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               mode="normal"
               in="SourceGraphic"
@@ -653,8 +653,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(16.8589 25.1299) rotate(155.964) scale(12.9748 12.4689)"
           >
-            <stop stop-color="#F4C097" />
-            <stop offset="1" stop-color="#E4AB93" />
+            <stop stopColor="#F4C097" />
+            <stop offset="1" stopColor="#E4AB93" />
           </radialGradient>
           <linearGradient
             id="paint1_linear_268_5127"
@@ -664,8 +664,8 @@ const HealthMountainIcon = () => {
             y2="25.7635"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#B36E90" />
-            <stop offset="1" stop-color="#B36E90" stop-opacity="0" />
+            <stop stopColor="#B36E90" />
+            <stop offset="1" stopColor="#B36E90" stopOpacity="0" />
           </linearGradient>
           <radialGradient
             id="paint2_radial_268_5127"
@@ -675,8 +675,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(7.69336 23.9926) rotate(-90) scale(1.75531 0.934611)"
           >
-            <stop stop-color="#BA876A" />
-            <stop offset="1" stop-color="#BA876A" stop-opacity="0" />
+            <stop stopColor="#BA876A" />
+            <stop offset="1" stopColor="#BA876A" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint3_radial_268_5127"
@@ -686,8 +686,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(4.77657 19.2413) rotate(173.66) scale(1.1817 2.11842)"
           >
-            <stop stop-color="#B6795D" />
-            <stop offset="1" stop-color="#B6795D" stop-opacity="0" />
+            <stop stopColor="#B6795D" />
+            <stop offset="1" stopColor="#B6795D" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint4_radial_268_5127"
@@ -697,8 +697,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(10.5491 27.1583) rotate(165.675) scale(10.8881 16.0797)"
           >
-            <stop offset="0.846" stop-color="#DDA389" stop-opacity="0" />
-            <stop offset="1" stop-color="#DDA389" />
+            <stop offset="0.846" stopColor="#DDA389" stopOpacity="0" />
+            <stop offset="1" stopColor="#DDA389" />
           </radialGradient>
           <radialGradient
             id="paint5_radial_268_5127"
@@ -708,8 +708,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(7.44005 18.8517) rotate(109.983) scale(6.92773 2.13966)"
           >
-            <stop stop-color="#F4BF99" />
-            <stop offset="1" stop-color="#F4BF99" stop-opacity="0" />
+            <stop stopColor="#F4BF99" />
+            <stop offset="1" stopColor="#F4BF99" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint6_radial_268_5127"
@@ -719,8 +719,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(18.1149 31.0077) rotate(-143.536) scale(16.7167 18.0755)"
           >
-            <stop offset="0.47" stop-color="#BE8769" stop-opacity="0" />
-            <stop offset="1" stop-color="#BE8769" />
+            <stop offset="0.47" stopColor="#BE8769" stopOpacity="0" />
+            <stop offset="1" stopColor="#BE8769" />
           </radialGradient>
           <linearGradient
             id="paint7_linear_268_5127"
@@ -730,8 +730,8 @@ const HealthMountainIcon = () => {
             y2="16.3368"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#DBA389" />
-            <stop offset="1" stop-color="#F0BA96" />
+            <stop stopColor="#DBA389" />
+            <stop offset="1" stopColor="#F0BA96" />
           </linearGradient>
           <radialGradient
             id="paint8_radial_268_5127"
@@ -741,8 +741,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(5.41001 18.0479) rotate(-30.196) scale(4.79116 5.90692)"
           >
-            <stop offset="0.79" stop-color="#FACAA1" stop-opacity="0" />
-            <stop offset="1" stop-color="#FACAA1" />
+            <stop offset="0.79" stopColor="#FACAA1" stopOpacity="0" />
+            <stop offset="1" stopColor="#FACAA1" />
           </radialGradient>
           <radialGradient
             id="paint9_radial_268_5127"
@@ -752,8 +752,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(6.33707 17.1495) rotate(-122.735) scale(3.71202 5.26949)"
           >
-            <stop offset="0.742" stop-color="#C79B7A" stop-opacity="0" />
-            <stop offset="1" stop-color="#C79B7A" />
+            <stop offset="0.742" stopColor="#C79B7A" stopOpacity="0" />
+            <stop offset="1" stopColor="#C79B7A" />
           </radialGradient>
           <linearGradient
             id="paint10_linear_268_5127"
@@ -763,8 +763,8 @@ const HealthMountainIcon = () => {
             y2="29.9732"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#D9A27D" />
-            <stop offset="1" stop-color="#E3AC92" stop-opacity="0" />
+            <stop stopColor="#D9A27D" />
+            <stop offset="1" stopColor="#E3AC92" stopOpacity="0" />
           </linearGradient>
           <radialGradient
             id="paint11_radial_268_5127"
@@ -774,8 +774,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(5.63066 25.502) rotate(33.9171) scale(1.47743 2.93336)"
           >
-            <stop stop-color="#FAC4A4" />
-            <stop offset="1" stop-color="#FAC4A4" stop-opacity="0" />
+            <stop stopColor="#FAC4A4" />
+            <stop offset="1" stopColor="#FAC4A4" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint12_radial_268_5127"
@@ -785,8 +785,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(9.82253 26.3332) rotate(143.906) scale(1.3159 5.59714)"
           >
-            <stop offset="0.231" stop-color="#C1835C" />
-            <stop offset="1" stop-color="#C1835C" stop-opacity="0" />
+            <stop offset="0.231" stopColor="#C1835C" />
+            <stop offset="1" stopColor="#C1835C" stopOpacity="0" />
           </radialGradient>
           <linearGradient
             id="paint13_linear_268_5127"
@@ -796,8 +796,8 @@ const HealthMountainIcon = () => {
             y2="15.4539"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFD0AB" />
-            <stop offset="1" stop-color="#FFD0AB" stop-opacity="0" />
+            <stop stopColor="#FFD0AB" />
+            <stop offset="1" stopColor="#FFD0AB" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint14_linear_268_5127"
@@ -807,8 +807,8 @@ const HealthMountainIcon = () => {
             y2="18.4068"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#D59D83" />
-            <stop offset="1" stop-color="#F2C098" />
+            <stop stopColor="#D59D83" />
+            <stop offset="1" stopColor="#F2C098" />
           </linearGradient>
           <linearGradient
             id="paint15_linear_268_5127"
@@ -818,8 +818,8 @@ const HealthMountainIcon = () => {
             y2="17.5775"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#C27E71" />
-            <stop offset="1" stop-color="#C27E71" stop-opacity="0" />
+            <stop stopColor="#C27E71" />
+            <stop offset="1" stopColor="#C27E71" stopOpacity="0" />
           </linearGradient>
           <radialGradient
             id="paint16_radial_268_5127"
@@ -829,8 +829,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(7.94771 17.9202) rotate(137.353) scale(1.09206 0.953104)"
           >
-            <stop stop-color="#FDCCA9" />
-            <stop offset="1" stop-color="#FDCCA9" stop-opacity="0" />
+            <stop stopColor="#FDCCA9" />
+            <stop offset="1" stopColor="#FDCCA9" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint17_radial_268_5127"
@@ -840,8 +840,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(8.86271 18.0869) rotate(180) scale(6.02974 4.75954)"
           >
-            <stop offset="0.903" stop-color="#DAA085" stop-opacity="0" />
-            <stop offset="1" stop-color="#DAA085" />
+            <stop offset="0.903" stopColor="#DAA085" stopOpacity="0" />
+            <stop offset="1" stopColor="#DAA085" />
           </radialGradient>
           <radialGradient
             id="paint18_radial_268_5127"
@@ -851,8 +851,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(6.35787 16.8345) rotate(-90) scale(0.819922 0.995124)"
           >
-            <stop stop-color="#87462A" />
-            <stop offset="1" stop-color="#AD6B49" stop-opacity="0" />
+            <stop stopColor="#87462A" />
+            <stop offset="1" stopColor="#AD6B49" stopOpacity="0" />
           </radialGradient>
           <linearGradient
             id="paint19_linear_268_5127"
@@ -862,8 +862,8 @@ const HealthMountainIcon = () => {
             y2="16.8718"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#EDBB9E" />
-            <stop offset="1" stop-color="#EDBB9E" stop-opacity="0" />
+            <stop stopColor="#EDBB9E" />
+            <stop offset="1" stopColor="#EDBB9E" stopOpacity="0" />
           </linearGradient>
           <radialGradient
             id="paint20_radial_268_5127"
@@ -873,8 +873,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(16.7979 23.9299) rotate(149.859) scale(5.02746 1.99841)"
           >
-            <stop stop-color="#FFD2A9" />
-            <stop offset="1" stop-color="#FFD2A9" stop-opacity="0" />
+            <stop stopColor="#FFD2A9" />
+            <stop offset="1" stopColor="#FFD2A9" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint21_radial_268_5127"
@@ -884,8 +884,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(6.12432 26.148) rotate(-102) scale(10.1803 3.55088)"
           >
-            <stop stop-color="#FEC7A5" />
-            <stop offset="1" stop-color="#FEC7A5" stop-opacity="0" />
+            <stop stopColor="#FEC7A5" />
+            <stop offset="1" stopColor="#FEC7A5" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint22_radial_268_5127"
@@ -895,8 +895,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(42.1411 25.1282) rotate(24.036) scale(12.9748 12.4689)"
           >
-            <stop stop-color="#F4C097" />
-            <stop offset="1" stop-color="#E4AB93" />
+            <stop stopColor="#F4C097" />
+            <stop offset="1" stopColor="#E4AB93" />
           </radialGradient>
           <linearGradient
             id="paint23_linear_268_5127"
@@ -906,8 +906,8 @@ const HealthMountainIcon = () => {
             y2="25.7635"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#B36E90" />
-            <stop offset="1" stop-color="#B36E90" stop-opacity="0" />
+            <stop stopColor="#B36E90" />
+            <stop offset="1" stopColor="#B36E90" stopOpacity="0" />
           </linearGradient>
           <radialGradient
             id="paint24_radial_268_5127"
@@ -917,8 +917,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(51.3066 23.9926) rotate(-90) scale(1.75531 0.934611)"
           >
-            <stop stop-color="#BA876A" />
-            <stop offset="1" stop-color="#BA876A" stop-opacity="0" />
+            <stop stopColor="#BA876A" />
+            <stop offset="1" stopColor="#BA876A" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint25_radial_268_5127"
@@ -928,8 +928,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(54.2234 19.2413) rotate(6.34) scale(1.1817 2.11842)"
           >
-            <stop stop-color="#B6795D" />
-            <stop offset="1" stop-color="#B6795D" stop-opacity="0" />
+            <stop stopColor="#B6795D" />
+            <stop offset="1" stopColor="#B6795D" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint26_radial_268_5127"
@@ -939,8 +939,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(48.4509 27.1583) rotate(14.325) scale(10.8881 16.0797)"
           >
-            <stop offset="0.846" stop-color="#DDA389" stop-opacity="0" />
-            <stop offset="1" stop-color="#DDA389" />
+            <stop offset="0.846" stopColor="#DDA389" stopOpacity="0" />
+            <stop offset="1" stopColor="#DDA389" />
           </radialGradient>
           <radialGradient
             id="paint27_radial_268_5127"
@@ -950,8 +950,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(51.5599 18.8517) rotate(70.017) scale(6.92773 2.13966)"
           >
-            <stop stop-color="#F4BF99" />
-            <stop offset="1" stop-color="#F4BF99" stop-opacity="0" />
+            <stop stopColor="#F4BF99" />
+            <stop offset="1" stopColor="#F4BF99" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint28_radial_268_5127"
@@ -961,8 +961,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(40.8851 31.0077) rotate(-36.464) scale(16.7167 18.0755)"
           >
-            <stop offset="0.47" stop-color="#BE8769" stop-opacity="0" />
-            <stop offset="1" stop-color="#BE8769" />
+            <stop offset="0.47" stopColor="#BE8769" stopOpacity="0" />
+            <stop offset="1" stopColor="#BE8769" />
           </radialGradient>
           <linearGradient
             id="paint29_linear_268_5127"
@@ -972,8 +972,8 @@ const HealthMountainIcon = () => {
             y2="16.3368"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#DBA389" />
-            <stop offset="1" stop-color="#F0BA96" />
+            <stop stopColor="#DBA389" />
+            <stop offset="1" stopColor="#F0BA96" />
           </linearGradient>
           <radialGradient
             id="paint30_radial_268_5127"
@@ -983,8 +983,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(53.59 18.0479) rotate(-149.804) scale(4.79116 5.90692)"
           >
-            <stop offset="0.79" stop-color="#FACAA1" stop-opacity="0" />
-            <stop offset="1" stop-color="#FACAA1" />
+            <stop offset="0.79" stopColor="#FACAA1" stopOpacity="0" />
+            <stop offset="1" stopColor="#FACAA1" />
           </radialGradient>
           <radialGradient
             id="paint31_radial_268_5127"
@@ -994,8 +994,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(52.6629 17.1495) rotate(-57.265) scale(3.71202 5.26949)"
           >
-            <stop offset="0.742" stop-color="#C79B7A" stop-opacity="0" />
-            <stop offset="1" stop-color="#C79B7A" />
+            <stop offset="0.742" stopColor="#C79B7A" stopOpacity="0" />
+            <stop offset="1" stopColor="#C79B7A" />
           </radialGradient>
           <linearGradient
             id="paint32_linear_268_5127"
@@ -1005,8 +1005,8 @@ const HealthMountainIcon = () => {
             y2="29.9734"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#D9A27D" />
-            <stop offset="1" stop-color="#E3AC92" stop-opacity="0" />
+            <stop stopColor="#D9A27D" />
+            <stop offset="1" stopColor="#E3AC92" stopOpacity="0" />
           </linearGradient>
           <radialGradient
             id="paint33_radial_268_5127"
@@ -1016,8 +1016,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(53.3684 25.5022) rotate(146.083) scale(1.47743 2.93336)"
           >
-            <stop stop-color="#FAC4A4" />
-            <stop offset="1" stop-color="#FAC4A4" stop-opacity="0" />
+            <stop stopColor="#FAC4A4" />
+            <stop offset="1" stopColor="#FAC4A4" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint34_radial_268_5127"
@@ -1027,8 +1027,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(49.1765 26.3333) rotate(36.094) scale(1.3159 5.59714)"
           >
-            <stop offset="0.231" stop-color="#C1835C" />
-            <stop offset="1" stop-color="#C1835C" stop-opacity="0" />
+            <stop offset="0.231" stopColor="#C1835C" />
+            <stop offset="1" stopColor="#C1835C" stopOpacity="0" />
           </radialGradient>
           <linearGradient
             id="paint35_linear_268_5127"
@@ -1038,8 +1038,8 @@ const HealthMountainIcon = () => {
             y2="15.4539"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFD0AB" />
-            <stop offset="1" stop-color="#FFD0AB" stop-opacity="0" />
+            <stop stopColor="#FFD0AB" />
+            <stop offset="1" stopColor="#FFD0AB" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint36_linear_268_5127"
@@ -1049,8 +1049,8 @@ const HealthMountainIcon = () => {
             y2="18.4068"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#D59D83" />
-            <stop offset="1" stop-color="#F2C098" />
+            <stop stopColor="#D59D83" />
+            <stop offset="1" stopColor="#F2C098" />
           </linearGradient>
           <linearGradient
             id="paint37_linear_268_5127"
@@ -1060,8 +1060,8 @@ const HealthMountainIcon = () => {
             y2="17.5775"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#C27E71" />
-            <stop offset="1" stop-color="#C27E71" stop-opacity="0" />
+            <stop stopColor="#C27E71" />
+            <stop offset="1" stopColor="#C27E71" stopOpacity="0" />
           </linearGradient>
           <radialGradient
             id="paint38_radial_268_5127"
@@ -1071,8 +1071,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(51.0523 17.9202) rotate(42.647) scale(1.09206 0.953104)"
           >
-            <stop stop-color="#FDCCA9" />
-            <stop offset="1" stop-color="#FDCCA9" stop-opacity="0" />
+            <stop stopColor="#FDCCA9" />
+            <stop offset="1" stopColor="#FDCCA9" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint39_radial_268_5127"
@@ -1082,8 +1082,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(50.1373 18.0869) scale(6.02974 4.75954)"
           >
-            <stop offset="0.903" stop-color="#DAA085" stop-opacity="0" />
-            <stop offset="1" stop-color="#DAA085" />
+            <stop offset="0.903" stopColor="#DAA085" stopOpacity="0" />
+            <stop offset="1" stopColor="#DAA085" />
           </radialGradient>
           <radialGradient
             id="paint40_radial_268_5127"
@@ -1093,8 +1093,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(52.6421 16.8345) rotate(-90) scale(0.819922 0.995124)"
           >
-            <stop stop-color="#87462A" />
-            <stop offset="1" stop-color="#AD6B49" stop-opacity="0" />
+            <stop stopColor="#87462A" />
+            <stop offset="1" stopColor="#AD6B49" stopOpacity="0" />
           </radialGradient>
           <linearGradient
             id="paint41_linear_268_5127"
@@ -1104,8 +1104,8 @@ const HealthMountainIcon = () => {
             y2="16.8699"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#EDBB9E" />
-            <stop offset="1" stop-color="#EDBB9E" stop-opacity="0" />
+            <stop stopColor="#EDBB9E" />
+            <stop offset="1" stopColor="#EDBB9E" stopOpacity="0" />
           </linearGradient>
           <radialGradient
             id="paint42_radial_268_5127"
@@ -1115,8 +1115,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(42.2021 23.9318) rotate(30.141) scale(5.02746 1.99841)"
           >
-            <stop stop-color="#FFD2A9" />
-            <stop offset="1" stop-color="#FFD2A9" stop-opacity="0" />
+            <stop stopColor="#FFD2A9" />
+            <stop offset="1" stopColor="#FFD2A9" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint43_radial_268_5127"
@@ -1126,8 +1126,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(52.8747 26.146) rotate(-78) scale(10.1803 3.55088)"
           >
-            <stop stop-color="#FEC7A5" />
-            <stop offset="1" stop-color="#FEC7A5" stop-opacity="0" />
+            <stop stopColor="#FEC7A5" />
+            <stop offset="1" stopColor="#FEC7A5" stopOpacity="0" />
           </radialGradient>
           <linearGradient
             id="paint44_linear_268_5127"
@@ -1137,8 +1137,8 @@ const HealthMountainIcon = () => {
             y2="21.5889"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#507F55" />
-            <stop offset="1" stop-color="#6BB07A" />
+            <stop stopColor="#507F55" />
+            <stop offset="1" stopColor="#6BB07A" />
           </linearGradient>
           <linearGradient
             id="paint45_linear_268_5127"
@@ -1148,8 +1148,8 @@ const HealthMountainIcon = () => {
             y2="19.0864"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.123" stop-color="#406045" />
-            <stop offset="0.8" stop-color="#416040" stop-opacity="0" />
+            <stop offset="0.123" stopColor="#406045" />
+            <stop offset="0.8" stopColor="#416040" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint46_linear_268_5127"
@@ -1159,8 +1159,8 @@ const HealthMountainIcon = () => {
             y2="20.3"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.364" stop-color="#7BC186" />
-            <stop offset="1" stop-color="#7BC186" stop-opacity="0" />
+            <stop offset="0.364" stopColor="#7BC186" />
+            <stop offset="1" stopColor="#7BC186" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="paint47_linear_268_5127"
@@ -1170,8 +1170,8 @@ const HealthMountainIcon = () => {
             y2="-0.710804"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#D4CAD6" />
-            <stop offset="1" stop-color="#DEDDE8" />
+            <stop stopColor="#D4CAD6" />
+            <stop offset="1" stopColor="#DEDDE8" />
           </linearGradient>
           <linearGradient
             id="paint48_linear_268_5127"
@@ -1181,9 +1181,9 @@ const HealthMountainIcon = () => {
             y2="7.41795"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.213" stop-color="#8D8B8C" />
-            <stop offset="0.375" stop-color="#9A9692" />
-            <stop offset="1" stop-color="#9A9692" stop-opacity="0" />
+            <stop offset="0.213" stopColor="#8D8B8C" />
+            <stop offset="0.375" stopColor="#9A9692" />
+            <stop offset="1" stopColor="#9A9692" stopOpacity="0" />
           </linearGradient>
           <radialGradient
             id="paint49_radial_268_5127"
@@ -1193,8 +1193,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(31.4404 12.1656) rotate(-90) scale(14.6998 17.5659)"
           >
-            <stop offset="0.746" stop-color="#9A9692" stop-opacity="0" />
-            <stop offset="1" stop-color="#9A9692" />
+            <stop offset="0.746" stopColor="#9A9692" stopOpacity="0" />
+            <stop offset="1" stopColor="#9A9692" />
           </radialGradient>
           <radialGradient
             id="paint50_radial_268_5127"
@@ -1204,8 +1204,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(37.023 6.84028) rotate(133.474) scale(8.43772 10.2253)"
           >
-            <stop stop-color="#F8F7FD" />
-            <stop offset="1" stop-color="#F8F7FD" stop-opacity="0" />
+            <stop stopColor="#F8F7FD" />
+            <stop offset="1" stopColor="#F8F7FD" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint51_radial_268_5127"
@@ -1215,10 +1215,10 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(32.1723 13.5471) rotate(78.923) scale(7.93225 6.13432)"
           >
-            <stop stop-color="#FAF7FC" />
-            <stop offset="0.457" stop-color="#D8D0DD" />
-            <stop offset="0.708" stop-color="#D0B3E3" />
-            <stop offset="1" stop-color="#CFABE4" />
+            <stop stopColor="#FAF7FC" />
+            <stop offset="0.457" stopColor="#D8D0DD" />
+            <stop offset="0.708" stopColor="#D0B3E3" />
+            <stop offset="1" stopColor="#CFABE4" />
           </radialGradient>
           <linearGradient
             id="paint52_linear_268_5127"
@@ -1228,8 +1228,8 @@ const HealthMountainIcon = () => {
             y2="16.7101"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.399" stop-color="#9B969E" />
-            <stop offset="1" stop-color="#9A959E" stop-opacity="0" />
+            <stop offset="0.399" stopColor="#9B969E" />
+            <stop offset="1" stopColor="#9A959E" stopOpacity="0" />
           </linearGradient>
           <radialGradient
             id="paint53_radial_268_5127"
@@ -1239,8 +1239,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(30.7265 17.3137) rotate(-46.206) scale(7.52659 8.14691)"
           >
-            <stop offset="0.844" stop-color="#9A959E" stop-opacity="0" />
-            <stop offset="0.949" stop-color="#949296" />
+            <stop offset="0.844" stopColor="#9A959E" stopOpacity="0" />
+            <stop offset="0.949" stopColor="#949296" />
           </radialGradient>
           <radialGradient
             id="paint54_radial_268_5127"
@@ -1250,8 +1250,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(29.5192 16.9518) rotate(-24.613) scale(3.22033 7.83009)"
           >
-            <stop offset="0.022" stop-color="#D1AFE5" />
-            <stop offset="1" stop-color="#D1AFE5" stop-opacity="0" />
+            <stop offset="0.022" stopColor="#D1AFE5" />
+            <stop offset="1" stopColor="#D1AFE5" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint55_radial_268_5127"
@@ -1261,8 +1261,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(30.5757 16.4384) scale(2.08262 5.91583)"
           >
-            <stop stop-color="#ABA5B0" />
-            <stop offset="1" stop-color="#ABA5B0" stop-opacity="0" />
+            <stop stopColor="#ABA5B0" />
+            <stop offset="1" stopColor="#ABA5B0" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint56_radial_268_5127"
@@ -1272,8 +1272,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(29.6399 17.2834) rotate(-42.847) scale(2.84056 7.82664)"
           >
-            <stop stop-color="#B689D0" />
-            <stop offset="1" stop-color="#B689D0" stop-opacity="0" />
+            <stop stopColor="#B689D0" />
+            <stop offset="1" stopColor="#B689D0" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint57_radial_268_5127"
@@ -1283,8 +1283,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(31.2618 13.0103) rotate(39.036) scale(1.31859 2.50817)"
           >
-            <stop stop-color="#F3F2F4" />
-            <stop offset="1" stop-color="#F3F2F4" stop-opacity="0" />
+            <stop stopColor="#F3F2F4" />
+            <stop offset="1" stopColor="#F3F2F4" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint58_radial_268_5127"
@@ -1294,10 +1294,10 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(27.0846 14.1098) rotate(76.49) scale(7.42725 5.74378)"
           >
-            <stop stop-color="#FAF7FC" />
-            <stop offset="0.457" stop-color="#D8D0DD" />
-            <stop offset="0.708" stop-color="#D0B3E3" />
-            <stop offset="1" stop-color="#CFABE4" />
+            <stop stopColor="#FAF7FC" />
+            <stop offset="0.457" stopColor="#D8D0DD" />
+            <stop offset="0.708" stopColor="#D0B3E3" />
+            <stop offset="1" stopColor="#CFABE4" />
           </radialGradient>
           <linearGradient
             id="paint59_linear_268_5127"
@@ -1307,8 +1307,8 @@ const HealthMountainIcon = () => {
             y2="16.5484"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.212" stop-color="#9B969E" />
-            <stop offset="1" stop-color="#9A959E" stop-opacity="0" />
+            <stop offset="0.212" stopColor="#9B969E" />
+            <stop offset="1" stopColor="#9A959E" stopOpacity="0" />
           </linearGradient>
           <radialGradient
             id="paint60_radial_268_5127"
@@ -1318,8 +1318,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(26.3849 13.0102) rotate(39.036) scale(1.31859 2.50817)"
           >
-            <stop stop-color="#F3F2F4" />
-            <stop offset="1" stop-color="#F3F2F4" stop-opacity="0" />
+            <stop stopColor="#F3F2F4" />
+            <stop offset="1" stopColor="#F3F2F4" stopOpacity="0" />
           </radialGradient>
           <linearGradient
             id="paint61_linear_268_5127"
@@ -1329,8 +1329,8 @@ const HealthMountainIcon = () => {
             y2="17.8606"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.354" stop-color="#232224" />
-            <stop offset="1" stop-color="#623C86" />
+            <stop offset="0.354" stopColor="#232224" />
+            <stop offset="1" stopColor="#623C86" />
           </linearGradient>
           <radialGradient
             id="paint62_radial_268_5127"
@@ -1340,8 +1340,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(29.0297 15.3752) rotate(90) scale(2.4854 0.815524)"
           >
-            <stop offset="0.354" stop-color="#443753" />
-            <stop offset="1" stop-color="#433750" stop-opacity="0" />
+            <stop offset="0.354" stopColor="#443753" />
+            <stop offset="1" stopColor="#433750" stopOpacity="0" />
           </radialGradient>
           <linearGradient
             id="paint63_linear_268_5127"
@@ -1351,8 +1351,8 @@ const HealthMountainIcon = () => {
             y2="17.8606"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.354" stop-color="#232224" />
-            <stop offset="1" stop-color="#623C86" />
+            <stop offset="0.354" stopColor="#232224" />
+            <stop offset="1" stopColor="#623C86" />
           </linearGradient>
           <radialGradient
             id="paint64_radial_268_5127"
@@ -1362,8 +1362,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(33.8842 15.3752) rotate(90) scale(2.4854 0.815524)"
           >
-            <stop offset="0.354" stop-color="#443753" />
-            <stop offset="1" stop-color="#433750" stop-opacity="0" />
+            <stop offset="0.354" stopColor="#443753" />
+            <stop offset="1" stopColor="#433750" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint65_radial_268_5127"
@@ -1373,8 +1373,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(33.8715 14.2401) rotate(92.2599) scale(0.89169 0.938403)"
           >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="#F4F4F4" stop-opacity="0" />
+            <stop stopColor="white" />
+            <stop offset="1" stopColor="#F4F4F4" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="paint66_radial_268_5127"
@@ -1384,8 +1384,8 @@ const HealthMountainIcon = () => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="translate(28.9962 14.2398) rotate(92.2599) scale(0.89169 0.938403)"
           >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="#F4F4F4" stop-opacity="0" />
+            <stop stopColor="white" />
+            <stop offset="1" stopColor="#F4F4F4" stopOpacity="0" />
           </radialGradient>
         </defs>
       </svg>

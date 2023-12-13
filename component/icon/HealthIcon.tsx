@@ -67,8 +67,8 @@ const HealthIcon = () => {
         <g filter="url(#p)">
           <path
             stroke="url(#q)"
-            stroke-linecap="round"
-            stroke-width=".876"
+            strokeLinecap="round"
+            strokeWidth=".876"
             d="m10.337 5.809 1.392.575c.234.086.531.397.563.852.033.481-.306.868-.52 1"
           />
         </g>
@@ -110,7 +110,7 @@ const HealthIcon = () => {
           r="3.25"
           fill="#40E98E"
           stroke="#fff"
-          stroke-width=".813"
+          strokeWidth=".813"
         />
         <defs>
           <radialGradient
@@ -121,8 +121,8 @@ const HealthIcon = () => {
             gradientTransform="matrix(-10.23021 4.56249 -4.38462 -9.83138 19.43 14.61)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#F4C097" />
-            <stop offset="1" stop-color="#E4AB93" />
+            <stop stopColor="#F4C097" />
+            <stop offset="1" stopColor="#E4AB93" />
           </radialGradient>
           <radialGradient
             id="d"
@@ -132,8 +132,8 @@ const HealthIcon = () => {
             gradientTransform="matrix(0 -1.51542 .80688 0 11.517 13.627)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#BA876A" />
-            <stop offset="1" stop-color="#BA876A" stop-opacity="0" />
+            <stop stopColor="#BA876A" />
+            <stop offset="1" stopColor="#BA876A" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="e"
@@ -143,8 +143,8 @@ const HealthIcon = () => {
             gradientTransform="rotate(173.66 4.236 5.012) scale(1.0202 1.8289)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#B6795D" />
-            <stop offset="1" stop-color="#B6795D" stop-opacity="0" />
+            <stop stopColor="#B6795D" />
+            <stop offset="1" stopColor="#B6795D" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="f"
@@ -154,8 +154,8 @@ const HealthIcon = () => {
             gradientTransform="matrix(-9.10777 2.32577 -3.43473 -13.45048 13.982 16.36)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".846" stop-color="#DDA389" stop-opacity="0" />
-            <stop offset="1" stop-color="#DDA389" />
+            <stop offset=".846" stopColor="#DDA389" stopOpacity="0" />
+            <stop offset="1" stopColor="#DDA389" />
           </radialGradient>
           <radialGradient
             id="g"
@@ -165,8 +165,8 @@ const HealthIcon = () => {
             gradientTransform="matrix(-2.04393 5.62084 -1.73603 -.63128 11.298 9.188)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#F4BF99" />
-            <stop offset="1" stop-color="#F4BF99" stop-opacity="0" />
+            <stop stopColor="#F4BF99" />
+            <stop offset="1" stopColor="#F4BF99" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="h"
@@ -176,8 +176,8 @@ const HealthIcon = () => {
             gradientTransform="rotate(-143.536 13.499 6.463) scale(14.4321 15.6052)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".47" stop-color="#BE8769" stop-opacity="0" />
-            <stop offset="1" stop-color="#BE8769" />
+            <stop offset=".47" stopColor="#BE8769" stopOpacity="0" />
+            <stop offset="1" stopColor="#BE8769" />
           </radialGradient>
           <radialGradient
             id="j"
@@ -187,8 +187,8 @@ const HealthIcon = () => {
             gradientTransform="matrix(3.5751 -2.08042 2.56491 4.40767 9.545 8.495)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".79" stop-color="#FACAA1" stop-opacity="0" />
-            <stop offset="1" stop-color="#FACAA1" />
+            <stop offset=".79" stopColor="#FACAA1" stopOpacity="0" />
+            <stop offset="1" stopColor="#FACAA1" />
           </radialGradient>
           <radialGradient
             id="k"
@@ -198,8 +198,8 @@ const HealthIcon = () => {
             gradientTransform="rotate(-122.735 7.28 1.036) scale(3.20471 4.54932)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".742" stop-color="#C79B7A" stop-opacity="0" />
-            <stop offset="1" stop-color="#C79B7A" />
+            <stop offset=".742" stopColor="#C79B7A" stopOpacity="0" />
+            <stop offset="1" stopColor="#C79B7A" />
           </radialGradient>
           <radialGradient
             id="n"
@@ -209,8 +209,8 @@ const HealthIcon = () => {
             gradientTransform="matrix(1.05848 .71173 -1.4131 2.10155 9.736 14.93)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FAC4A4" />
-            <stop offset="1" stop-color="#FAC4A4" stop-opacity="0" />
+            <stop stopColor="#FAC4A4" />
+            <stop offset="1" stopColor="#FAC4A4" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="o"
@@ -220,8 +220,8 @@ const HealthIcon = () => {
             gradientTransform="matrix(-.918 .66927 -2.8467 -3.90466 13.355 15.647)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".231" stop-color="#C1835C" />
-            <stop offset="1" stop-color="#C1835C" stop-opacity="0" />
+            <stop offset=".231" stopColor="#C1835C" />
+            <stop offset="1" stopColor="#C1835C" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="t"
@@ -231,8 +231,8 @@ const HealthIcon = () => {
             gradientTransform="matrix(-.69348 .63874 -.55746 -.60524 11.735 8.386)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FDCCA9" />
-            <stop offset="1" stop-color="#FDCCA9" stop-opacity="0" />
+            <stop stopColor="#FDCCA9" />
+            <stop offset="1" stopColor="#FDCCA9" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="u"
@@ -242,8 +242,8 @@ const HealthIcon = () => {
             gradientTransform="matrix(-5.20567 0 0 -4.10907 12.525 8.53)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".903" stop-color="#DAA085" stop-opacity="0" />
-            <stop offset="1" stop-color="#DAA085" />
+            <stop offset=".903" stopColor="#DAA085" stopOpacity="0" />
+            <stop offset="1" stopColor="#DAA085" />
           </radialGradient>
           <radialGradient
             id="v"
@@ -253,8 +253,8 @@ const HealthIcon = () => {
             gradientTransform="matrix(0 -.70786 .85912 0 10.364 7.446)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#87462A" />
-            <stop offset="1" stop-color="#AD6B49" stop-opacity="0" />
+            <stop stopColor="#87462A" />
+            <stop offset="1" stopColor="#AD6B49" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="z"
@@ -264,8 +264,8 @@ const HealthIcon = () => {
             gradientTransform="matrix(-3.75352 2.17943 -.86632 -1.49203 19.377 13.576)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFD2A9" />
-            <stop offset="1" stop-color="#FFD2A9" stop-opacity="0" />
+            <stop stopColor="#FFD2A9" />
+            <stop offset="1" stopColor="#FFD2A9" stopOpacity="0" />
           </radialGradient>
           <radialGradient
             id="B"
@@ -275,8 +275,8 @@ const HealthIcon = () => {
             gradientTransform="matrix(-1.82733 -8.5969 2.9986 -.63737 10.163 15.488)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FEC7A5" />
-            <stop offset="1" stop-color="#FEC7A5" stop-opacity="0" />
+            <stop stopColor="#FEC7A5" />
+            <stop offset="1" stopColor="#FEC7A5" stopOpacity="0" />
           </radialGradient>
           <linearGradient
             id="c"
@@ -286,8 +286,8 @@ const HealthIcon = () => {
             y2="15.156"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#B36E90" />
-            <stop offset="1" stop-color="#B36E90" stop-opacity="0" />
+            <stop stopColor="#B36E90" />
+            <stop offset="1" stopColor="#B36E90" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="i"
@@ -297,8 +297,8 @@ const HealthIcon = () => {
             y2="7.018"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#DBA389" />
-            <stop offset="1" stop-color="#F0BA96" />
+            <stop stopColor="#DBA389" />
+            <stop offset="1" stopColor="#F0BA96" />
           </linearGradient>
           <linearGradient
             id="m"
@@ -308,8 +308,8 @@ const HealthIcon = () => {
             y2="18.79"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#D9A27D" />
-            <stop offset="1" stop-color="#E3AC92" stop-opacity="0" />
+            <stop stopColor="#D9A27D" />
+            <stop offset="1" stopColor="#E3AC92" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="q"
@@ -319,8 +319,8 @@ const HealthIcon = () => {
             y2="6.26"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFD0AB" />
-            <stop offset="1" stop-color="#FFD0AB" stop-opacity="0" />
+            <stop stopColor="#FFD0AB" />
+            <stop offset="1" stopColor="#FFD0AB" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="r"
@@ -330,8 +330,8 @@ const HealthIcon = () => {
             y2="8.806"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#D59D83" />
-            <stop offset="1" stop-color="#F2C098" />
+            <stop stopColor="#D59D83" />
+            <stop offset="1" stopColor="#F2C098" />
           </linearGradient>
           <linearGradient
             id="s"
@@ -341,8 +341,8 @@ const HealthIcon = () => {
             y2="8.09"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#C27E71" />
-            <stop offset="1" stop-color="#C27E71" stop-opacity="0" />
+            <stop stopColor="#C27E71" />
+            <stop offset="1" stopColor="#C27E71" stopOpacity="0" />
           </linearGradient>
           <linearGradient
             id="x"
@@ -352,8 +352,8 @@ const HealthIcon = () => {
             y2="7.477"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#EDBB9E" />
-            <stop offset="1" stop-color="#EDBB9E" stop-opacity="0" />
+            <stop stopColor="#EDBB9E" />
+            <stop offset="1" stopColor="#EDBB9E" stopOpacity="0" />
           </linearGradient>
           <filter
             id="a"
@@ -361,10 +361,10 @@ const HealthIcon = () => {
             height="13.231"
             x="4.875"
             y="7.019"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               in="SourceGraphic"
               in2="BackgroundImageFix"
@@ -387,10 +387,10 @@ const HealthIcon = () => {
             height="6.259"
             x="6.716"
             y="13.488"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               in="SourceGraphic"
               in2="BackgroundImageFix"
@@ -407,10 +407,10 @@ const HealthIcon = () => {
             height="4.472"
             x="9.314"
             y="4.787"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               in="SourceGraphic"
               in2="BackgroundImageFix"
@@ -427,10 +427,10 @@ const HealthIcon = () => {
             height="1.814"
             x="8.547"
             y="5.837"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               in="SourceGraphic"
               in2="BackgroundImageFix"
@@ -447,10 +447,10 @@ const HealthIcon = () => {
             height="7.543"
             x="13.911"
             y="10.713"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               in="SourceGraphic"
               in2="BackgroundImageFix"
@@ -467,10 +467,10 @@ const HealthIcon = () => {
             height="11.113"
             x="6.463"
             y="8.798"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend
               in="SourceGraphic"
               in2="BackgroundImageFix"

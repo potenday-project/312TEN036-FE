@@ -93,7 +93,7 @@ const UserAgreementForm = ({
               ])
             }
           >
-            <Box>모두 동의합니다.</Box>
+            모두 동의합니다.
           </Checkbox>
         </Flex>
         <Checkbox
