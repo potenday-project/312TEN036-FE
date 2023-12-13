@@ -10,6 +10,7 @@ const ChattingInput = () => {
         bottom={"0px"}
         bgColor={"white"}
         w={"100%"}
+        maxW={"390px"}
         padding={"10px 22px"}
         justifyContent={"space-between"}
         alignItems={"center"}

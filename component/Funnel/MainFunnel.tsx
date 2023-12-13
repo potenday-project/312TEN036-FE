@@ -1,5 +1,5 @@
 "use client";
-import { Box, ButtonGroup, Heading, Text } from "@chakra-ui/react";
+import { Box, ButtonGroup, Heading, Text, VStack } from "@chakra-ui/react";
 import Image from "next/image";
 import MainButton from "../../component/button/MainButton";
 import { useRouter } from "next/navigation";
@@ -22,7 +22,7 @@ const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
         width={100}
         height={100}
       />
-      <Box as="section" paddingBottom={"100px"}>
+      <VStack spacing={"16px"} as="section" paddingBottom={"100px"}>
         <Heading
           as={"h1"}
           color={"#000000"}
@@ -44,9 +44,16 @@ const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
           lineHeight={7}
         >
           오늘 먹은 음식을 식선생에게 외쳐보세요! <br />
-          필요 운동량과 안찌는 식단을 한번에 알려드려요
+          <Text as={"a"} color={"#636363"} fontWeight={"semibold"}>
+            필요 운동량
+          </Text>
+          과&nbsp;
+          <Text as={"a"} color={"#636363"} fontWeight={"semibold"}>
+            안찌는 식단
+          </Text>
+          을 한번에 알려드려요
         </Text>
-      </Box>
+      </VStack>
 
       <ButtonGroup
         width={"100%"}
