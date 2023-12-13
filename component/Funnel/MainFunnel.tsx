@@ -15,7 +15,9 @@ const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
   return (
     <>
       <Image
-        src={"https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg"}
+        src={
+          "https://images.pexels.com/photos/1485894/pexels-photo-1485894.jpeg?cs=srgb&dl=pexels-mohamed-almari-1485894.jpg&fm=jpg"
+        }
         alt="식선생"
         width={100}
         height={100}
