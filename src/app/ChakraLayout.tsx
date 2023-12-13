@@ -31,7 +31,7 @@ export function ChakraLayout({ children }: { children: React.ReactNode }) {
 
   return (
     <ChakraProvider>
-      <ColorModeScript initialColorMode="system" />
+      <ColorModeScript initialColorMode="light" />
       <CacheProvider>{children}</CacheProvider>
     </ChakraProvider>
   );
