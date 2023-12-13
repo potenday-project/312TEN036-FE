@@ -1,13 +1,25 @@
 import {
   Box,
+  Button,
   ButtonGroup,
   Checkbox,
   Flex,
   Heading,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalHeader,
+  ModalOverlay,
   VStack,
+  useDisclosure,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import MainButton from "../button/MainButton";
+import {
+  personalAgreement,
+  serviceAgreement,
+} from "../../utils/DummyData/AgreementData";
 
 interface UserAgreementFormPropsType {
   setFunnel: React.Dispatch<React.SetStateAction<string>>;
@@ -19,11 +31,34 @@ const UserAgreementForm = ({
   setProgress,
 }: UserAgreementFormPropsType) => {
   const [checkedItems, setCheckedItems] = useState([false, false, false]);
+  const [modalState, setModalState] = useState<string>("");
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   const allChecked = checkedItems.every(Boolean);
   const isIndeterminate = checkedItems.some(Boolean) && !allChecked;
 
   return (
     <>
+      <Modal isOpen={isOpen} onClose={onClose} size={"full"}>
+        <ModalOverlay />
+        <ModalContent overflow={"scroll"} h={"100vh"}>
+          <ModalCloseButton />
+          <ModalHeader padding={"30px"} />
+          <ModalBody>
+            {modalState === "serviceAgreement" && (
+              <Box>
+                서비스 이용 약관
+                <br />
+                <br />
+                {serviceAgreement}
+              </Box>
+            )}
+            {modalState === "personalAgreement" && (
+              <Box>{personalAgreement}</Box>
+            )}
+          </ModalBody>
+        </ModalContent>
+      </Modal>
       <Box as="section" alignSelf={"flex-start"}>
         <Heading
           as={"h1"}
@@ -74,7 +109,14 @@ const UserAgreementForm = ({
             ])
           }
         >
-          (필수) 서비스 이용 약관 동의
+          <Box
+            onClick={() => {
+              onOpen();
+              setModalState("serviceAgreement");
+            }}
+          >
+            (필수) 서비스 이용 약관 동의
+          </Box>
         </Checkbox>
         <Checkbox
           color={"#838383"}
@@ -89,7 +131,14 @@ const UserAgreementForm = ({
             ])
           }
         >
-          (필수) 개인 정보 수집 및 이용 동의
+          <Box
+            onClick={() => {
+              onOpen();
+              setModalState("personalAgreement");
+            }}
+          >
+            (필수) 개인 정보 수집 및 이용 동의
+          </Box>
         </Checkbox>
         <Checkbox
           color={"#838383"}

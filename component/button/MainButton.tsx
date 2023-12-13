@@ -15,6 +15,7 @@ const MainButton = ({
       bgColor={"#000000"}
       textColor={"white"}
       borderRadius={"12px"}
+      margin={"0 22px"}
       w={w}
       h={h}
       maxW={"390px"}
