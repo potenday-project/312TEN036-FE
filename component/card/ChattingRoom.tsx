@@ -85,8 +85,8 @@ const ChattingRoom = () => {
 
           <DietChattingMsgCart />
         </VStack>
-        <ChattingInput />
       </Flex>
+      <ChattingInput />
     </>
   );
 };
