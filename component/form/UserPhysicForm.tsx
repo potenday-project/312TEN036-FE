@@ -15,9 +15,10 @@ import {
 } from "@chakra-ui/react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
+import { UserInfoType } from "@/app/signup/page";
 
 interface UserPhysicsFormPropsType {
-  setProgress: React.Dispatch<React.SetStateAction<number>>;
+  userInfo: UserInfoType;
 }
 interface PhysicsFormType {
   age: number;
@@ -26,13 +27,21 @@ interface PhysicsFormType {
   targetWeight: number;
 }
 
-const UserPhysicForm = () => {
+const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
   const router = useRouter();
   const { handleSubmit, register } = useForm<PhysicsFormType>();
 
-  const onSubmit: SubmitHandler<PhysicsFormType> = (data) => {
-    console.log(data);
-    // setProgress((oldState) => oldState + 33.3);
+  const onSubmit: SubmitHandler<PhysicsFormType> = async (data) => {
+    const newUserInfo: UserInfoType = {
+      userName: userInfo.userName,
+      gender: userInfo.gender,
+      age: data.age,
+      height: data.height,
+      weight: data.weight,
+      targetWeight: data.targetWeight,
+    };
+
+    console.log(newUserInfo);
     router.push("/main");
   };
   return (

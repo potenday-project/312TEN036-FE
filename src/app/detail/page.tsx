@@ -20,7 +20,11 @@ const Page = () => {
         alignItems={"center"}
       >
         <TheHeader>
-          <Box cursor={"pointer"} onClick={() => router.push("/main")}>
+          <Box
+            pos={"absolute"}
+            cursor={"pointer"}
+            onClick={() => router.push("/main")}
+          >
             <GoBackArrowIcon />
           </Box>
           <Text margin={"0 auto"} fontSize={"20px"} fontWeight={"medium"}>

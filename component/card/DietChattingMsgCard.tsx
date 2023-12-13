@@ -1,3 +1,4 @@
+"use client";
 import {
   Box,
   Button,
@@ -10,11 +11,12 @@ import {
   HStack,
   Heading,
   Text,
-  VStack,
 } from "@chakra-ui/react";
 import WarningIcon from "../icon/WarningIcon";
+import { useRouter } from "next/navigation";
 
 const DietChattingMsgCart = ({}: CardProps) => {
+  const router = useRouter();
   return (
     <>
       <Card
@@ -80,7 +82,12 @@ const DietChattingMsgCart = ({}: CardProps) => {
           </HStack>
         </CardHeader>
         <CardBody color={"#2F2F2F"} padding={"14px 14px 14px 14px"}>
-          <Button bgColor={"#FFFFFF"} w={"100%"} h={"41px"}>
+          <Button
+            onClick={() => router.push("/detail")}
+            bgColor={"#FFFFFF"}
+            w={"100%"}
+            h={"41px"}
+          >
             식단 상세보기
           </Button>
         </CardBody>

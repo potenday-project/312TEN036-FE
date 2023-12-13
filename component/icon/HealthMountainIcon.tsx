@@ -658,10 +658,10 @@ const HealthMountainIcon = () => {
           </radialGradient>
           <linearGradient
             id="paint1_linear_268_5127"
-            x1="9.40609"
-            y1="32.9506"
-            x2="9.40609"
-            y2="25.7635"
+            x1="9.40609px"
+            y1="32.9506px"
+            x2="9.40609px"
+            y2="25.7635px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#B36E90" />
@@ -724,10 +724,10 @@ const HealthMountainIcon = () => {
           </radialGradient>
           <linearGradient
             id="paint7_linear_268_5127"
-            x1="4.26907"
-            y1="17.9846"
-            x2="10.3089"
-            y2="16.3368"
+            x1="4.26907px"
+            y1="17.9846px"
+            x2="10.3089px"
+            y2="16.3368px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#DBA389" />
@@ -757,10 +757,10 @@ const HealthMountainIcon = () => {
           </radialGradient>
           <linearGradient
             id="paint10_linear_268_5127"
-            x1="7.45905"
-            y1="24.9967"
-            x2="7.45905"
-            y2="29.9732"
+            x1="7.45905px"
+            y1="24.9967px"
+            x2="7.45905px"
+            y2="29.9732px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#D9A27D" />
@@ -790,10 +790,10 @@ const HealthMountainIcon = () => {
           </radialGradient>
           <linearGradient
             id="paint13_linear_268_5127"
-            x1="8.60394"
-            y1="16.5876"
-            x2="6.02809"
-            y2="15.4539"
+            x1="8.60394px"
+            y1="16.5876px"
+            x2="6.02809px"
+            y2="15.4539px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#FFD0AB" />
@@ -801,10 +801,10 @@ const HealthMountainIcon = () => {
           </linearGradient>
           <linearGradient
             id="paint14_linear_268_5127"
-            x1="4.4605"
-            y1="18.4068"
-            x2="8.34998"
-            y2="18.4068"
+            x1="4.4605px"
+            y1="18.4068px"
+            x2="8.34998px"
+            y2="18.4068px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#D59D83" />
@@ -812,10 +812,10 @@ const HealthMountainIcon = () => {
           </linearGradient>
           <linearGradient
             id="paint15_linear_268_5127"
-            x1="5.84786"
-            y1="19.598"
-            x2="5.84786"
-            y2="17.5775"
+            x1="5.84786px"
+            y1="19.598px"
+            x2="5.84786px"
+            y2="17.5775px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#C27E71" />
@@ -856,10 +856,10 @@ const HealthMountainIcon = () => {
           </radialGradient>
           <linearGradient
             id="paint19_linear_268_5127"
-            x1="5.61118"
-            y1="16.0391"
-            x2="5.24996"
-            y2="16.8718"
+            x1="5.61118px"
+            y1="16.0391px"
+            x2="5.24996px"
+            y2="16.8718px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#EDBB9E" />
@@ -900,10 +900,10 @@ const HealthMountainIcon = () => {
           </radialGradient>
           <linearGradient
             id="paint23_linear_268_5127"
-            x1="49.5939"
-            y1="32.9506"
-            x2="49.5939"
-            y2="25.7635"
+            x1="49.5939px"
+            y1="32.9506px"
+            x2="49.5939px"
+            y2="25.7635px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#B36E90" />
@@ -966,10 +966,10 @@ const HealthMountainIcon = () => {
           </radialGradient>
           <linearGradient
             id="paint29_linear_268_5127"
-            x1="54.7309"
-            y1="17.9846"
-            x2="48.6911"
-            y2="16.3368"
+            x1="54.7309px"
+            y1="17.9846px"
+            x2="48.6911px"
+            y2="16.3368px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#DBA389" />
@@ -999,10 +999,10 @@ const HealthMountainIcon = () => {
           </radialGradient>
           <linearGradient
             id="paint32_linear_268_5127"
-            x1="51.54"
-            y1="24.9969"
-            x2="51.54"
-            y2="29.9734"
+            x1="51.54px"
+            y1="24.9969px"
+            x2="51.54px"
+            y2="29.9734px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#D9A27D" />
@@ -1032,10 +1032,10 @@ const HealthMountainIcon = () => {
           </radialGradient>
           <linearGradient
             id="paint35_linear_268_5127"
-            x1="50.3961"
-            y1="16.5876"
-            x2="52.9719"
-            y2="15.4539"
+            x1="50.3961px"
+            y1="16.5876px"
+            x2="52.9719px"
+            y2="15.4539px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#FFD0AB" />
@@ -1043,10 +1043,10 @@ const HealthMountainIcon = () => {
           </linearGradient>
           <linearGradient
             id="paint36_linear_268_5127"
-            x1="54.5395"
-            y1="18.4068"
-            x2="50.65"
-            y2="18.4068"
+            x1="54.5395px"
+            y1="18.4068px"
+            x2="50.65px"
+            y2="18.4068px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#D59D83" />
@@ -1054,10 +1054,10 @@ const HealthMountainIcon = () => {
           </linearGradient>
           <linearGradient
             id="paint37_linear_268_5127"
-            x1="53.1521"
-            y1="19.598"
-            x2="53.1521"
-            y2="17.5775"
+            x1="53.1521px"
+            y1="19.598px"
+            x2="53.1521px"
+            y2="17.5775px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#C27E71" />
@@ -1098,10 +1098,10 @@ const HealthMountainIcon = () => {
           </radialGradient>
           <linearGradient
             id="paint41_linear_268_5127"
-            x1="53.3878"
-            y1="16.0372"
-            x2="53.7491"
-            y2="16.8699"
+            x1="53.3878px"
+            y1="16.0372px"
+            x2="53.7491px"
+            y2="16.8699px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#EDBB9E" />
@@ -1131,10 +1131,10 @@ const HealthMountainIcon = () => {
           </radialGradient>
           <linearGradient
             id="paint44_linear_268_5127"
-            x1="18.8833"
-            y1="21.5889"
-            x2="43.079"
-            y2="21.5889"
+            x1="18.8833px"
+            y1="21.5889px"
+            x2="43.079px"
+            y2="21.5889px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#507F55" />
@@ -1142,10 +1142,10 @@ const HealthMountainIcon = () => {
           </linearGradient>
           <linearGradient
             id="paint45_linear_268_5127"
-            x1="14.3323"
-            y1="15.0657"
-            x2="19.3384"
-            y2="19.0864"
+            x1="14.3323px"
+            y1="15.0657px"
+            x2="19.3384px"
+            y2="19.0864px"
             gradientUnits="userSpaceOnUse"
           >
             <stop offset="0.123" stopColor="#406045" />
@@ -1153,10 +1153,10 @@ const HealthMountainIcon = () => {
           </linearGradient>
           <linearGradient
             id="paint46_linear_268_5127"
-            x1="60.373"
-            y1="7.40541"
-            x2="25.4817"
-            y2="20.3"
+            x1="60.373px"
+            y1="7.40541px"
+            x2="25.4817px"
+            y2="20.3px"
             gradientUnits="userSpaceOnUse"
           >
             <stop offset="0.364" stopColor="#7BC186" />
@@ -1164,10 +1164,10 @@ const HealthMountainIcon = () => {
           </linearGradient>
           <linearGradient
             id="paint47_linear_268_5127"
-            x1="27.2279"
-            y1="12.1086"
-            x2="27.2279"
-            y2="-0.710804"
+            x1="27.2279px"
+            y1="12.1086px"
+            x2="27.2279px"
+            y2="-0.710804px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#D4CAD6" />
@@ -1175,10 +1175,10 @@ const HealthMountainIcon = () => {
           </linearGradient>
           <linearGradient
             id="paint48_linear_268_5127"
-            x1="18.2545"
-            y1="0.279501"
-            x2="28.1927"
-            y2="7.41795"
+            x1="18.2545px"
+            y1="0.279501px"
+            x2="28.1927px"
+            y2="7.41795px"
             gradientUnits="userSpaceOnUse"
           >
             <stop offset="0.213" stopColor="#8D8B8C" />
@@ -1222,10 +1222,10 @@ const HealthMountainIcon = () => {
           </radialGradient>
           <linearGradient
             id="paint52_linear_268_5127"
-            x1="37.1195"
-            y1="16.2201"
-            x2="33.5034"
-            y2="16.7101"
+            x1="37.1195px"
+            y1="16.2201px"
+            x2="33.5034px"
+            y2="16.7101px"
             gradientUnits="userSpaceOnUse"
           >
             <stop offset="0.399" stopColor="#9B969E" />
@@ -1301,10 +1301,10 @@ const HealthMountainIcon = () => {
           </radialGradient>
           <linearGradient
             id="paint59_linear_268_5127"
-            x1="32.2426"
-            y1="16.2201"
-            x2="28.6786"
-            y2="16.5484"
+            x1="32.2426px"
+            y1="16.2201px"
+            x2="28.6786px"
+            y2="16.5484px"
             gradientUnits="userSpaceOnUse"
           >
             <stop offset="0.212" stopColor="#9B969E" />
@@ -1323,10 +1323,10 @@ const HealthMountainIcon = () => {
           </radialGradient>
           <linearGradient
             id="paint61_linear_268_5127"
-            x1="29.3696"
-            y1="13.3588"
-            x2="29.3696"
-            y2="17.8606"
+            x1="29.3696px"
+            y1="13.3588px"
+            x2="29.3696px"
+            y2="17.8606px"
             gradientUnits="userSpaceOnUse"
           >
             <stop offset="0.354" stopColor="#232224" />
@@ -1345,10 +1345,10 @@ const HealthMountainIcon = () => {
           </radialGradient>
           <linearGradient
             id="paint63_linear_268_5127"
-            x1="34.2241"
-            y1="13.3588"
-            x2="34.2241"
-            y2="17.8606"
+            x1="34.2241px"
+            y1="13.3588px"
+            x2="34.2241px"
+            y2="17.8606px"
             gradientUnits="userSpaceOnUse"
           >
             <stop offset="0.354" stopColor="#232224" />
