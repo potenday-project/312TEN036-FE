@@ -22,7 +22,12 @@ const ChattingInput = () => {
             fontSize={"16px"}
             h={"50px"}
           />
-          <InputRightElement marginRight={"5px"} h={"50px"}>
+          <InputRightElement
+            cursor={"pointer"}
+            onClick={() => console.log(1)}
+            marginRight={"5px"}
+            h={"50px"}
+          >
             <ChattingInputArrowIcon />
           </InputRightElement>
         </InputGroup>
