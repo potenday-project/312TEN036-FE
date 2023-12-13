@@ -6,10 +6,11 @@ const ChattingInput = () => {
   return (
     <>
       <Flex
-        position={"absolute"}
-        bottom={"10px"}
+        position={"fixed"}
+        bottom={"0px"}
+        bgColor={"white"}
         w={"100%"}
-        padding={"0 22px"}
+        padding={"10px 22px"}
         justifyContent={"space-between"}
         alignItems={"center"}
       >
