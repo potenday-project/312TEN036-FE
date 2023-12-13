@@ -51,9 +51,13 @@ const Page = () => {
           <UserAgreementForm setFunnel={setFunnel} setProgress={setProgress} />
         )}
         {funnel === "userInfo" && (
-          <UserInfoForm setFunnel={setFunnel} setProgress={setProgress} />
+          <UserInfoForm
+            setFunnel={setFunnel}
+            setProgress={setProgress}
+            setUserInfo={setUserInfo}
+          />
         )}
-        {funnel === "userPhysics" && <UserPhysicForm />}
+        {funnel === "userPhysics" && <UserPhysicForm userInfo={userInfo} />}
       </Flex>
     </>
   );

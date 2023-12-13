@@ -280,10 +280,10 @@ const HealthIcon = () => {
           </radialGradient>
           <linearGradient
             id="c"
-            x1="12.996"
-            x2="12.996"
-            y1="21.36"
-            y2="15.156"
+            x1="12.996px"
+            x2="12.996px"
+            y1="21.36px"
+            y2="15.156px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#B36E90" />
@@ -291,10 +291,10 @@ const HealthIcon = () => {
           </linearGradient>
           <linearGradient
             id="i"
-            x1="8.56"
-            x2="13.775"
-            y1="8.44"
-            y2="7.018"
+            x1="8.56px"
+            x2="13.775px"
+            y1="8.44px"
+            y2="7.018px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#DBA389" />
@@ -302,10 +302,10 @@ const HealthIcon = () => {
           </linearGradient>
           <linearGradient
             id="m"
-            x1="11.315"
-            x2="11.315"
-            y1="14.493"
-            y2="18.79"
+            x1="11.315px"
+            x2="11.315px"
+            y1="14.493px"
+            y2="18.79px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#D9A27D" />
@@ -313,10 +313,10 @@ const HealthIcon = () => {
           </linearGradient>
           <linearGradient
             id="q"
-            x1="12.301"
-            x2="10.077"
-            y1="7.239"
-            y2="6.26"
+            x1="12.301px"
+            x2="10.077px"
+            y1="7.239px"
+            y2="6.26px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#FFD0AB" />
@@ -324,10 +324,10 @@ const HealthIcon = () => {
           </linearGradient>
           <linearGradient
             id="r"
-            x1="8.724"
-            x2="12.082"
-            y1="8.806"
-            y2="8.806"
+            x1="8.724px"
+            x2="12.082px"
+            y1="8.806px"
+            y2="8.806px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#D59D83" />
@@ -335,10 +335,10 @@ const HealthIcon = () => {
           </linearGradient>
           <linearGradient
             id="s"
-            x1="9.922"
-            x2="9.922"
-            y1="9.835"
-            y2="8.09"
+            x1="9.922px"
+            x2="9.922px"
+            y1="9.835px"
+            y2="8.09px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#C27E71" />
@@ -346,10 +346,10 @@ const HealthIcon = () => {
           </linearGradient>
           <linearGradient
             id="x"
-            x1="9.719"
-            x2="9.407"
-            y1="6.758"
-            y2="7.477"
+            x1="9.719px"
+            x2="9.407px"
+            y1="6.758px"
+            y2="7.477px"
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#EDBB9E" />
@@ -357,10 +357,10 @@ const HealthIcon = () => {
           </linearGradient>
           <filter
             id="a"
-            width="16.824"
-            height="13.231"
-            x="4.875"
-            y="7.019"
+            width="16.824px"
+            height="13.231px"
+            x="4.875px"
+            y="7.019px"
             colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
           >

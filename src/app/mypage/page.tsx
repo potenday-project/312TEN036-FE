@@ -1,8 +1,9 @@
 "use client";
-import { Flex, Text, VStack } from "@chakra-ui/react";
+import { Box, Flex, Text, VStack } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import TodayReportCard from "../../../component/card/TodayReportCard";
 import TheHeader from "../../../component/header/TheHeader";
+import GoBackArrowIcon from "../../../component/icon/GoBackArrowIcon";
 
 const Page = () => {
   const router = useRouter();
@@ -19,13 +20,13 @@ const Page = () => {
         alignItems={"center"}
       >
         <TheHeader>
-          <Text
-            pos={"fixed"}
-            onClick={() => router.push("/main")}
+          <Box
+            pos={"absolute"}
             cursor={"pointer"}
+            onClick={() => router.push("/main")}
           >
-            {"<"}
-          </Text>
+            <GoBackArrowIcon />
+          </Box>
           <Text margin={"0 auto"} fontSize={"20px"} fontWeight={"medium"}>
             마이페이지
           </Text>
