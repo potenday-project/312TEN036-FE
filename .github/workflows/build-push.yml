@@ -50,7 +50,7 @@ jobs:
         sed -i 's|image: k8s-registry-test.kr.ncr.ntruss.com/nextjs-fe:.*$|image: ${{ secrets.NCP_CONTAINER_REGISTRY }}/nextjs-fe:${{ github.sha }}|' fe-deployment.yaml
         git checkout -b alarm   
 
-        git add fe/fe-deployment.yaml
+        git add fe-deployment.yaml
         git status
         git commit -m "alarm"
         git push origin alarm
