@@ -1,13 +1,14 @@
 import axios from "axios";
 
 const instacne = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL,
+  //   baseURL: process.env.NEXT_PUBLIC_API_URL,
+  baseURL: "/",
   withCredentials: true,
 });
 
 export const getUserInfo = async () => {
   console.log(process.env.NEXT_PUBLIC_API_URL);
-  const res = await instacne.get("");
+  const res = await instacne.get("/123");
 
   console.log(res);
   return res;
