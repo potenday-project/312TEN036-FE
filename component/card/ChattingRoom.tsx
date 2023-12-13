@@ -15,7 +15,19 @@ const ChattingRoom = () => {
         borderRadius={"12px 12px 0 0"}
         position={"absolute"}
         bottom={"0"}
-        overflow={"scroll"}
+        overflow={"hidden"}
+        overflowY={"scroll"}
+        css={{
+          "&::-webkit-scrollbar": {
+            width: "4px",
+          },
+          "&::-webkit-scrollbar-track": {
+            width: "6px",
+          },
+          "&::-webkit-scrollbar-thumb": {
+            borderRadius: "24px",
+          },
+        }}
         flexDir={"column"}
       >
         <VStack
@@ -46,6 +58,7 @@ const ChattingRoom = () => {
           alignItems={"flex-start"}
           spacing={"16px"}
           marginTop={"10px"}
+          paddingBottom={"80px"}
         >
           <ChattingMsgCard>반갑습니다 00님</ChattingMsgCard>
           <ChattingMsgCard>
@@ -57,6 +70,15 @@ const ChattingRoom = () => {
             </Text>
           </ChattingMsgCard>
 
+          <UserChattingMsgCard>
+            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
+          </UserChattingMsgCard>
+          <UserChattingMsgCard>
+            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
+          </UserChattingMsgCard>
+          <UserChattingMsgCard>
+            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
+          </UserChattingMsgCard>
           <UserChattingMsgCard>
             아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
           </UserChattingMsgCard>
