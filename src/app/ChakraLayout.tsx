@@ -19,11 +19,6 @@ const ChakraProvider = dynamic(() =>
 // });
 
 export function ChakraLayout({ children }: { children: React.ReactNode }) {
-  const config: ThemeConfig = {
-    initialColorMode: "light",
-    useSystemColorMode: false,
-  };
-
   //   const [mount, setMount] = useState(false);
 
   //   useLayoutEffect(() => {
@@ -34,15 +29,8 @@ export function ChakraLayout({ children }: { children: React.ReactNode }) {
   //     return <></>;
   //   }
 
-  const theme = extendTheme({
-    config,
-    // fonts: {
-    //   body: BMJUA.style.fontFamily,
-    // },
-  });
-
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider>
       <ColorModeScript initialColorMode="system" />
       <CacheProvider>{children}</CacheProvider>
     </ChakraProvider>
