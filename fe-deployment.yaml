@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: fe
+  name: fe
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fe
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: fe
+    spec:
+      imagePullSecrets:
+      - name: fe-regcred
+      containers:
+      - image: k8s-registry-test.kr.ncr.ntruss.com/nextjs-fe:latest
+        name: fe
+        ports: 
+        - containerPort: 3000
