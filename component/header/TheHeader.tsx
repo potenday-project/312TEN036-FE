@@ -8,7 +8,7 @@ const TheHeader = ({ children }: { children: ReactNode }) => {
     <>
       <Flex
         as={"header"}
-        position={"fixed"}
+        position={"absolute"}
         top={"0"}
         padding={"4px 22px"}
         w={"100%"}

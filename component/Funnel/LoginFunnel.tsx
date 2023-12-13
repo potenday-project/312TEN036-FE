@@ -19,7 +19,7 @@ const LoginFunnel = () => {
         width={"100%"}
         pos={"fixed"}
         bottom={"30px"}
-        margin={"0 auto"}
+        padding={"0 22px"}
         justifyContent={"center"}
         alignItems={"center"}
         flexDir={"column"}

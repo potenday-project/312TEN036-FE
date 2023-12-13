@@ -1,24 +1,19 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Input,
-  InputGroup,
-  InputRightElement,
-} from "@chakra-ui/react";
+import { Flex, Input, InputGroup, InputRightElement } from "@chakra-ui/react";
+import ChattingInputArrowIcon from "../icon/ChattingInputArrowIcon";
+import CircleIcon from "../icon/CircleIcon";
 
 const ChattingInput = () => {
   return (
     <>
       <Flex
-        position={"fixed"}
+        position={"absolute"}
         bottom={"10px"}
         w={"100%"}
         padding={"0 22px"}
-        justifyContent={"space-around"}
+        justifyContent={"space-between"}
         alignItems={"center"}
       >
-        <Box bgColor={"black"} w={"28px"} h={"28px"}></Box>
+        <CircleIcon />
         <InputGroup w={"304px"}>
           <Input
             borderRadius={"12px"}
@@ -27,8 +22,8 @@ const ChattingInput = () => {
             fontSize={"16px"}
             h={"50px"}
           />
-          <InputRightElement paddingRight={"15px"} h={"50px"}>
-            icon
+          <InputRightElement marginRight={"5px"} h={"50px"}>
+            <ChattingInputArrowIcon />
           </InputRightElement>
         </InputGroup>
       </Flex>

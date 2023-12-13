@@ -7,9 +7,12 @@ import {
   CardProps,
   Divider,
   Flex,
+  HStack,
   Heading,
   Text,
+  VStack,
 } from "@chakra-ui/react";
+import WarningIcon from "../icon/WarningIcon";
 
 const DietChattingMsgCart = ({}: CardProps) => {
   return (
@@ -63,16 +66,20 @@ const DietChattingMsgCart = ({}: CardProps) => {
             </Box>
           </Flex>
           <Divider margin={"0 auto"} padding={"4.5px 0"} color={"#ECECEC"} />
-          <Text
-            textAlign={"center"}
-            paddingTop={"4.5px"}
-            color={"#FF6C6C"}
-            fontWeight={"medium"}
-          >
-            300 Kcal가 초과되셨습니다.
-          </Text>
+
+          <HStack justifyContent={"center"}>
+            <WarningIcon />
+            <Text
+              textAlign={"center"}
+              paddingTop={"4.5px"}
+              color={"#FF6C6C"}
+              fontWeight={"medium"}
+            >
+              300 Kcal가 초과되셨습니다.
+            </Text>
+          </HStack>
         </CardHeader>
-        <CardBody color={"#2F2F2F"} padding={"16px 14px 14px 14px"}>
+        <CardBody color={"#2F2F2F"} padding={"14px 14px 14px 14px"}>
           <Button bgColor={"#FFFFFF"} w={"100%"} h={"41px"}>
             식단 상세보기
           </Button>
