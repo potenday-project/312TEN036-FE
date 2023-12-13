@@ -4,9 +4,13 @@ import { useRouter } from "next/navigation";
 import TodayReportCard from "../../../component/card/TodayReportCard";
 import TheHeader from "../../../component/header/TheHeader";
 import GoBackArrowIcon from "../../../component/icon/GoBackArrowIcon";
+import { useUser } from "../../../utils/hooks/useUser";
 
 const Page = () => {
   const router = useRouter();
+
+  const { data } = useUser();
+
   return (
     <>
       <Flex
