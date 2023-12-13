@@ -36,10 +36,6 @@ jobs:
         cache-to: type=inline
 
   
-  push:
-
-    runs-on: ubuntu-latest
-    steps:
     - name: change docker image name
       run: |
         git config --global user.name "${{ secrets.GIT_USERNAME }}"
