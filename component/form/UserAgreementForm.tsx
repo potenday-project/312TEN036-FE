@@ -10,8 +10,10 @@ import {
   ModalBody,
   ModalCloseButton,
   ModalContent,
+  ModalFooter,
   ModalHeader,
   ModalOverlay,
+  Text,
   VStack,
   useDisclosure,
 } from "@chakra-ui/react";
@@ -41,24 +43,31 @@ const UserAgreementForm = ({
 
   return (
     <>
-      <Modal isOpen={isOpen} onClose={onClose} size={"full"}>
+      <Modal
+        isOpen={isOpen}
+        onClose={onClose}
+        size={["full", "xl", "xl"]}
+        scrollBehavior={"inside"}
+      >
         <ModalOverlay />
-        <ModalContent overflow={"scroll"} h={"100vh"}>
+        <ModalContent>
           <ModalCloseButton />
           <ModalHeader padding={"30px"} />
-          <ModalBody>
+          <ModalBody minW={"390px"}>
             {modalState === "serviceAgreement" && (
-              <Box>
-                서비스 이용 약관
-                <br />
+              <>
+                <Text>서비스 이용 약관</Text>
                 <br />
                 {serviceAgreement}
-              </Box>
+              </>
             )}
             {modalState === "personalAgreement" && (
-              <Box>{personalAgreement}</Box>
+              <Box overflow={"scroll"}>
+                <Text as={"pre"}>{personalAgreement}</Text>
+              </Box>
             )}
           </ModalBody>
+          <ModalFooter />
         </ModalContent>
       </Modal>
       <Box as="section" alignSelf={"flex-start"}>

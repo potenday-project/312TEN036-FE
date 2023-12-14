@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
-import { UserInfoType } from "@/app/signup/page";
+import { UserInfoType } from "../template/SignupTemplate";
 
 interface UserPhysicsFormPropsType {
   userInfo: UserInfoType;
