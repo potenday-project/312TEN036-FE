@@ -1,8 +1,7 @@
 import React from "react";
-
 import { redirect } from "next/navigation";
 import SignupTemplate from "../../../component/template/SignupTemplate";
-import { postKakaoCode } from "../../../utils/api/AxiosSetting";
+import { postKakaoCode } from "../../../utils/API/AxiosSetting";
 
 const Page = ({
   searchParams,
