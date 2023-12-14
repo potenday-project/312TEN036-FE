@@ -12,8 +12,8 @@ const Page = ({
   const kakaoCode = searchParams.code;
 
   const errorCode = searchParams.error;
-  postKakaoCode(kakaoCode);
   if (errorCode) return redirect("/");
+  postKakaoCode(kakaoCode);
 
   return <SignupTemplate />;
 };
