@@ -1,11 +1,20 @@
 "use client";
-import { Flex } from "@chakra-ui/react";
+import { Flex, useColorMode } from "@chakra-ui/react";
 import { useFunnel } from "../../utils/hooks/useFunnel";
 import MainFunnel from "../../component/Funnel/MainFunnel";
 import LoginFunnel from "../../component/Funnel/LoginFunnel";
+import { useEffect } from "react";
 
 export default function Home() {
   const { funnel, setFunnel } = useFunnel("main");
+
+  const { colorMode, setColorMode } = useColorMode();
+
+  useEffect(() => {
+    if (colorMode === "dark") {
+      setColorMode("light");
+    }
+  }, [colorMode, setColorMode]);
 
   return (
     <Flex
