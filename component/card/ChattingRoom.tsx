@@ -1,6 +1,5 @@
 import { Divider, Flex, HStack, Heading, Text, VStack } from "@chakra-ui/react";
 import ChattingMsgCard from "../card/ChattingMsgCard";
-import UserChattingMsgCard from "./UserChattingMsgCard";
 import DietChattingMsgCart from "./DietChattingMsgCard";
 import ChattingInput from "../input/ChattingInput";
 import HealthIcon from "../icon/HealthIcon";
@@ -11,7 +10,9 @@ const ChattingRoom = () => {
       <Flex
         w={"100%"}
         bgColor={"#FFFFFF"}
-        h={"80%"}
+        h={"85%"}
+        maxH={"1150px"}
+        minH={"300px"}
         borderRadius={"12px 12px 0 0"}
         position={"absolute"}
         bottom={"0"}
@@ -23,7 +24,6 @@ const ChattingRoom = () => {
           padding={"13px 22px"}
           spacing={"0.5px"}
           zIndex={100}
-          bgColor={"white"}
         >
           <HStack spacing={"2px"}>
             <HealthIcon />
@@ -72,7 +72,7 @@ const ChattingRoom = () => {
             </Text>
           </ChattingMsgCard>
 
-          <UserChattingMsgCard>
+          {/* <UserChattingMsgCard>
             아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
           </UserChattingMsgCard>
           <UserChattingMsgCard>
@@ -95,7 +95,7 @@ const ChattingRoom = () => {
           </UserChattingMsgCard>
           <UserChattingMsgCard>
             아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
-          </UserChattingMsgCard>
+          </UserChattingMsgCard> */}
 
           <DietChattingMsgCart />
         </VStack>

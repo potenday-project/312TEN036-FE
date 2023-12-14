@@ -1,5 +1,5 @@
 "use client";
-import { Flex, Text } from "@chakra-ui/react";
+import { Flex, Text, VStack } from "@chakra-ui/react";
 import ChattingRoom from "../../../component/card/ChattingRoom";
 import DietStateCard from "../../../component/card/DietStateCard";
 import { useRouter } from "next/navigation";
@@ -27,8 +27,10 @@ const Page = () => {
             <UserIcon />
           </Text>
         </TheHeader>
-        <DietStateCard />
-        <ChattingRoom />
+        <VStack spacing={"20px"} w={"100%"}>
+          <DietStateCard />
+          <ChattingRoom />
+        </VStack>
       </Flex>
     </>
   );
