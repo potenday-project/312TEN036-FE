@@ -1,5 +1,5 @@
 import { useMutation } from "@tanstack/react-query";
-import { postUserInfo } from "../api/AxiosSetting";
+import { postUserInfo } from "../API/AxiosSetting";
 
 export const usePostUserInfo = () => {
   const {

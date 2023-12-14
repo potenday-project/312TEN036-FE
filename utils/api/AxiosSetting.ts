@@ -13,11 +13,7 @@ export const getUserInfo = async () => {
 };
 
 export const postKakaoCode = async (code: string) => {
-  const res = await instacne.post(
-    `${process.env.NEXT_PUBLIC_API_URL}/user`,
-    code
-  );
-
+  const res = await instacne.post(`/user`, code);
   return res.data;
 };
 
