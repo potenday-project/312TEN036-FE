@@ -38,16 +38,19 @@ jobs:
   
     - name: change docker image name
       run: |
+        sed -i 's|image: k8s-registry-test.kr.ncr.ntruss.com/nextjs-fe:.*$|image: ${{ secrets.NCP_CONTAINER_REGISTRY }}/nextjs-fe:${{ github.sha }}|' fe/fe-deployment.yaml
         git config --global user.name "${{ secrets.GIT_USERNAME }}"
         git config --global user.email "${{ secrets.GIT_EMAIL }}"
-        git remote set-url origin ${{ secrets.GIT_URL }}
-        sed -i 's|image: k8s-registry-test.kr.ncr.ntruss.com/nextjs-fe:.*$|image: ${{ secrets.NCP_CONTAINER_REGISTRY }}/nextjs-fe:${{ github.sha }}|' fe-deployment.yaml
-        git checkout -b alarm   
 
-        git add fe-deployment.yaml
+        git add fe
         git status
-        git commit -m "alarm"
-        git push origin alarm
+        git commit -m "change docker image name"
+        
+    - name: Push changes to main branch # merge 내용들을 main 브랜치로 최종 push
+      uses: ad-m/github-push-action@master
+      with:
+        branch: main
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         
 
     
