@@ -1,11 +1,21 @@
 "use client";
-import { ButtonGroup, Text } from "@chakra-ui/react";
-import MainButton from "../button/MainButton";
+import { Box, ButtonGroup, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import KaKaoButtonIcon from "../icon/KaKaoButtonIcon";
 
 const LoginFunnel = () => {
   const router = useRouter();
+
+  const Rest_api_key = "536cb646ce60d71102dc92d2b7845c8d"; //REST API KEY
+  const redirect_uri = "http://localhost:3000/signup"; //Redirect URI
+  // oauth 요청 URL
+  const kakaoURL = `https://kauth.kakao.com/oauth/authorize?client_id=${Rest_api_key}&redirect_uri=${redirect_uri}&response_type=code`;
+
+  const signUpKakaoHandler = () => {
+    window.location.href = kakaoURL;
+  };
+
   return (
     <>
       <Image
@@ -25,9 +35,10 @@ const LoginFunnel = () => {
         flexDir={"column"}
         gap={"10px"}
       >
-        <MainButton w={"100%"} h={"52px"} onClick={() => {}}>
-          다음으로
-        </MainButton>
+        <Box onClick={() => signUpKakaoHandler()} cursor={"pointer"}>
+          <KaKaoButtonIcon />
+        </Box>
+
         <Text
           as={"u"}
           fontSize={"17px"}
