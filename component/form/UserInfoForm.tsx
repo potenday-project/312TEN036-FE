@@ -13,7 +13,7 @@ import {
 import MainInput from "../input/MainInput";
 import MainButton from "../button/MainButton";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { UserInfoType } from "@/app/signup/page";
+import { UserInfoType } from "../template/SignupTemplate";
 
 function RadioCard(props: any) {
   const { getInputProps, getRadioProps } = useRadio(props);
