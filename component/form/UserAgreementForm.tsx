@@ -1,6 +1,7 @@
+"use client";
+
 import {
   Box,
-  Button,
   ButtonGroup,
   Checkbox,
   Flex,
@@ -14,12 +15,13 @@ import {
   VStack,
   useDisclosure,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import MainButton from "../button/MainButton";
 import {
   personalAgreement,
   serviceAgreement,
 } from "../../utils/DummyData/AgreementData";
+import { useRouter, useSearchParams } from "next/navigation";
 
 interface UserAgreementFormPropsType {
   setFunnel: React.Dispatch<React.SetStateAction<string>>;
