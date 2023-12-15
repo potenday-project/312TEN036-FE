@@ -1,28 +1,24 @@
 "use client";
 import { Flex, Input, InputGroup, InputRightElement } from "@chakra-ui/react";
 import ChattingInputArrowIcon from "../icon/ChattingInputArrowIcon";
-import CircleIcon from "../icon/CircleIcon";
-import { usePostUserDiet } from "../../utils/hooks/usePostUserDiet";
-import { SubmitHandler, useForm } from "react-hook-form";
+import { DietMsgType } from "../card/ChattingRoom";
+import {
+  SubmitHandler,
+  UseFormHandleSubmit,
+  UseFormRegister,
+} from "react-hook-form";
 
-interface DietMsgType {
-  msg: string;
+interface ChattingInputPropsType {
+  handleSubmit: UseFormHandleSubmit<DietMsgType, undefined>;
+  onSubmit: SubmitHandler<DietMsgType>;
+  register: UseFormRegister<DietMsgType>;
 }
-const ChattingInput = () => {
-  const { postUserDietMutation } = usePostUserDiet();
 
-  const {
-    handleSubmit,
-    register,
-    formState: { errors },
-    reset,
-  } = useForm<DietMsgType>();
-
-  const onSubmit: SubmitHandler<DietMsgType> = async (data) => {
-    reset();
-    await postUserDietMutation(data.msg);
-  };
-
+const ChattingInput = ({
+  handleSubmit,
+  onSubmit,
+  register,
+}: ChattingInputPropsType) => {
   return (
     <>
       <Flex
