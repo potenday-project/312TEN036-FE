@@ -42,7 +42,7 @@ const Page = () => {
 
         <VStack w={"100%"} spacing={"16px"}>
           <CharacterImgCard />
-          <TodayReportCard>
+          <TodayReportCard bgColor={"#000000"}>
             <VStack alignItems={"flex-start"} spacing={"5px"}>
               <Text color={"#838383"}>00님의 하루 칼로리</Text>
               <Text fontWeight={"semibold"}>아침 : 계란후라이 200 kcal</Text>
@@ -50,7 +50,7 @@ const Page = () => {
               <Text fontWeight={"semibold"}>저녁 : 마라탕 800 kcal</Text>
             </VStack>
           </TodayReportCard>
-          <TodayReportCard>
+          <TodayReportCard bgColor={"#000000"}>
             <VStack alignItems={"flex-start"} spacing={"5px"}>
               <Text color={"#838383"}>00님께 드리는 팩폭</Text>
               <Text fontWeight={"semibold"}>기초대사량에서 300 Kcal 초과</Text>
