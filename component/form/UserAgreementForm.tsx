@@ -83,12 +83,13 @@ const UserAgreementForm = ({
         </Heading>
       </Box>
 
-      <VStack alignItems={"flex-start"} spacing={5} padding={"30px 0"}>
+      <VStack alignItems={"flex-start"} spacing={"7px"} padding={"30px 0"}>
         <Flex
           w={"346px"}
           h={"48px"}
           border={"1px solid #00CE84"}
           borderRadius={"12px"}
+          marginBottom={"4px"}
         >
           <Checkbox
             isChecked={allChecked}
@@ -103,6 +104,7 @@ const UserAgreementForm = ({
           </Checkbox>
         </Flex>
         <Checkbox
+          h={"48px"}
           color={"#838383"}
           isChecked={checkedItems[0]}
           textDecor={"underline"}
@@ -110,12 +112,13 @@ const UserAgreementForm = ({
           onChange={(e) => setCheckedItems([e.target.checked, checkedItems[1]])}
         >
           <Box
+            h={"48px"}
             onClick={() => {
               onOpen();
               setModalState("serviceAgreement");
             }}
           >
-            (필수) 서비스 이용 약관 동의
+            <Text lineHeight={"45px"}>(필수) 서비스 이용 약관 동의</Text>
           </Box>
         </Checkbox>
         <Checkbox
@@ -126,12 +129,13 @@ const UserAgreementForm = ({
           onChange={(e) => setCheckedItems([checkedItems[0], e.target.checked])}
         >
           <Box
+            h={"48px"}
             onClick={() => {
               onOpen();
               setModalState("personalAgreement");
             }}
           >
-            (필수) 개인 정보 수집 및 이용 동의
+            <Text lineHeight={"45px"}>(필수) 개인 정보 수집 및 이용 동의</Text>
           </Box>
         </Checkbox>
       </VStack>
