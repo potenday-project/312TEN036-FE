@@ -19,7 +19,7 @@ const Page = () => {
         maxW={"390px"}
         padding={"60px 0px 0px 0px"}
         margin={"0 auto"}
-        bgColor={"#010101"}
+        bgColor={"#2B2C2C"}
         alignItems={"center"}
       >
         <TheHeader>

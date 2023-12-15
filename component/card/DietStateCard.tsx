@@ -4,7 +4,6 @@ import HealthMountainIcon from "../icon/HealthMountainIcon";
 const DietStateCard = () => {
   return (
     <Flex
-      bg={"rgba(0, 0, 0, 0.2)"}
       paddingTop={"20px"}
       margin={"0 auto"}
       color={"#F4F4F4"}

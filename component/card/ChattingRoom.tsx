@@ -1,11 +1,36 @@
+"use client";
 import { Divider, Flex, HStack, Heading, Text, VStack } from "@chakra-ui/react";
 import ChattingMsgCard from "../card/ChattingMsgCard";
 import DietChattingMsgCart from "./DietChattingMsgCard";
 import ChattingInput from "../input/ChattingInput";
 import HealthIcon from "../icon/HealthIcon";
 import UserChattingMsgCard from "./UserChattingMsgCard";
+import { usePostUserDiet } from "../../utils/hooks/usePostUserDiet";
+import { SubmitHandler, useForm } from "react-hook-form";
+
+export interface DietMsgType {
+  msg: string;
+}
 
 const ChattingRoom = () => {
+  const {
+    data: dietResponseData,
+    postUserDietMutation,
+    isLoading,
+  } = usePostUserDiet();
+
+  const {
+    handleSubmit,
+    register,
+    formState: { errors },
+    reset,
+  } = useForm<DietMsgType>();
+
+  const onSubmit: SubmitHandler<DietMsgType> = async (data) => {
+    reset();
+    await postUserDietMutation(data.msg);
+  };
+
   return (
     <>
       <Flex
@@ -22,7 +47,7 @@ const ChattingRoom = () => {
         <VStack
           textAlign={"center"}
           w={"100%"}
-          padding={"13px 22px"}
+          padding={"13px 22px 0px 22px"}
           spacing={"0.5px"}
           zIndex={100}
         >
@@ -47,7 +72,7 @@ const ChattingRoom = () => {
           w={"100%"}
           alignItems={"flex-start"}
           spacing={"16px"}
-          marginTop={"10px"}
+          // marginTop={"10px"}
           paddingBottom={"80px"}
           overflow={"hidden"}
           overflowY={"scroll"}
@@ -77,10 +102,17 @@ const ChattingRoom = () => {
             아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
           </UserChattingMsgCard>
 
-          <DietChattingMsgCart />
+          <DietChattingMsgCart
+            isLoading={isLoading}
+            dietResponseData={dietResponseData}
+          />
         </VStack>
       </Flex>
-      <ChattingInput />
+      <ChattingInput
+        handleSubmit={handleSubmit}
+        onSubmit={onSubmit}
+        register={register}
+      />
     </>
   );
 };
