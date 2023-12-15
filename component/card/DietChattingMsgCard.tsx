@@ -21,14 +21,14 @@ const DietChattingMsgCart = ({}: CardProps) => {
     <>
       <Card
         w={"312px"}
-        bgColor={"#F5F5F9"}
+        bgColor={"#FFFFFF"}
         shadow={"none"}
         margin={"0px 0px 0px 22px"}
       >
         <CardHeader padding={"14px 16px 0 16px"}>
           <Flex justifyContent={"space-between"} textAlign={"center"}>
             <Box>
-              <Text as={"h2"} color={"#787878"} fontSize={"15px"}>
+              <Text as={"h2"} color={"#00C27C"} fontSize={"15px"}>
                 아침
               </Text>
               <Heading
@@ -41,7 +41,7 @@ const DietChattingMsgCart = ({}: CardProps) => {
               </Heading>
             </Box>
             <Box>
-              <Text as={"h2"} color={"#787878"} fontSize={"15px"}>
+              <Text as={"h2"} color={"#00C27C"} fontSize={"15px"}>
                 점심
               </Text>
               <Heading
@@ -54,7 +54,7 @@ const DietChattingMsgCart = ({}: CardProps) => {
               </Heading>
             </Box>
             <Box>
-              <Text as={"h2"} color={"#787878"} fontSize={"15px"}>
+              <Text as={"h2"} color={"#00C27C"} fontSize={"15px"}>
                 저녁
               </Text>
               <Heading
