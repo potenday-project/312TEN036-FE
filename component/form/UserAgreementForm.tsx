@@ -23,7 +23,6 @@ import {
   personalAgreement,
   serviceAgreement,
 } from "../../utils/DummyData/AgreementData";
-import { useRouter, useSearchParams } from "next/navigation";
 
 interface UserAgreementFormPropsType {
   setFunnel: React.Dispatch<React.SetStateAction<string>>;
@@ -34,13 +33,14 @@ const UserAgreementForm = ({
   setFunnel,
   setProgress,
 }: UserAgreementFormPropsType) => {
-  const [checkedItems, setCheckedItems] = useState([false, false, false]);
+  const [checkedItems, setCheckedItems] = useState([false, false]);
   const [modalState, setModalState] = useState<string>("");
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const allChecked = checkedItems.every(Boolean);
   const isIndeterminate = checkedItems.some(Boolean) && !allChecked;
 
+  console.log(checkedItems);
   return (
     <>
       <Modal
@@ -88,20 +88,16 @@ const UserAgreementForm = ({
         <Flex
           w={"346px"}
           h={"48px"}
-          border={"1px solid #BCBCBC"}
+          border={"1px solid #00CE84"}
           borderRadius={"12px"}
         >
           <Checkbox
             isChecked={allChecked}
             isIndeterminate={isIndeterminate}
             margin={"auto 20px"}
-            color={"#BCBCBC"}
+            color={"#00CE84"}
             onChange={(e) =>
-              setCheckedItems([
-                e.target.checked,
-                e.target.checked,
-                e.target.checked,
-              ])
+              setCheckedItems([e.target.checked, e.target.checked])
             }
           >
             모두 동의합니다.
@@ -112,13 +108,7 @@ const UserAgreementForm = ({
           isChecked={checkedItems[0]}
           textDecor={"underline"}
           margin={"auto 20px"}
-          onChange={(e) =>
-            setCheckedItems([
-              e.target.checked,
-              checkedItems[1],
-              checkedItems[2],
-            ])
-          }
+          onChange={(e) => setCheckedItems([e.target.checked, checkedItems[1]])}
         >
           <Box
             onClick={() => {
@@ -134,13 +124,7 @@ const UserAgreementForm = ({
           margin={"auto 20px"}
           textDecor={"underline"}
           isChecked={checkedItems[1]}
-          onChange={(e) =>
-            setCheckedItems([
-              checkedItems[0],
-              e.target.checked,
-              checkedItems[2],
-            ])
-          }
+          onChange={(e) => setCheckedItems([checkedItems[0], e.target.checked])}
         >
           <Box
             onClick={() => {
@@ -150,21 +134,6 @@ const UserAgreementForm = ({
           >
             (필수) 개인 정보 수집 및 이용 동의
           </Box>
-        </Checkbox>
-        <Checkbox
-          color={"#838383"}
-          textDecor={"underline"}
-          margin={"auto 20px"}
-          isChecked={checkedItems[2]}
-          onChange={(e) =>
-            setCheckedItems([
-              checkedItems[0],
-              checkedItems[1],
-              e.target.checked,
-            ])
-          }
-        >
-          (필수) 만 14세 이상입니다
         </Checkbox>
       </VStack>
 
@@ -178,7 +147,16 @@ const UserAgreementForm = ({
         <MainButton
           w={"100%"}
           h={"52px"}
-          isDisabled={checkedItems.filter((ele) => ele).length !== 3}
+          isDisabled={checkedItems.filter((ele) => ele).length !== 2}
+          _disabled={{
+            bgColor: "#D2D2D2",
+            color: "#FFFFFF",
+          }}
+          _hover={{
+            bgColor: "#2B2C2C30",
+            color: "#FFFFFF",
+          }}
+          bgColor={"#2B2C2C"}
           onClick={() => {
             setFunnel("userInfo");
             setProgress((oldState) => oldState + 33.3);

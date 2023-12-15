@@ -26,8 +26,8 @@ export default function Home() {
       height={"100vh"}
       padding={"60px 22px"}
       margin={"0 auto"}
-      justifyContent={"center"}
       alignItems={"center"}
+      bgColor={"#2B2C2C"}
     >
       {funnel === "main" && <MainFunnel setFunnel={setFunnel} />}
       {funnel === "login" && <LoginFunnel />}

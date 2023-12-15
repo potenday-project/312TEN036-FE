@@ -1,5 +1,13 @@
 "use client";
-import { Box, ButtonGroup, Heading, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  ButtonGroup,
+  Card,
+  CardBody,
+  Heading,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import Image from "next/image";
 import MainButton from "../../component/button/MainButton";
 import { useRouter } from "next/navigation";
@@ -14,6 +22,37 @@ const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
 
   return (
     <>
+      <VStack spacing={"16px"} as="section" marginTop={"71px"}>
+        <Heading
+          as={"h1"}
+          color={"#FFFFFF"}
+          fontSize={"24px"}
+          fontWeight={"semibold"}
+          textAlign={"center"}
+          lineHeight={10}
+          padding={"0px"}
+          w={"325px"}
+        >
+          식선생에게 식단 알리고
+          <br />
+          <Text as={"a"} color={"#40E98E"} fontWeight={"semibold"}>
+            운동량
+          </Text>
+          과&nbsp;
+          <Text as={"a"} color={"#40E98E"} fontWeight={"semibold"}>
+            안찌는 식단
+          </Text>
+          을 추천 받자!
+        </Heading>
+      </VStack>
+
+      <Card bgColor={"#FFFFFF20"} marginTop={"71px"}>
+        <CardBody textAlign={"center"} color={"#D2D2D2"}>
+          나.. 오늘 얼마나 먹었더라?
+          <br />안 찌려면 얼마만큼 운동해야하지?
+        </CardBody>
+      </Card>
+
       <Image
         src={
           "https://images.pexels.com/photos/1485894/pexels-photo-1485894.jpeg?cs=srgb&dl=pexels-mohamed-almari-1485894.jpg&fm=jpg"
@@ -22,54 +61,23 @@ const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
         width={100}
         height={100}
       />
-      <VStack spacing={"16px"} as="section" paddingBottom={"100px"}>
-        <Heading
-          as={"h1"}
-          color={"#000000"}
-          fontSize={"24px"}
-          fontWeight={"semibold"}
-          textAlign={"center"}
-          lineHeight={10}
-          padding={"15px"}
-        >
-          살빼려면
-          <br />
-          오늘 얼마만큼 운동해야하지?
-        </Heading>
-        <Text
-          as={"h2"}
-          color={"#787878"}
-          fontSize={"17px"}
-          textAlign={"center"}
-          lineHeight={7}
-        >
-          오늘 먹은 음식을 식선생에게 외쳐보세요! <br />
-          <Text as={"a"} color={"#636363"} fontWeight={"semibold"}>
-            필요 운동량
-          </Text>
-          과&nbsp;
-          <Text as={"a"} color={"#636363"} fontWeight={"semibold"}>
-            안찌는 식단
-          </Text>
-          을 한번에 알려드려요
-        </Text>
-      </VStack>
 
       <ButtonGroup
         width={"100%"}
-        pos={"fixed"}
+        pos={"absolute"}
         bottom={"30px"}
-        margin={"0 auto"}
+        padding={"0 22px"}
         justifyContent={"center"}
       >
         <MainButton
           w={"100%"}
           h={"52px"}
+          bgColor={"#40E98E"}
           onClick={() => {
             setFunnel("login");
           }}
         >
-          다음으로
+          <Text color={"#2B2C2C"}>다음으로</Text>
         </MainButton>
       </ButtonGroup>
     </>

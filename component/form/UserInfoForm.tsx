@@ -32,10 +32,15 @@ function RadioCard(props: any) {
         fontSize={"15px"}
         fontWeight={"semibold"}
         color={"#C6C6C6"}
+        _hover={{
+          bgColor: "#00CE8440",
+          color: "#FFFFFF",
+          borderColor: "transparent",
+        }}
         _checked={{
-          bg: "#000000",
+          bg: "#00CE84",
           color: "white",
-          borderColor: "#000000",
+          borderColor: "transparent",
         }}
         px={5}
         py={3}
@@ -70,7 +75,6 @@ const UserInfoForm = ({
   const { handleSubmit, register } = useForm<SignUpFormType>();
 
   const onSubmit: SubmitHandler<SignUpFormType> = (data) => {
-    console.log(data, value);
     const newUserInfo: UserInfoType = {
       userName: data.userName,
       gender: value as string,
@@ -146,6 +150,15 @@ const UserInfoForm = ({
           <MainButton
             w={"100%"}
             h={"52px"}
+            _disabled={{
+              bgColor: "#D2D2D2",
+              color: "#FFFFFF",
+            }}
+            _hover={{
+              bgColor: "#2B2C2C30",
+              color: "#FFFFFF",
+            }}
+            bgColor={"#2B2C2C"}
             type="submit"
             isDisabled={value === ""}
           >
