@@ -3,14 +3,15 @@ import ChattingMsgCard from "../card/ChattingMsgCard";
 import DietChattingMsgCart from "./DietChattingMsgCard";
 import ChattingInput from "../input/ChattingInput";
 import HealthIcon from "../icon/HealthIcon";
+import UserChattingMsgCard from "./UserChattingMsgCard";
 
 const ChattingRoom = () => {
   return (
     <>
       <Flex
         w={"100%"}
-        bgColor={"#FFFFFF"}
-        h={"85%"}
+        bgColor={"#F4F4F4"}
+        h={"75%"}
         maxH={"1150px"}
         minH={"300px"}
         borderRadius={"12px 12px 0 0"}
@@ -72,30 +73,9 @@ const ChattingRoom = () => {
             </Text>
           </ChattingMsgCard>
 
-          {/* <UserChattingMsgCard>
-            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
-          </UserChattingMsgCard>
           <UserChattingMsgCard>
             아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
           </UserChattingMsgCard>
-          <UserChattingMsgCard>
-            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
-          </UserChattingMsgCard>
-          <UserChattingMsgCard>
-            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
-          </UserChattingMsgCard>
-          <UserChattingMsgCard>
-            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
-          </UserChattingMsgCard>
-          <UserChattingMsgCard>
-            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
-          </UserChattingMsgCard>
-          <UserChattingMsgCard>
-            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
-          </UserChattingMsgCard>
-          <UserChattingMsgCard>
-            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
-          </UserChattingMsgCard> */}
 
           <DietChattingMsgCart />
         </VStack>

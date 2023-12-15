@@ -15,6 +15,7 @@ const TheHeader = ({ children }: { children: ReactNode }) => {
         h={"52px"}
         alignItems={"center"}
         justifyContent={"space-between"}
+        zIndex={1000}
       >
         {children}
       </Flex>

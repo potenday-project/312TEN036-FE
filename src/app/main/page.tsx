@@ -5,6 +5,7 @@ import DietStateCard from "../../../component/card/DietStateCard";
 import { useRouter } from "next/navigation";
 import TheHeader from "../../../component/header/TheHeader";
 import UserIcon from "../../../component/icon/UserIcon";
+import TextLogoIcon from "../../../component/icon/TextLogoIcon";
 
 const Page = () => {
   const router = useRouter();
@@ -18,11 +19,11 @@ const Page = () => {
         maxW={"390px"}
         padding={"60px 0px 0px 0px"}
         margin={"0 auto"}
-        bgColor={"#D9D9D9"}
+        bgColor={"#010101"}
         alignItems={"center"}
       >
         <TheHeader>
-          <Text>로고</Text>
+          <TextLogoIcon />
           <Text onClick={() => router.push("/mypage")} cursor={"pointer"}>
             <UserIcon />
           </Text>

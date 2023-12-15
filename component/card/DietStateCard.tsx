@@ -1,29 +1,35 @@
-import { Box, Card, HStack, Text } from "@chakra-ui/react";
+import { Box, Card, Flex, HStack, Text } from "@chakra-ui/react";
 import HealthMountainIcon from "../icon/HealthMountainIcon";
 
 const DietStateCard = () => {
   return (
-    <Card
+    <Flex
       bg={"rgba(0, 0, 0, 0.2)"}
+      paddingTop={"20px"}
       margin={"0 auto"}
-      h={"70px"}
-      w={"346px"}
-      color={"#FFFFFF"}
-      padding={"22px"}
+      color={"#F4F4F4"}
       flexDir={"row"}
       borderRadius={"12px"}
     >
-      <HStack display={"flex"} margin={"0 auto"} w={"100%"} spacing={"18px"}>
-        <HealthMountainIcon />
-        <Box w={"70%"}>
-          <Text>
+      <HStack
+        display={"flex"}
+        margin={"0 auto"}
+        w={"100%"}
+        alignItems={"flex-end"}
+      >
+        <Box w={"100%"}>
+          <Text fontSize={"16px"} color={"#787878"}>
+            잠깐 스톱, 회원님 뭐드셨어요?
+          </Text>
+          <Text fontSize={"22px"}>
             식단을 입력하시면
             <br />
             오늘의 솔루션을 드릴게요
           </Text>
         </Box>
+        <HealthMountainIcon />
       </HStack>
-    </Card>
+    </Flex>
   );
 };
 

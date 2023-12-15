@@ -44,8 +44,6 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
       weight: data.weight,
       targetWeight: data.targetWeight,
     };
-
-    console.log(newUserInfo);
     router.push("/main");
   };
 
