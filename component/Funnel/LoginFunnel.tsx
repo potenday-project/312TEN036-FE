@@ -18,13 +18,7 @@ const LoginFunnel = () => {
 
   return (
     <>
-      <Image
-        src={"https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg"}
-        alt="식선생"
-        width={100}
-        height={100}
-      />
-
+      <Text>우리의 식단 선생님</Text>
       <ButtonGroup
         width={"100%"}
         pos={"fixed"}
