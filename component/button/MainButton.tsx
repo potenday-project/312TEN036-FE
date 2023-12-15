@@ -9,13 +9,17 @@ const MainButton = ({
   alignSelf,
   isDisabled,
   type,
+  bgColor,
+  color,
+  _disabled,
+  _hover,
 }: ButtonProps) => {
   return (
     <Button
-      bgColor={"#000000"}
+      bgColor={bgColor}
+      color={color}
       textColor={"white"}
       borderRadius={"12px"}
-      margin={"0 22px"}
       w={w}
       h={h}
       maxW={"390px"}
@@ -23,6 +27,8 @@ const MainButton = ({
       alignSelf={alignSelf}
       isDisabled={isDisabled}
       type={type}
+      _disabled={_disabled}
+      _hover={_hover}
     >
       {children}
     </Button>

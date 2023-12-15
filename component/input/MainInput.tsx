@@ -14,7 +14,8 @@ const MainInput = ({ h, w, placeholder, register }: MainInputPropsType) => {
       border={"1px solid #BCBCBC"}
       borderRadius={"12px"}
       placeholder={placeholder}
-      focusBorderColor={"black"}
+      focusBorderColor={"#00C27C"}
+      color={"#00C27C"}
       {...register}
     />
   );

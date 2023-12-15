@@ -29,7 +29,11 @@ interface PhysicsFormType {
 
 const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
   const router = useRouter();
-  const { handleSubmit, register } = useForm<PhysicsFormType>();
+  const {
+    handleSubmit,
+    register,
+    formState: { errors },
+  } = useForm<PhysicsFormType>();
 
   const onSubmit: SubmitHandler<PhysicsFormType> = async (data) => {
     const newUserInfo: UserInfoType = {
@@ -44,6 +48,9 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
     console.log(newUserInfo);
     router.push("/main");
   };
+
+  const formErr = Object.keys(errors).length ? true : false;
+
   return (
     <>
       <Box as="section" alignSelf={"flex-start"}>
@@ -77,9 +84,10 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
             </InputLeftElement>
             <Input
               {...register("age", { required: true })}
+              focusBorderColor={"#00C27C"}
+              color={"#00C27C"}
               type="number"
               h={"48px"}
-              focusBorderColor={"black"}
             />
             <InputRightElement color={"#C6C6C6"} h={"48px"}>
               세
@@ -96,7 +104,8 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
               {...register("height", { required: true })}
               type="number"
               h={"48px"}
-              focusBorderColor={"black"}
+              focusBorderColor={"#00C27C"}
+              color={"#00C27C"}
             />
             <InputRightElement color={"#C6C6C6"} h={"48px"}>
               cm
@@ -112,7 +121,8 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
               {...register("weight", { required: true })}
               type="number"
               h={"48px"}
-              focusBorderColor={"black"}
+              focusBorderColor={"#00C27C"}
+              color={"#00C27C"}
             />
             <InputRightElement color={"#C6C6C6"} h={"48px"}>
               kg
@@ -128,7 +138,8 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
               {...register("targetWeight", { required: true })}
               type="number"
               h={"48px"}
-              focusBorderColor={"black"}
+              focusBorderColor={"#00C27C"}
+              color={"#00C27C"}
             />
             <InputRightElement color={"#C6C6C6"} h={"48px"}>
               kg
@@ -142,7 +153,21 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
           margin={"0 auto"}
           justifyContent={"center"}
         >
-          <MainButton w={"100%"} h={"52px"} type="submit">
+          <MainButton
+            w={"100%"}
+            h={"52px"}
+            _disabled={{
+              bgColor: "#D2D2D2",
+              color: "#FFFFFF",
+            }}
+            _hover={{
+              bgColor: "#2B2C2C30",
+              color: "#FFFFFF",
+            }}
+            bgColor={"#2B2C2C"}
+            type="submit"
+            isDisabled={formErr}
+          >
             다음으로
           </MainButton>
         </ButtonGroup>
