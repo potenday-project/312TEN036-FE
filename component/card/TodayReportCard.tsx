@@ -1,14 +1,9 @@
 import { Card, CardBody, CardProps } from "@chakra-ui/react";
 
-const TodayReportCard = ({ children }: CardProps) => {
+const TodayReportCard = ({ children, bgColor }: CardProps) => {
   return (
     <>
-      <Card
-        bgColor={"#000000"}
-        width={"max-content"}
-        shadow={"none"}
-        w={"100%"}
-      >
+      <Card bgColor={bgColor} width={"max-content"} shadow={"none"} w={"100%"}>
         <CardBody
           color={"#FFFFFF"}
           padding={"14px 16px"}
