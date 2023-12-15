@@ -4,13 +4,13 @@ const TodayReportCard = ({ children }: CardProps) => {
   return (
     <>
       <Card
-        bgColor={"#F5F5F9"}
+        bgColor={"#000000"}
         width={"max-content"}
         shadow={"none"}
         w={"100%"}
       >
         <CardBody
-          color={"#2F2F2F"}
+          color={"#FFFFFF"}
           padding={"14px 16px"}
           width={"max-content"}
           maxW={"346px"}

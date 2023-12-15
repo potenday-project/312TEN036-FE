@@ -8,7 +8,7 @@ const GoBackArrowIcon = () => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M16 5L8 12.5L16 20" stroke="black" />
+        <path d="M16 5L8 12.5L16 20" stroke="white" />
       </svg>
     </>
   );
