@@ -4,7 +4,7 @@ const UserChattingMsgCard = ({ children }: CardProps) => {
   return (
     <>
       <Card
-        bgColor={"#F5F5F9"}
+        bgColor={"#00CE84"}
         width={"max-content"}
         shadow={"none"}
         margin={"0px 22px 0px 0px"}
@@ -13,10 +13,10 @@ const UserChattingMsgCard = ({ children }: CardProps) => {
         alignSelf={"flex-end"}
       >
         <CardBody
-          color={"#2F2F2F"}
+          maxW={"275px"}
+          color={"#FFFFFF"}
           padding={"14px 16px"}
           width={"max-content"}
-          maxW={"320px"}
         >
           {children}
         </CardBody>

@@ -7,7 +7,7 @@ export const usePostUserDiet = () => {
     mutateAsync: postUserDietMutation,
     isLoading,
   } = useMutation({
-    mutationFn: () => postUserDiet(),
+    mutationFn: (diet: string) => postUserDiet(diet),
     onError: () => {},
     onSuccess: () => {},
   });

@@ -40,7 +40,6 @@ const UserAgreementForm = ({
   const allChecked = checkedItems.every(Boolean);
   const isIndeterminate = checkedItems.some(Boolean) && !allChecked;
 
-  console.log(checkedItems);
   return (
     <>
       <Modal

@@ -3,6 +3,9 @@ import axios from "axios";
 const instacne = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_URL,
   withCredentials: true,
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
 
 export const getUserInfo = async () => {
@@ -22,7 +25,10 @@ export const postUserInfo = async () => {
   return res.data;
 };
 
-export const postUserDiet = async () => {
-  const res = await instacne.post("");
+export const postUserDiet = async (diet: Object) => {
+  const query = {
+    ["query"]: diet,
+  };
+  const res = await instacne.post("/users/6/diet-exercise-advice", query);
   return res.data;
 };
