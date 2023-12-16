@@ -9,9 +9,9 @@ import {
   SubmitHandler,
   UseFormHandleSubmit,
   UseFormRegister,
-  useForm,
 } from "react-hook-form";
 import { DietResponse } from "../../utils/api/AxiosSetting";
+import { useState } from "react";
 
 export interface DietMsgType {
   msg: string;
@@ -21,6 +21,7 @@ interface ChattingRoomPropsType {
   handleSubmit: UseFormHandleSubmit<DietMsgType, undefined>;
   onSubmit: SubmitHandler<DietMsgType>;
   register: UseFormRegister<DietMsgType>;
+  chattingData: string;
   isLoading: boolean;
   dietResponseData: DietResponse | undefined;
 }
@@ -31,6 +32,7 @@ const ChattingRoom = ({
   register,
   isLoading,
   dietResponseData,
+  chattingData,
 }: ChattingRoomPropsType) => {
   return (
     <>
@@ -96,21 +98,9 @@ const ChattingRoom = ({
             </Text>
           </ChattingMsgCard>
 
-          <UserChattingMsgCard>
-            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
-          </UserChattingMsgCard>
-          <UserChattingMsgCard>
-            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
-          </UserChattingMsgCard>
-          <UserChattingMsgCard>
-            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
-          </UserChattingMsgCard>
-          <UserChattingMsgCard>
-            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
-          </UserChattingMsgCard>
-          <UserChattingMsgCard>
-            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
-          </UserChattingMsgCard>
+          {chattingData && (
+            <UserChattingMsgCard>{chattingData}</UserChattingMsgCard>
+          )}
 
           <DietChattingMsgCart
             isLoading={isLoading}

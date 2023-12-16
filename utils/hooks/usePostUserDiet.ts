@@ -1,15 +1,26 @@
 import { useMutation } from "@tanstack/react-query";
 import { postUserDiet } from "../api/AxiosSetting";
 import { UserPostDietData } from "@/app/main/page";
+import { useToast } from "@chakra-ui/react";
 
 export const usePostUserDiet = () => {
+  const toast = useToast();
   const {
     data,
     mutateAsync: postUserDietMutation,
     isLoading,
   } = useMutation({
     mutationFn: (data: UserPostDietData) => postUserDiet(data),
-    onError: () => {},
+    onError: () => {
+      toast({
+        title: "Sever Error",
+        description: "다시 한번 입력해주세요.",
+        status: "error",
+        duration: 5000,
+        position: "top",
+        isClosable: true,
+      });
+    },
     onSuccess: () => {},
   });
 
