@@ -22,7 +22,13 @@ const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
 
   return (
     <>
-      <VStack spacing={"16px"} as="section" marginTop={"71px"}>
+      <VStack
+        w={"#100%"}
+        h={"100%"}
+        spacing={"16px"}
+        as="section"
+        marginTop={"71px"}
+      >
         <Heading
           as={"h1"}
           color={"#FFFFFF"}
@@ -44,40 +50,41 @@ const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
           </Text>
           을 추천 받자!
         </Heading>
-      </VStack>
 
-      <Card bgColor={"#FFFFFF20"} marginTop={"71px"}>
-        <CardBody textAlign={"center"} color={"#D2D2D2"}>
-          나.. 오늘 얼마나 먹었더라?
-          <br />안 찌려면 얼마만큼 운동해야하지?
-        </CardBody>
-      </Card>
-      <Image
-        src={MainPageDiet}
-        alt="식선생"
-        placeholder="blur"
-        style={{ width: "100%", height: "auto" }}
-        quality={100}
-      />
-
-      <ButtonGroup
-        width={"100%"}
-        pos={"absolute"}
-        bottom={"100px"}
-        padding={"0 22px"}
-        justifyContent={"center"}
-      >
-        <MainButton
-          w={"100%"}
-          h={"52px"}
-          bgColor={"#40E98E"}
-          onClick={() => {
-            setFunnel("login");
-          }}
+        <VStack spacing={"1px"} marginTop={"10%"}>
+          <Card bgColor={"#FFFFFF20"}>
+            <CardBody textAlign={"center"} color={"#D2D2D2"}>
+              나.. 오늘 얼마나 먹었더라?
+              <br />안 찌려면 얼마만큼 운동해야하지?
+            </CardBody>
+          </Card>
+          <Image
+            src={MainPageDiet}
+            alt="식선생"
+            placeholder="blur"
+            style={{ width: "100%", height: "auto" }}
+            quality={100}
+          />
+        </VStack>
+        <ButtonGroup
+          width={"100%"}
+          pos={"absolute"}
+          bottom={"100px"}
+          padding={"0 22px"}
+          justifyContent={"center"}
         >
-          <Text color={"#2B2C2C"}>다음으로</Text>
-        </MainButton>
-      </ButtonGroup>
+          <MainButton
+            w={"100%"}
+            h={"52px"}
+            bgColor={"#40E98E"}
+            onClick={() => {
+              setFunnel("login");
+            }}
+          >
+            <Text color={"#2B2C2C"}>다음으로</Text>
+          </MainButton>
+        </ButtonGroup>
+      </VStack>
     </>
   );
 };

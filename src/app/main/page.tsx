@@ -30,12 +30,6 @@ const Page = () => {
     reset,
   } = useForm<DietMsgType>();
 
-  useEffect(() => {
-    const jwt = localStorage.getItem("jwt");
-    const userInfo = localStorage.getItem("userInfo");
-    if (!jwt && !userInfo) return redirect("/");
-  }, []);
-
   const onSubmit: SubmitHandler<DietMsgType> = async (data) => {
     reset();
     await postUserDietMutation(data.msg);
@@ -53,6 +47,7 @@ const Page = () => {
         margin={"0 auto"}
         bgColor={"#2B2C2C"}
         alignItems={"center"}
+        minH={"844px"}
       >
         <TheHeader>
           <TextLogoIcon />
