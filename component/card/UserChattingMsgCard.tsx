@@ -1,4 +1,4 @@
-import { Box, Card, CardBody, CardProps } from "@chakra-ui/react";
+import { Card, CardBody, CardProps } from "@chakra-ui/react";
 
 const UserChattingMsgCard = ({ children }: CardProps) => {
   return (

@@ -15,8 +15,8 @@ export default function Home() {
     if (colorMode === "dark") {
       setColorMode("light");
     }
-    const jwt = localStorage.getItem("jwt");
-    if (jwt) return router.push("/main");
+    const userId = localStorage.getItem("userId");
+    if (userId) return router.push("/main");
   }, [colorMode, setColorMode, router]);
 
   return (
@@ -24,11 +24,13 @@ export default function Home() {
       as={"main"}
       flexDir={"column"}
       w={"100%"}
+      h={"100vh"}
       pos={"relative"}
-      maxW={"390px"}
+      margin={"0 auto"}
+      maxW={"420px"}
+      minW={"390px"}
       height={"100vh"}
       padding={"60px 22px"}
-      margin={"0 auto"}
       alignItems={"center"}
       bgColor={"#2B2C2C"}
     >
