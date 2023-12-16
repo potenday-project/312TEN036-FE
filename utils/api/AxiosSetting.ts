@@ -28,19 +28,23 @@ export const getUserInfo = async () => {
 };
 
 export const postKakaoCode = async (code: string) => {
-  try {
-    const res = await instacne.post(`/auth`, { code });
-    return res.data;
-  } catch (err) {
-    return redirect("/");
+  if (!code) {
+    return null;
+  } else {
+    try {
+      const res = await instacne.post(`/auth`, { code });
+      return res.data;
+    } catch (err) {
+      return redirect("/");
+    }
   }
 };
 
 export const postUserInfo = async (userInfo: UserInfoType) => {
   const jwtToken = localStorage.getItem(`jwt`);
-  console.log(jwtToken);
   const res = await instacne.post("/users", userInfo, {
     headers: { Authorization: `Bearer ${jwtToken}` },
+    withCredentials: true,
   });
   return res.data;
 };

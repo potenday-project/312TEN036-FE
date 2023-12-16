@@ -96,6 +96,7 @@ const UserAgreementForm = ({
             isIndeterminate={isIndeterminate}
             margin={"auto 20px"}
             color={"#00CE84"}
+            colorScheme="green"
             onChange={(e) =>
               setCheckedItems([e.target.checked, e.target.checked])
             }
@@ -109,6 +110,7 @@ const UserAgreementForm = ({
           isChecked={checkedItems[0]}
           textDecor={"underline"}
           margin={"auto 20px"}
+          colorScheme="green"
           onChange={(e) => setCheckedItems([e.target.checked, checkedItems[1]])}
         >
           <Box
@@ -125,6 +127,7 @@ const UserAgreementForm = ({
           color={"#838383"}
           margin={"auto 20px"}
           textDecor={"underline"}
+          colorScheme="green"
           isChecked={checkedItems[1]}
           onChange={(e) => setCheckedItems([checkedItems[0], e.target.checked])}
         >

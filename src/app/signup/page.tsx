@@ -20,8 +20,6 @@ const Page = async ({
 
   const jwtToken: JwtToken = await postKakaoCode(kakaoCode);
 
-  console.log(jwtToken);
-
   return <SignupTemplate jwtToken={jwtToken} />;
 };
 
