@@ -17,6 +17,7 @@ const Page = () => {
         h={"100vh"}
         pos={"relative"}
         maxW={"390px"}
+        minH={"844px"}
         padding={"60px 22px 0px 22px"}
         margin={"0 auto"}
         alignItems={"center"}

@@ -12,15 +12,6 @@ const MyPageTemplate = () => {
   const router = useRouter();
   const [userData, setUserData] = useState<UserInfoType>();
 
-  useEffect(() => {
-    let userInfo = localStorage.getItem("userInfo");
-    if (userInfo !== null) {
-      const userParsing: UserInfoType = JSON.parse(userInfo);
-      console.log(userParsing);
-      setUserData(userParsing);
-    }
-  }, [setUserData]);
-
   return (
     <>
       <Flex
@@ -29,6 +20,7 @@ const MyPageTemplate = () => {
         h={"100vh"}
         pos={"relative"}
         maxW={"390px"}
+        minH={"844px"}
         padding={"60px 22px 0px 22px"}
         margin={"0 auto"}
         alignItems={"center"}

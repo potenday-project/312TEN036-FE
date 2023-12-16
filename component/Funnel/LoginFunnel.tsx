@@ -8,14 +8,9 @@ import VerticalLogoIcon from "../icon/VerticalLogoIcon";
 const LoginFunnel = () => {
   const router = useRouter();
 
-  const Rest_api_key = "536cb646ce60d71102dc92d2b7845c8d"; //REST API KEY
-  const redirect_uri = "http://localhost:3000/signup"; //Redirect URI
-  // oauth 요청 URL
-  const kakaoURL = `https://kauth.kakao.com/oauth/authorize?client_id=${Rest_api_key}&redirect_uri=${redirect_uri}&response_type=code`;
-
-  const signUpKakaoHandler = () => {
-    window.location.href = kakaoURL;
-  };
+  // const signUpKakaoHandler = () => {
+  //   window.location.href = kakaoURL;
+  // };
 
   return (
     <VStack w={"100%"} h={"100%"} justifyContent={"center"}>
@@ -32,9 +27,9 @@ const LoginFunnel = () => {
         flexDir={"column"}
         gap={"20px"}
       >
-        <Box onClick={() => signUpKakaoHandler()} cursor={"pointer"}>
+        {/* <Box onClick={() => signUpKakaoHandler()} cursor={"pointer"}>
           <KaKaoButtonIcon />
-        </Box>
+        </Box> */}
 
         <Text
           as={"u"}

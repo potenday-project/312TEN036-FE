@@ -17,7 +17,7 @@ export interface UserInfoType {
   targetweight: number;
 }
 
-const SignupTemplate = ({ jwtToken }: { jwtToken: JwtToken }) => {
+const SignupTemplate = ({ jwtToken }: { jwtToken?: JwtToken }) => {
   const [progress, setProgress] = useState<number>(33.3);
   const [userInfo, setUserInfo] = useState<UserInfoType>({
     name: "",
@@ -28,12 +28,6 @@ const SignupTemplate = ({ jwtToken }: { jwtToken: JwtToken }) => {
     targetweight: 0,
   });
   const { funnel, setFunnel } = useFunnel("userAgreement");
-
-  useEffect(() => {
-    if (jwtToken) {
-      localStorage.setItem("jwt", jwtToken.jwt);
-    }
-  }, [jwtToken]);
 
   return (
     <>
