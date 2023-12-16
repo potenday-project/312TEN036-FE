@@ -12,6 +12,7 @@ import HealthMountainIcon from "../../../component/icon/HealthMountainIcon";
 import DietStateSection from "../../../component/section/DietStateSection";
 import { usePostUserDiet } from "../../../utils/hooks/usePostUserDiet";
 import { SubmitHandler, useForm } from "react-hook-form";
+import { useState } from "react";
 
 export interface UserPostDietData {
   msg: string;
@@ -20,6 +21,7 @@ export interface UserPostDietData {
 
 const Page = () => {
   const router = useRouter();
+  const [chattingData, setChattingData] = useState<string>("");
 
   const {
     data: dietResponseData,
@@ -40,6 +42,7 @@ const Page = () => {
       msg: data.msg,
       userId,
     };
+    setChattingData(data.msg);
     reset();
     await postUserDietMutation(userInfoData);
   };
@@ -49,10 +52,12 @@ const Page = () => {
       <Flex
         flexDir={"column"}
         w={"100%"}
+        h={"100vh"}
         pos={"relative"}
-        maxW={"390px"}
-        padding={"60px 0px 0px 0px"}
         margin={"0 auto"}
+        maxW={"420px"}
+        minW={"390px"}
+        padding={"60px 0px 0px 0px"}
         bgColor={"#2B2C2C"}
         alignItems={"center"}
       >
@@ -94,6 +99,7 @@ const Page = () => {
             handleSubmit={handleSubmit}
             onSubmit={onSubmit}
             register={register}
+            chattingData={chattingData}
             isLoading={isLoading}
             dietResponseData={dietResponseData}
           />

@@ -39,7 +39,7 @@ const DietChattingMsgCart = ({
         shadow={"none"}
         margin={"0px 0px 0px 22px"}
       >
-        {!isLoading && (
+        {isLoading && (
           <CardBody padding={"16px 14px"}>
             <VStack>
               <SaladIcon />

@@ -1,3 +1,4 @@
+"use client";
 import {
   Box,
   Card,
@@ -14,6 +15,7 @@ import mainStage2 from "../../utils/img/mainStage2.png";
 import mainStage3 from "../../utils/img/mainStage3.png";
 import mainStage4 from "../../utils/img/mainStage4.png";
 import mainStage5 from "../../utils/img/mainStage5.png";
+import { useRouter } from "next/navigation";
 
 const DietStateSection = () => {
   const dietNickName = {
@@ -23,12 +25,16 @@ const DietStateSection = () => {
     stage4: "방신한 다이어터",
     stage5: "위기의 다이어터",
   };
+
+  const router = useRouter();
   return (
     <HStack
       display={"flex"}
       margin={"0 auto"}
       w={"100%"}
       alignItems={"flex-end"}
+      onClick={() => router.push("/detail")}
+      cursor={"pointer"}
     >
       <Box w={"100%"}>
         <Text fontSize={"16px"} color={"#787878"}>

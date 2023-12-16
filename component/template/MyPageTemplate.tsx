@@ -23,10 +23,11 @@ const MyPageTemplate = () => {
         w={"100%"}
         h={"100vh"}
         pos={"relative"}
-        maxW={"390px"}
+        margin={"0 auto"}
+        maxW={"420px"}
+        minW={"390px"}
         minH={"844px"}
         padding={"60px 22px 0px 22px"}
-        margin={"0 auto"}
         alignItems={"center"}
         bgColor={"#F4F4F4"}
       >
@@ -130,7 +131,7 @@ const MyPageTemplate = () => {
             marginLeft={"15px"}
             cursor={"pointer"}
             onClick={() => {
-              localStorage.removeItem(`jwt`);
+              localStorage.removeItem(`userId`);
               router.push("/");
             }}
           >

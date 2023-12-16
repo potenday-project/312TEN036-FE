@@ -16,10 +16,11 @@ const Page = () => {
         w={"100%"}
         h={"100vh"}
         pos={"relative"}
-        maxW={"390px"}
+        margin={"0 auto"}
+        maxW={"420px"}
+        minW={"390px"}
         minH={"844px"}
         padding={"60px 22px 0px 22px"}
-        margin={"0 auto"}
         alignItems={"center"}
         bgColor={"#181818"}
       >
