@@ -1,7 +1,8 @@
-import { Box, Card, Flex, HStack, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, Text } from "@chakra-ui/react";
 import HealthMountainIcon from "../icon/HealthMountainIcon";
+import { ReactNode } from "react";
 
-const DietStateCard = () => {
+const DietStateCard = ({ children }: { children: ReactNode }) => {
   return (
     <Flex
       paddingTop={"20px"}
@@ -10,24 +11,7 @@ const DietStateCard = () => {
       flexDir={"row"}
       borderRadius={"12px"}
     >
-      <HStack
-        display={"flex"}
-        margin={"0 auto"}
-        w={"100%"}
-        alignItems={"flex-end"}
-      >
-        <Box w={"100%"}>
-          <Text fontSize={"16px"} color={"#787878"}>
-            잠깐 스톱, 회원님 뭐드셨어요?
-          </Text>
-          <Text fontSize={"22px"}>
-            식단을 입력하시면
-            <br />
-            오늘의 솔루션을 드릴게요
-          </Text>
-        </Box>
-        <HealthMountainIcon />
-      </HStack>
+      {children}
     </Flex>
   );
 };
