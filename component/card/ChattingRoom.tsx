@@ -5,7 +5,6 @@ import DietChattingMsgCart from "./DietChattingMsgCard";
 import ChattingInput from "../input/ChattingInput";
 import HealthIcon from "../icon/HealthIcon";
 import UserChattingMsgCard from "./UserChattingMsgCard";
-import { usePostUserDiet } from "../../utils/hooks/usePostUserDiet";
 import {
   SubmitHandler,
   UseFormHandleSubmit,
@@ -38,12 +37,8 @@ const ChattingRoom = ({
       <Flex
         w={"100%"}
         bgColor={"#F4F4F4"}
-        h={"75%"}
-        maxH={"1150px"}
-        minH={"300px"}
+        h={"100%"}
         borderRadius={"12px 12px 0 0"}
-        position={"absolute"}
-        bottom={"0"}
         flexDir={"column"}
       >
         <VStack
@@ -73,9 +68,11 @@ const ChattingRoom = ({
         <VStack
           w={"100%"}
           alignItems={"flex-start"}
+          h={"520px"}
           spacing={"16px"}
           marginTop={"10px"}
-          paddingBottom={"80px"}
+          marginBottom={"30px"}
+          paddingBottom={"50px"}
           overflow={"hidden"}
           overflowY={"scroll"}
           css={{
@@ -100,6 +97,18 @@ const ChattingRoom = ({
             </Text>
           </ChattingMsgCard>
 
+          <UserChattingMsgCard>
+            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
+          </UserChattingMsgCard>
+          <UserChattingMsgCard>
+            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
+          </UserChattingMsgCard>
+          <UserChattingMsgCard>
+            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
+          </UserChattingMsgCard>
+          <UserChattingMsgCard>
+            아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
+          </UserChattingMsgCard>
           <UserChattingMsgCard>
             아침은 계란후라이 점심은 마라탕 저녁은 칼국수를 먹었어
           </UserChattingMsgCard>

@@ -12,7 +12,11 @@ import HealthMountainIcon from "../../../component/icon/HealthMountainIcon";
 import DietStateSection from "../../../component/section/DietStateSection";
 import { usePostUserDiet } from "../../../utils/hooks/usePostUserDiet";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { useEffect } from "react";
+
+export interface UserPostDietData {
+  msg: string;
+  userId: string | null;
+}
 
 const Page = () => {
   const router = useRouter();
@@ -31,8 +35,13 @@ const Page = () => {
   } = useForm<DietMsgType>();
 
   const onSubmit: SubmitHandler<DietMsgType> = async (data) => {
+    const userId = localStorage.getItem("userId");
+    const userInfoData: UserPostDietData = {
+      msg: data.msg,
+      userId,
+    };
     reset();
-    await postUserDietMutation(data.msg);
+    await postUserDietMutation(userInfoData);
   };
 
   return (
@@ -40,14 +49,12 @@ const Page = () => {
       <Flex
         flexDir={"column"}
         w={"100%"}
-        h={"100vh"}
         pos={"relative"}
         maxW={"390px"}
         padding={"60px 0px 0px 0px"}
         margin={"0 auto"}
         bgColor={"#2B2C2C"}
         alignItems={"center"}
-        minH={"844px"}
       >
         <TheHeader>
           <TextLogoIcon />
@@ -55,7 +62,7 @@ const Page = () => {
             <UserIcon />
           </Text>
         </TheHeader>
-        <VStack spacing={"20px"} w={"100%"}>
+        <VStack spacing={"20px"} w={"100%"} h={"100%"}>
           {false ? (
             <DietStateCard>
               <HStack

@@ -33,7 +33,7 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
 
   const path = usePathname();
 
-  const { postUserInfoMutation, isLoading, data } = usePostUserInfo();
+  const { postUserInfoMutation, isLoading, data: userId } = usePostUserInfo();
   const {
     handleSubmit,
     register,
@@ -50,11 +50,11 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
       targetweight: parseInt(data.targetweight),
     };
 
-    if (path === "/signup") {
-      localStorage.setItem("userInfo", JSON.stringify(newUserInfo));
-    } else {
-      await postUserInfoMutation(newUserInfo);
-    }
+    await postUserInfoMutation(newUserInfo);
+
+    console.log(userId);
+
+    localStorage.setItem("userId", userId.user_id);
 
     router.push("/main");
   };
