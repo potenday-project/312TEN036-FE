@@ -1,7 +1,7 @@
 "use client";
 
 import { Flex, Progress } from "@chakra-ui/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useFunnel } from "../../utils/hooks/useFunnel";
 import UserAgreementForm from "../form/UserAgreementForm";
 import UserInfoForm from "../form/UserInfoForm";
@@ -9,25 +9,31 @@ import UserPhysicForm from "../form/UserPhysicForm";
 import { JwtToken } from "@/app/signup/page";
 
 export interface UserInfoType {
-  userName: string;
+  name: string;
   gender: string;
   age: number;
   height: number;
   weight: number;
-  targetWeight: number;
+  targetweight: number;
 }
 
 const SignupTemplate = ({ jwtToken }: { jwtToken: JwtToken }) => {
   const [progress, setProgress] = useState<number>(33.3);
   const [userInfo, setUserInfo] = useState<UserInfoType>({
-    userName: "",
+    name: "",
     gender: "",
     age: 0,
     height: 0,
     weight: 0,
-    targetWeight: 0,
+    targetweight: 0,
   });
   const { funnel, setFunnel } = useFunnel("userAgreement");
+
+  useEffect(() => {
+    if (jwtToken) {
+      localStorage.setItem("jwt", jwtToken.jwt);
+    }
+  }, [jwtToken]);
 
   return (
     <>
