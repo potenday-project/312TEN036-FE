@@ -12,9 +12,13 @@ import { useUser } from "../../utils/hooks/useUser";
 
 const MyPageTemplate = () => {
   const router = useRouter();
+  const [userData, setUserData] = useState<UserInfoType>();
 
-  let userInfo: any = localStorage.getItem("userInfo");
-  const userData: UserInfoType = JSON.parse(userInfo);
+  useEffect(() => {
+    let userInfo: any = localStorage.getItem("userInfo");
+    const userInfoData: UserInfoType = JSON.parse(userInfo);
+    setUserData(userInfoData);
+  }, []);
 
   return (
     <>
