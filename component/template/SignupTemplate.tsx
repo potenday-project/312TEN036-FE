@@ -29,8 +29,6 @@ const SignupTemplate = ({ jwtToken }: { jwtToken: JwtToken }) => {
   });
   const { funnel, setFunnel } = useFunnel("userAgreement");
 
-  localStorage.setItem(`jwt`, jwtToken.jwt);
-
   return (
     <>
       <Progress

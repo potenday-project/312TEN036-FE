@@ -7,6 +7,8 @@ import TheHeader from "../../../component/header/TheHeader";
 import UserIcon from "../../../component/icon/UserIcon";
 import TextLogoIcon from "../../../component/icon/TextLogoIcon";
 import HealthMountainIcon from "../../../component/icon/HealthMountainIcon";
+import Image from "next/image";
+import mainStage1 from "../../../utils/img/mainStage1.png";
 
 const Page = () => {
   const router = useRouter();
@@ -63,13 +65,22 @@ const Page = () => {
                   <Text fontSize={"16px"} color={"#787878"}>
                     200Kcal 초과
                   </Text>
-                  <Heading>
-                    오늘 <Text color={"#40E98E"}>30분 이상 달려야</Text>
+                  <Heading fontSize={"22px"}>
+                    오늘{" "}
+                    <Text as={"a"} color={"#40E98E"}>
+                      30분 이상 달려야
+                    </Text>
                     <br />
                     현재 몸무게 안정권 유지
                   </Heading>
                 </Box>
-                <HealthMountainIcon />
+                <Image
+                  src={mainStage1}
+                  alt="메인 캐릭터"
+                  placeholder="blur"
+                  style={{ width: "104px", height: "auto" }}
+                  quality={100}
+                />
               </HStack>
             </DietStateCard>
           )}

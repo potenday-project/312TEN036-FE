@@ -159,6 +159,7 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
           <MainButton
             w={"100%"}
             h={"52px"}
+            isLoading={isLoading}
             _disabled={{
               bgColor: "#D2D2D2",
               color: "#FFFFFF",
