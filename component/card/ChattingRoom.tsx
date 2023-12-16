@@ -36,8 +36,8 @@ const ChattingRoom = ({
     <>
       <Flex
         w={"100%"}
-        bgColor={"#F4F4F4"}
         h={"100%"}
+        bgColor={"#F4F4F4"}
         borderRadius={"12px 12px 0 0"}
         flexDir={"column"}
       >
@@ -68,11 +68,10 @@ const ChattingRoom = ({
         <VStack
           w={"100%"}
           alignItems={"flex-start"}
-          h={"520px"}
+          h={"62vh"}
           spacing={"16px"}
-          marginTop={"10px"}
-          marginBottom={"30px"}
-          paddingBottom={"50px"}
+          marginTop={"1vh"}
+          paddingBottom={"15%"}
           overflow={"hidden"}
           overflowY={"scroll"}
           css={{

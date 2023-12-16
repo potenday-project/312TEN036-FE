@@ -74,8 +74,8 @@ const SaladIcon = () => {
           <path
             d="M14.9844 16.7344C15.7809 17.0865 17.4808 17.649 19.6599 17.649C21.8401 17.649 22.4375 15.8558 25.6021 15.9953C28.1334 16.1078 30.1021 17.3903 30.4531 17.9303"
             stroke="url(#paint12_radial_388_5001)"
-            stroke-width="0.666667"
-            stroke-linecap="round"
+            strokeWidth="0.666667"
+            strokeLinecap="round"
           />
         </g>
         <g filter="url(#filter5_f_388_5001)">
