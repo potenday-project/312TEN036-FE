@@ -48,10 +48,8 @@ const Page = () => {
   } = useForm<DietMsgType>();
 
   const onSubmit: SubmitHandler<DietMsgType> = async (data) => {
-    // const userId = localStorage.getItem("userId");
-
+    localStorage.removeItem("userDiet");
     reset();
-
     const userInfoString: string | null = localStorage.getItem("userInfo");
 
     if (userInfoString !== null) {

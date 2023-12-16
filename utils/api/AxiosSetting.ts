@@ -12,10 +12,10 @@ const instacne = axios.create({
 });
 
 export interface DietResponse {
-  아침: string;
-  점심: string;
-  저녁: string;
-  초과칼로리: string;
+  아침: number;
+  점심: number;
+  저녁: number;
+  초과칼로리: number;
   운동필요시간: string;
   잔소리: string;
 }

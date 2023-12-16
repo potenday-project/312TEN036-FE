@@ -31,6 +31,22 @@ const DietStateSection = ({
     stage5: "위기의 다이어터",
   };
 
+  function getStageName(step: number) {
+    if (step >= 800) {
+      return dietNickName.stage5;
+    } else if (step >= 400) {
+      return dietNickName.stage4;
+    } else if (step >= 200) {
+      return dietNickName.stage3;
+    } else if (step >= 100) {
+      return dietNickName.stage2;
+    } else {
+      return dietNickName.stage1;
+    }
+  }
+
+  const nickName = getStageName(dietResponseData.초과칼로리);
+
   const router = useRouter();
   return (
     <HStack
@@ -43,7 +59,9 @@ const DietStateSection = ({
     >
       <Box w={"100%"}>
         <Text fontSize={"16px"} color={"#787878"}>
-          {dietResponseData.초과칼로리}
+          {dietResponseData?.초과칼로리 > 0
+            ? `${dietResponseData?.초과칼로리} Kcal 초과`
+            : `${-dietResponseData?.초과칼로리} Kcal`}
         </Text>
         <Heading fontSize={"22px"}>
           오늘{" "}
@@ -58,7 +76,7 @@ const DietStateSection = ({
         <Card bgColor={"#434343"} margin={"0 auto"}>
           <CardBody padding={"4px 7px"}>
             <Text color={"#40E98E"} textAlign={"center"} fontSize={"9px"}>
-              열정가득 다이어터
+              {nickName}
             </Text>
           </CardBody>
         </Card>
