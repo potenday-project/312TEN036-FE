@@ -110,13 +110,21 @@ const ChattingRoom = ({
             <>
               <ChattingMsgCard>
                 <HStack spacing={"5px"}>
-                  <RunningIcon />
-                  <Text>
-                    <Text as="a" color={"#00C27C"} fontWeight={"semibold"}>
-                      {dietResponseData.운동필요시간}
-                    </Text>
-                    이상 꼭 하셔야해요.
-                  </Text>
+                  {!dietResponseData.운동필요시간.includes("안 해도") ? (
+                    <>
+                      <RunningIcon />
+                      <Text as="a" color={"#00C27C"} fontWeight={"semibold"}>
+                        {dietResponseData.운동필요시간}
+                      </Text>
+                      이상 꼭 하셔야해요.
+                    </>
+                  ) : (
+                    <>
+                      <Text as="a" color={"#00C27C"} fontWeight={"semibold"}>
+                        {dietResponseData.운동필요시간}
+                      </Text>
+                    </>
+                  )}
                 </HStack>
               </ChattingMsgCard>
               <ChattingMsgCard>{dietResponseData.잔소리}</ChattingMsgCard>

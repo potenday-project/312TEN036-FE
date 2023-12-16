@@ -9,7 +9,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import mainStage1 from "../../utils/img/mainStage1.png";
 import mainStage2 from "../../utils/img/mainStage2.png";
 import mainStage3 from "../../utils/img/mainStage3.png";
@@ -17,12 +17,12 @@ import mainStage4 from "../../utils/img/mainStage4.png";
 import mainStage5 from "../../utils/img/mainStage5.png";
 import { useRouter } from "next/navigation";
 import { DietResponse } from "../../utils/api/AxiosSetting";
-import { userInfo } from "os";
 
 const DietStateSection = (isLoading: { isLoading: boolean }) => {
   const [dietResponseData, setDietResponseData] = useState<
     DietResponse | undefined
   >();
+
   useEffect(() => {
     let userInfo: any = localStorage.getItem("userDiet");
     if (userInfo) {
@@ -35,7 +35,7 @@ const DietStateSection = (isLoading: { isLoading: boolean }) => {
     stage1: ["열정가득 다이어터", mainStage1],
     stage2: ["기세등등 유지어터", mainStage2],
     stage3: ["휴식중인 유지어터", mainStage3],
-    stage4: ["방신한 다이어터", mainStage4],
+    stage4: ["방심한 다이어터", mainStage4],
     stage5: ["위기의 다이어터", mainStage5],
   };
 

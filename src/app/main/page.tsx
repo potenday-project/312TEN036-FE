@@ -14,7 +14,6 @@ import { usePostUserDiet } from "../../../utils/hooks/usePostUserDiet";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useEffect, useState } from "react";
 import { UserInfoType } from "../../../component/template/SignupTemplate";
-import { DietResponse } from "../../../utils/api/AxiosSetting";
 
 export interface UserPostDietData extends UserInfoType {
   query: string;
@@ -42,7 +41,7 @@ const Page = () => {
   useEffect(() => {
     let userDietData: any = localStorage.getItem("userDiet");
     setUserDiet(userDietData);
-  }, [userDiet]);
+  }, [isLoading]);
 
   const onSubmit: SubmitHandler<DietMsgType> = async (data) => {
     reset();
