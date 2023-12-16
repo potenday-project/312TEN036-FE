@@ -1,5 +1,5 @@
 "use client";
-import { Box, Flex, HStack, Heading, Text, VStack } from "@chakra-ui/react";
+import { Box, Flex, HStack, Text, VStack } from "@chakra-ui/react";
 import ChattingRoom from "../../../component/card/ChattingRoom";
 import DietStateCard from "../../../component/card/DietStateCard";
 import { useRouter } from "next/navigation";
@@ -9,6 +9,7 @@ import TextLogoIcon from "../../../component/icon/TextLogoIcon";
 import HealthMountainIcon from "../../../component/icon/HealthMountainIcon";
 import Image from "next/image";
 import mainStage1 from "../../../utils/img/mainStage1.png";
+import DietStateSection from "../../../component/section/DietStateSection";
 
 const Page = () => {
   const router = useRouter();
@@ -55,33 +56,7 @@ const Page = () => {
             </DietStateCard>
           ) : (
             <DietStateCard>
-              <HStack
-                display={"flex"}
-                margin={"0 auto"}
-                w={"100%"}
-                alignItems={"flex-end"}
-              >
-                <Box w={"100%"}>
-                  <Text fontSize={"16px"} color={"#787878"}>
-                    200Kcal 초과
-                  </Text>
-                  <Heading fontSize={"22px"}>
-                    오늘{" "}
-                    <Text as={"a"} color={"#40E98E"}>
-                      30분 이상 달려야
-                    </Text>
-                    <br />
-                    현재 몸무게 안정권 유지
-                  </Heading>
-                </Box>
-                <Image
-                  src={mainStage1}
-                  alt="메인 캐릭터"
-                  placeholder="blur"
-                  style={{ width: "104px", height: "auto" }}
-                  quality={100}
-                />
-              </HStack>
+              <DietStateSection />
             </DietStateCard>
           )}
 
