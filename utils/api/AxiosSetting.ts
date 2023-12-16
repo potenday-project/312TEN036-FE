@@ -51,13 +51,8 @@ export const postUserInfo = async (userInfo: UserInfoType) => {
 };
 
 export const postUserDiet = async (postDietData: UserPostDietData) => {
-  const query = {
-    ["query"]: postDietData.msg,
-  };
-  const res = await instacne.post(
-    `/users/${postDietData.userId}/diet-exercise-advice`,
-    query
-  );
-  const data: DietResponse = res.data;
-  return data;
+  const res = await instacne.post(`/users/diet-exercise-advice`, postDietData);
+
+  const data: DietResponse = await res.data;
+  return res.data;
 };

@@ -12,14 +12,18 @@ export const usePostUserDiet = () => {
   } = useMutation({
     mutationFn: (data: UserPostDietData) => postUserDiet(data),
     onError: () => {
-      toast({
-        title: "Sever Error",
-        description: "다시 한번 입력해주세요.",
-        status: "error",
-        duration: 5000,
-        position: "top",
-        isClosable: true,
-      });
+      const toastId = "chattingErr";
+      if (!toast.isActive(toastId)) {
+        toast({
+          id: "chattingErr",
+          title: "Sever Error",
+          description: "다시 한번 입력해주세요.",
+          status: "error",
+          duration: 5000,
+          position: "top",
+          isClosable: true,
+        });
+      }
     },
     onSuccess: () => {},
   });

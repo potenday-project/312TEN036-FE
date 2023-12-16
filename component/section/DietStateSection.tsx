@@ -16,8 +16,13 @@ import mainStage3 from "../../utils/img/mainStage3.png";
 import mainStage4 from "../../utils/img/mainStage4.png";
 import mainStage5 from "../../utils/img/mainStage5.png";
 import { useRouter } from "next/navigation";
+import { DietResponse } from "../../utils/api/AxiosSetting";
 
-const DietStateSection = () => {
+const DietStateSection = ({
+  dietResponseData,
+}: {
+  dietResponseData: DietResponse;
+}) => {
   const dietNickName = {
     stage1: "열정가득 다이어터",
     stage2: "기세등등 유지어터",
@@ -38,12 +43,12 @@ const DietStateSection = () => {
     >
       <Box w={"100%"}>
         <Text fontSize={"16px"} color={"#787878"}>
-          200Kcal 초과
+          {dietResponseData.초과칼로리}
         </Text>
         <Heading fontSize={"22px"}>
           오늘{" "}
           <Text as={"a"} color={"#40E98E"}>
-            30분 이상 달려야
+            {dietResponseData.운동필요시간}
           </Text>
           <br />
           현재 몸무게 안정권 유지

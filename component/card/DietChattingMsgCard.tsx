@@ -34,7 +34,7 @@ const DietChattingMsgCart = ({
   return (
     <>
       <Card
-        w={!isLoading ? "197px" : "312px"}
+        w={!dietResponseData ? "197px" : "312px"}
         bgColor={"#FFFFFF"}
         shadow={"none"}
         margin={"0px 0px 0px 22px"}

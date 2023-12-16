@@ -11,7 +11,6 @@ import {
   UseFormRegister,
 } from "react-hook-form";
 import { DietResponse } from "../../utils/api/AxiosSetting";
-import { useState } from "react";
 
 export interface DietMsgType {
   msg: string;
@@ -97,7 +96,6 @@ const ChattingRoom = ({
               {"ex) 아침은 00 점심은 00 저녁은 00을 먹었어"}
             </Text>
           </ChattingMsgCard>
-
           {chattingData && (
             <UserChattingMsgCard>{chattingData}</UserChattingMsgCard>
           )}
