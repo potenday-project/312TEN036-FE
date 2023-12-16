@@ -145,6 +145,7 @@ const UserAgreementForm = ({
         pos={"absolute"}
         bottom={"30px"}
         margin={"0 auto"}
+        padding={"0 22px"}
         justifyContent={"center"}
       >
         <MainButton

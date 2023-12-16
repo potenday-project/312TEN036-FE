@@ -10,8 +10,8 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import MainButton from "../../component/button/MainButton";
-import { useRouter } from "next/navigation";
 import { Dispatch, SetStateAction } from "react";
+import MainPageDiet from "../../utils/img/MainPageDiet.png";
 
 interface MainFunnelPropsType {
   setFunnel: Dispatch<SetStateAction<string>>;
@@ -52,14 +52,12 @@ const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
           <br />안 찌려면 얼마만큼 운동해야하지?
         </CardBody>
       </Card>
-
       <Image
-        src={
-          "https://images.pexels.com/photos/1485894/pexels-photo-1485894.jpeg?cs=srgb&dl=pexels-mohamed-almari-1485894.jpg&fm=jpg"
-        }
+        src={MainPageDiet}
         alt="식선생"
-        width={100}
-        height={100}
+        placeholder="blur"
+        style={{ width: "100%", height: "auto" }}
+        quality={100}
       />
 
       <ButtonGroup

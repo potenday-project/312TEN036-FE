@@ -72,7 +72,7 @@ const ChattingRoom = () => {
           w={"100%"}
           alignItems={"flex-start"}
           spacing={"16px"}
-          // marginTop={"10px"}
+          marginTop={"10px"}
           paddingBottom={"80px"}
           overflow={"hidden"}
           overflowY={"scroll"}
