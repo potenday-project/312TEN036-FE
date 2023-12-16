@@ -25,7 +25,7 @@ interface PhysicsFormType {
   age: number;
   height: number;
   weight: number;
-  targetWeight: number;
+  targetweight: string;
 }
 
 const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
@@ -39,12 +39,12 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
 
   const onSubmit: SubmitHandler<PhysicsFormType> = async (data) => {
     const newUserInfo: UserInfoType = {
-      userName: userInfo.userName,
+      name: userInfo.name,
       gender: userInfo.gender,
       age: data.age,
       height: data.height,
       weight: data.weight,
-      targetWeight: data.targetWeight,
+      targetweight: parseInt(data.targetweight),
     };
 
     await postUserInfoMutation(newUserInfo);
@@ -137,7 +137,7 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
           </FormLabel>
           <InputGroup>
             <Input
-              {...register("targetWeight", { required: true })}
+              {...register("targetweight", { required: true })}
               type="number"
               h={"48px"}
               focusBorderColor={"#00C27C"}

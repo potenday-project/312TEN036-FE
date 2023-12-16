@@ -17,6 +17,7 @@ const Page = async ({
 
   const errorCode = searchParams.error;
   if (errorCode) return redirect("/");
+
   const jwtToken: JwtToken = await postKakaoCode(kakaoCode);
 
   console.log(jwtToken);

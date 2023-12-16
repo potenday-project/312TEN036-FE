@@ -69,19 +69,19 @@ const UserInfoForm = ({
   });
 
   interface SignUpFormType {
-    userName: string;
+    name: string;
   }
 
   const { handleSubmit, register } = useForm<SignUpFormType>();
 
   const onSubmit: SubmitHandler<SignUpFormType> = (data) => {
     const newUserInfo: UserInfoType = {
-      userName: data.userName,
+      name: data.name,
       gender: value as string,
       age: 0,
       height: 0,
       weight: 0,
-      targetWeight: 0,
+      targetweight: 0,
     };
 
     setUserInfo(newUserInfo);
@@ -119,7 +119,7 @@ const UserInfoForm = ({
             이름
           </FormLabel>
           <MainInput
-            register={{ ...register("userName", { required: true }) }}
+            register={{ ...register("name", { required: true }) }}
             placeholder="이름을 입력해주세요."
             w={"100%"}
             h={"48px"}

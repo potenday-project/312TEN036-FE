@@ -35,7 +35,7 @@ export const postUserInfo = async (userInfo: UserInfoType) => {
   const jwtToken = localStorage.getItem(`jwt`);
   console.log(jwtToken);
 
-  const res = await instacne.post("", userInfo, {
+  const res = await instacne.post("/users", userInfo, {
     headers: { Authorization: `Bearer ${jwtToken}` },
   });
 
