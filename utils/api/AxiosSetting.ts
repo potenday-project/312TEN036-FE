@@ -21,10 +21,14 @@ export interface DietResponse {
 }
 
 export const getUserInfo = async () => {
-  const jwtToken = localStorage.getItem(`jwt`);
-  const res = await instacne.get("/users", {
-    headers: { Authorization: `Bearer ${jwtToken}` },
-  });
+  const userId = localStorage.getItem(`userId`);
+  const res = await instacne.get(`/users/${userId}`);
+  return res;
+};
+
+export const getUserBmr = async () => {
+  const userId = localStorage.getItem(`userId`);
+  const res = await instacne.get(`/users/${userId}/bmr`);
   return res;
 };
 

@@ -69,7 +69,7 @@ const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
         <ButtonGroup
           width={"100%"}
           pos={"absolute"}
-          bottom={"3vh"}
+          bottom={"5vh"}
           padding={"0 22px"}
           justifyContent={"center"}
         >

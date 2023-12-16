@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import KaKaoButtonIcon from "../icon/KaKaoButtonIcon";
 import VerticalLogoIcon from "../icon/VerticalLogoIcon";
+import MainButton from "../button/MainButton";
 
 const LoginFunnel = () => {
   const router = useRouter();
@@ -17,31 +18,26 @@ const LoginFunnel = () => {
       <Box marginBottom={"150px"}>
         <VerticalLogoIcon />
       </Box>
-      <ButtonGroup
-        width={"100%"}
-        pos={"absolute"}
-        bottom={"27px"}
-        padding={"0 22px"}
-        justifyContent={"center"}
-        alignItems={"center"}
-        flexDir={"column"}
-        gap={"20px"}
-      >
-        {/* <Box onClick={() => signUpKakaoHandler()} cursor={"pointer"}>
+
+      {/* <Box onClick={() => signUpKakaoHandler()} cursor={"pointer"}>
           <KaKaoButtonIcon />
         </Box> */}
 
-        <Text
-          as={"u"}
-          fontSize={"17px"}
-          h={"35px"}
-          color={"#9D9D9D"}
-          margin={"0.5rem"}
+      <ButtonGroup
+        width={"100%"}
+        pos={"absolute"}
+        bottom={"5vh"}
+        padding={"0 22px"}
+        justifyContent={"center"}
+      >
+        <MainButton
+          w={"100%"}
+          h={"52px"}
+          bgColor={"#40E98E"}
           onClick={() => router.push("/signup")}
-          cursor={"pointer"}
         >
-          체험하기
-        </Text>
+          <Text color={"#2B2C2C"}>체험하기</Text>
+        </MainButton>
       </ButtonGroup>
     </VStack>
   );

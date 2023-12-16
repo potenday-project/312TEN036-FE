@@ -8,9 +8,7 @@ export const metadata: Metadata = {
   ),
   title: "식선생",
   description: "당신의 식단 관리 서비스",
-  icons: {
-    icon: "/icon.png",
-  },
+
   openGraph: {
     title: "식선생",
     description: "당신의 식단 관리 서비스",
@@ -40,6 +38,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" style={{ height: "100%" }} suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="%PUBLIC_URL%/logo.ico" />
+      </head>
       <body suppressHydrationWarning={true}>
         <QueryLayout>
           <ChakraLayout>{children}</ChakraLayout>
