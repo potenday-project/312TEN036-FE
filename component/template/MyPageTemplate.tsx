@@ -1,3 +1,4 @@
+"use client";
 import { Box, Flex, HStack, Text, VStack } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -7,10 +8,13 @@ import TheHeader from "../header/TheHeader";
 import CloseIcon from "../icon/CloseIcon";
 import TodayReportCard from "../card/TodayReportCard";
 import { UserInfoType } from "./SignupTemplate";
+import { useUser } from "../../utils/hooks/useUser";
 
 const MyPageTemplate = () => {
   const router = useRouter();
   const [userData, setUserData] = useState<UserInfoType>();
+
+  const {} = useUser();
 
   return (
     <>
