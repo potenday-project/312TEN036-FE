@@ -8,10 +8,13 @@ export const metadata: Metadata = {
   ),
   title: "식선생",
   description: "당신의 식단 관리 서비스",
+  icons: {
+    icon: "/icon.png",
+  },
   openGraph: {
     title: "식선생",
     description: "당신의 식단 관리 서비스",
-    url: "http://fe-fe-544a1-21216457-67a2ef796b03.kr.lb.naverncp.com/",
+    url: "www.foodteacher.xyz ",
     siteName: "foodteacher",
     images: [
       {
