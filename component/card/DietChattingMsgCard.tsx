@@ -12,10 +12,14 @@ import {
   Heading,
   Spinner,
   Text,
+  VStack,
 } from "@chakra-ui/react";
 import WarningIcon from "../icon/WarningIcon";
 import { useRouter } from "next/navigation";
 import { DietResponse } from "../../utils/api/AxiosSetting";
+import Lottie from "lottie-react";
+import LoadingLotte from "../../utils/json/loading.json";
+import SaladIcon from "../icon/SaladIcon";
 
 interface DietChattingMsgCard extends CardProps {
   isLoading: boolean;
@@ -30,14 +34,24 @@ const DietChattingMsgCart = ({
   return (
     <>
       <Card
-        w={isLoading ? "187px" : "312px"}
+        w={!isLoading ? "197px" : "312px"}
         bgColor={"#FFFFFF"}
         shadow={"none"}
         margin={"0px 0px 0px 22px"}
       >
-        {isLoading && (
-          <CardBody>
-            <Spinner />
+        {!isLoading && (
+          <CardBody padding={"16px 14px"}>
+            <VStack>
+              <SaladIcon />
+              <Box w={"30%"}>
+                <Lottie animationData={LoadingLotte} />
+              </Box>
+              <Text color={"#2F2F2F"} fontSize={"18px"}>
+                식선생이 오늘의
+                <br />
+                식사를 분석하고 있어요
+              </Text>
+            </VStack>
           </CardBody>
         )}
         {dietResponseData && !isLoading && (
