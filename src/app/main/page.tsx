@@ -1,18 +1,46 @@
 "use client";
 import { Box, Flex, HStack, Text, VStack } from "@chakra-ui/react";
-import ChattingRoom from "../../../component/card/ChattingRoom";
+import ChattingRoom, {
+  DietMsgType,
+} from "../../../component/card/ChattingRoom";
 import DietStateCard from "../../../component/card/DietStateCard";
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 import TheHeader from "../../../component/header/TheHeader";
 import UserIcon from "../../../component/icon/UserIcon";
 import TextLogoIcon from "../../../component/icon/TextLogoIcon";
 import HealthMountainIcon from "../../../component/icon/HealthMountainIcon";
-import Image from "next/image";
-import mainStage1 from "../../../utils/img/mainStage1.png";
 import DietStateSection from "../../../component/section/DietStateSection";
+import { usePostUserDiet } from "../../../utils/hooks/usePostUserDiet";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { useEffect } from "react";
 
 const Page = () => {
   const router = useRouter();
+
+  const {
+    data: dietResponseData,
+    postUserDietMutation,
+    isLoading,
+  } = usePostUserDiet();
+
+  const {
+    handleSubmit,
+    register,
+    formState: { errors },
+    reset,
+  } = useForm<DietMsgType>();
+
+  useEffect(() => {
+    const jwt = localStorage.getItem("jwt");
+
+    if (!jwt) return redirect("/");
+  }, []);
+
+  const onSubmit: SubmitHandler<DietMsgType> = async (data) => {
+    reset();
+    await postUserDietMutation(data.msg);
+  };
+
   return (
     <>
       <Flex
@@ -60,7 +88,13 @@ const Page = () => {
             </DietStateCard>
           )}
 
-          <ChattingRoom />
+          <ChattingRoom
+            handleSubmit={handleSubmit}
+            onSubmit={onSubmit}
+            register={register}
+            isLoading={isLoading}
+            dietResponseData={dietResponseData}
+          />
         </VStack>
       </Flex>
     </>

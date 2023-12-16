@@ -6,31 +6,33 @@ import ChattingInput from "../input/ChattingInput";
 import HealthIcon from "../icon/HealthIcon";
 import UserChattingMsgCard from "./UserChattingMsgCard";
 import { usePostUserDiet } from "../../utils/hooks/usePostUserDiet";
-import { SubmitHandler, useForm } from "react-hook-form";
+import {
+  SubmitHandler,
+  UseFormHandleSubmit,
+  UseFormRegister,
+  useForm,
+} from "react-hook-form";
+import { DietResponse } from "../../utils/api/AxiosSetting";
 
 export interface DietMsgType {
   msg: string;
 }
 
-const ChattingRoom = () => {
-  const {
-    data: dietResponseData,
-    postUserDietMutation,
-    isLoading,
-  } = usePostUserDiet();
+interface ChattingRoomPropsType {
+  handleSubmit: UseFormHandleSubmit<DietMsgType, undefined>;
+  onSubmit: SubmitHandler<DietMsgType>;
+  register: UseFormRegister<DietMsgType>;
+  isLoading: boolean;
+  dietResponseData: DietResponse | undefined;
+}
 
-  const {
-    handleSubmit,
-    register,
-    formState: { errors },
-    reset,
-  } = useForm<DietMsgType>();
-
-  const onSubmit: SubmitHandler<DietMsgType> = async (data) => {
-    reset();
-    await postUserDietMutation(data.msg);
-  };
-
+const ChattingRoom = ({
+  handleSubmit,
+  onSubmit,
+  register,
+  isLoading,
+  dietResponseData,
+}: ChattingRoomPropsType) => {
   return (
     <>
       <Flex
