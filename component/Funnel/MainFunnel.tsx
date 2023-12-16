@@ -51,7 +51,7 @@ const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
           을 추천 받자!
         </Heading>
 
-        <VStack spacing={"1px"} marginTop={"10%"}>
+        <VStack spacing={"1px"} marginTop={"55px"}>
           <Card bgColor={"#FFFFFF20"}>
             <CardBody textAlign={"center"} color={"#D2D2D2"}>
               나.. 오늘 얼마나 먹었더라?
@@ -69,7 +69,7 @@ const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
         <ButtonGroup
           width={"100%"}
           pos={"absolute"}
-          bottom={"100px"}
+          bottom={"3vh"}
           padding={"0 22px"}
           justifyContent={"center"}
         >

@@ -1,5 +1,6 @@
 import { useMutation } from "@tanstack/react-query";
 import { postUserDiet } from "../api/AxiosSetting";
+import { UserPostDietData } from "@/app/main/page";
 
 export const usePostUserDiet = () => {
   const {
@@ -7,7 +8,7 @@ export const usePostUserDiet = () => {
     mutateAsync: postUserDietMutation,
     isLoading,
   } = useMutation({
-    mutationFn: (diet: string) => postUserDiet(diet),
+    mutationFn: (data: UserPostDietData) => postUserDiet(data),
     onError: () => {},
     onSuccess: () => {},
   });

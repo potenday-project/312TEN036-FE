@@ -1,6 +1,7 @@
 import axios from "axios";
 import { UserInfoType } from "../../component/template/SignupTemplate";
 import { redirect } from "next/navigation";
+import { UserPostDietData } from "@/app/main/page";
 
 const instacne = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_URL,
@@ -41,19 +42,18 @@ export const postKakaoCode = async (code: string) => {
 };
 
 export const postUserInfo = async (userInfo: UserInfoType) => {
-  const jwtToken = localStorage.getItem(`jwt`);
-  const res = await instacne.post("/users", userInfo, {
-    headers: { Authorization: `Bearer ${jwtToken}` },
-    withCredentials: true,
-  });
+  const res = await instacne.post("/users", userInfo);
   return res.data;
 };
 
-export const postUserDiet = async (diet: Object) => {
+export const postUserDiet = async (postDietData: UserPostDietData) => {
   const query = {
-    ["query"]: diet,
+    ["query"]: postDietData.msg,
   };
-  const res = await instacne.post("/users/8/diet-exercise-advice", query);
+  const res = await instacne.post(
+    `/users/${postDietData.userId}/diet-exercise-advice`,
+    query
+  );
   const data: DietResponse = res.data;
   return data;
 };
