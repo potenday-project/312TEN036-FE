@@ -1,4 +1,5 @@
 import axios from "axios";
+import { UserInfoType } from "../../component/template/SignupTemplate";
 
 const instacne = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_URL,
@@ -7,6 +8,8 @@ const instacne = axios.create({
     "Content-Type": "application/json",
   },
 });
+
+const jwtToken = localStorage.getItem(`jwt`);
 
 export interface DietResponse {
   아침: string;
@@ -30,8 +33,10 @@ export const postKakaoCode = async (code: string) => {
   return res.data;
 };
 
-export const postUserInfo = async () => {
-  const res = await instacne.post("");
+export const postUserInfo = async (userInfo: UserInfoType) => {
+  const res = await instacne.post("", userInfo, {
+    headers: { Authorization: `Bearer ${jwtToken}` },
+  });
   return res.data;
 };
 

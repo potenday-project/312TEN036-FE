@@ -144,6 +144,7 @@ const UserInfoForm = ({
           width={"100%"}
           pos={"absolute"}
           bottom={"30px"}
+          padding={"0 22px"}
           margin={"0 auto"}
           justifyContent={"center"}
         >

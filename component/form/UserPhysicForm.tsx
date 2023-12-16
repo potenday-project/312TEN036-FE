@@ -16,6 +16,7 @@ import {
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import { UserInfoType } from "../template/SignupTemplate";
+import { usePostUserInfo } from "../../utils/hooks/usePostUserInfo";
 
 interface UserPhysicsFormPropsType {
   userInfo: UserInfoType;
@@ -29,6 +30,7 @@ interface PhysicsFormType {
 
 const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
   const router = useRouter();
+  const { postUserInfoMutation, isLoading, data } = usePostUserInfo();
   const {
     handleSubmit,
     register,
@@ -44,6 +46,8 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
       weight: data.weight,
       targetWeight: data.targetWeight,
     };
+
+    await postUserInfoMutation(newUserInfo);
     router.push("/main");
   };
 
@@ -148,6 +152,7 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
           width={"100%"}
           pos={"absolute"}
           bottom={"30px"}
+          padding={"0 22px"}
           margin={"0 auto"}
           justifyContent={"center"}
         >
