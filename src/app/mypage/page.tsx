@@ -120,7 +120,16 @@ const Page = () => {
             </VStack>
           </TodayReportCard>
 
-          <Text fontSize={"18px"} alignSelf={"flex-start"} marginLeft={"15px"}>
+          <Text
+            fontSize={"18px"}
+            alignSelf={"flex-start"}
+            marginLeft={"15px"}
+            cursor={"pointer"}
+            onClick={() => {
+              localStorage.removeItem(`jwt`);
+              router.push("/");
+            }}
+          >
             로그아웃
           </Text>
         </VStack>
