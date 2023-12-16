@@ -32,8 +32,8 @@ const Page = () => {
 
   useEffect(() => {
     const jwt = localStorage.getItem("jwt");
-
-    if (!jwt) return redirect("/");
+    const userInfo = localStorage.getItem("userInfo");
+    if (!jwt && !userInfo) return redirect("/");
   }, []);
 
   const onSubmit: SubmitHandler<DietMsgType> = async (data) => {

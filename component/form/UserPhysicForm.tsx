@@ -14,7 +14,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { UserInfoType } from "../template/SignupTemplate";
 import { usePostUserInfo } from "../../utils/hooks/usePostUserInfo";
 
@@ -30,6 +30,9 @@ interface PhysicsFormType {
 
 const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
   const router = useRouter();
+
+  const path = usePathname();
+
   const { postUserInfoMutation, isLoading, data } = usePostUserInfo();
   const {
     handleSubmit,
@@ -47,7 +50,12 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
       targetweight: parseInt(data.targetweight),
     };
 
-    await postUserInfoMutation(newUserInfo);
+    if (path === "/signup") {
+      localStorage.setItem("userInfo", JSON.stringify(newUserInfo));
+    } else {
+      await postUserInfoMutation(newUserInfo);
+    }
+
     router.push("/main");
   };
 
