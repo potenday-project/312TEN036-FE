@@ -14,7 +14,11 @@ const MyPageTemplate = () => {
   const router = useRouter();
   const [userData, setUserData] = useState<UserInfoType>();
 
-  const {} = useUser();
+  useEffect(() => {
+    let userInfo: any = localStorage.getItem("userInfo");
+    const userInfoData: UserInfoType = JSON.parse(userInfo);
+    setUserData(userInfoData);
+  }, []);
 
   return (
     <>
@@ -110,7 +114,7 @@ const MyPageTemplate = () => {
                   목표 체중
                 </Text>
                 <Text fontWeight={"semibold"} color={"#2F2F2F"}>
-                  {userData?.targetweight}
+                  {userData?.targetWeight}
                 </Text>
               </HStack>
             </VStack>
@@ -131,7 +135,7 @@ const MyPageTemplate = () => {
             marginLeft={"15px"}
             cursor={"pointer"}
             onClick={() => {
-              localStorage.removeItem(`userId`);
+              localStorage.removeItem(`userInfo`);
               router.push("/");
             }}
           >

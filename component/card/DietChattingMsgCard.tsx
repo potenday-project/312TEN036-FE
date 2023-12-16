@@ -10,7 +10,6 @@ import {
   Flex,
   HStack,
   Heading,
-  Spinner,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -34,7 +33,7 @@ const DietChattingMsgCart = ({
   return (
     <>
       <Card
-        w={!isLoading ? "197px" : "312px"}
+        w={!dietResponseData ? "197px" : "312px"}
         bgColor={"#FFFFFF"}
         shadow={"none"}
         margin={"0px 0px 0px 22px"}
@@ -46,7 +45,7 @@ const DietChattingMsgCart = ({
               <Box w={"30%"}>
                 <Lottie animationData={LoadingLotte} />
               </Box>
-              <Text color={"#2F2F2F"} fontSize={"18px"}>
+              <Text color={"#2F2F2F"} fontSize={"18px"} textAlign={"center"}>
                 식선생이 오늘의
                 <br />
                 식사를 분석하고 있어요
@@ -68,7 +67,7 @@ const DietChattingMsgCart = ({
                     fontSize={"18px"}
                     fontWeight={"regular"}
                   >
-                    {dietResponseData?.아침}
+                    {` ${dietResponseData?.아침} Kcal`}
                   </Heading>
                 </Box>
                 <Box>
@@ -81,7 +80,7 @@ const DietChattingMsgCart = ({
                     fontSize={"18px"}
                     fontWeight={"regular"}
                   >
-                    {dietResponseData?.점심}
+                    {` ${dietResponseData?.점심} Kcal`}
                   </Heading>
                 </Box>
                 <Box>
@@ -94,7 +93,7 @@ const DietChattingMsgCart = ({
                     fontSize={"18px"}
                     fontWeight={"regular"}
                   >
-                    {dietResponseData?.저녁}
+                    {`${dietResponseData?.저녁} Kcal`}
                   </Heading>
                 </Box>
               </Flex>
@@ -113,7 +112,9 @@ const DietChattingMsgCart = ({
                   fontWeight={"semibold"}
                   fontSize={"17px"}
                 >
-                  {dietResponseData?.초과칼로리}를 초과하셨습니다.
+                  {dietResponseData?.초과칼로리 > 0
+                    ? `${dietResponseData?.초과칼로리} Kcal를 초과하셨습니다.`
+                    : `${-dietResponseData?.초과칼로리} Kcal 더 드셔도 됩니다.`}
                 </Text>
               </HStack>
             </CardHeader>

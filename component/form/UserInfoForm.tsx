@@ -81,7 +81,7 @@ const UserInfoForm = ({
       age: 0,
       height: 0,
       weight: 0,
-      targetweight: 0,
+      targetWeight: 0,
     };
 
     setUserInfo(newUserInfo);

@@ -13,11 +13,22 @@ import DietStateSection from "../../../component/section/DietStateSection";
 import { usePostUserDiet } from "../../../utils/hooks/usePostUserDiet";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useState } from "react";
+import { UserInfoType } from "../../../component/template/SignupTemplate";
 
-export interface UserPostDietData {
-  msg: string;
-  userId: string | null;
+export interface UserPostDietData extends UserInfoType {
+  query: string;
+  userId?: string | null;
 }
+
+// {
+//   "name": "서경원",
+//   "height": 123,
+//   "weight": 432,
+//   "age": 12,
+//   "gender": "남성",
+//   "targetWeight": 321,
+//   "query": "오늘 아침은 우유 1컵, 점심은 된장찌개랑 갈비조림, 저녁은 마라탕"
+// }
 
 const Page = () => {
   const router = useRouter();
@@ -37,14 +48,26 @@ const Page = () => {
   } = useForm<DietMsgType>();
 
   const onSubmit: SubmitHandler<DietMsgType> = async (data) => {
-    const userId = localStorage.getItem("userId");
-    const userInfoData: UserPostDietData = {
-      msg: data.msg,
-      userId,
-    };
-    setChattingData(data.msg);
+    localStorage.removeItem("userDiet");
     reset();
-    await postUserDietMutation(userInfoData);
+    const userInfoString: string | null = localStorage.getItem("userInfo");
+
+    if (userInfoString !== null) {
+      const userInfo: UserInfoType = JSON.parse(userInfoString);
+      const userInfoData: UserPostDietData = {
+        query: data.msg,
+        name: userInfo.name,
+        age: userInfo.age,
+        weight: userInfo.weight,
+        height: userInfo.height,
+        targetWeight: userInfo.targetWeight,
+        gender: userInfo.gender,
+      };
+      setChattingData(data.msg);
+      await postUserDietMutation(userInfoData);
+
+      localStorage.setItem("userDiet", JSON.stringify(dietResponseData));
+    }
   };
 
   return (
@@ -68,7 +91,7 @@ const Page = () => {
           </Text>
         </TheHeader>
         <VStack spacing={"20px"} w={"100%"} h={"100%"}>
-          {false ? (
+          {!dietResponseData ? (
             <DietStateCard>
               <HStack
                 display={"flex"}
@@ -91,7 +114,7 @@ const Page = () => {
             </DietStateCard>
           ) : (
             <DietStateCard>
-              <DietStateSection />
+              <DietStateSection dietResponseData={dietResponseData} />
             </DietStateCard>
           )}
 

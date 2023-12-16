@@ -16,8 +16,13 @@ import mainStage3 from "../../utils/img/mainStage3.png";
 import mainStage4 from "../../utils/img/mainStage4.png";
 import mainStage5 from "../../utils/img/mainStage5.png";
 import { useRouter } from "next/navigation";
+import { DietResponse } from "../../utils/api/AxiosSetting";
 
-const DietStateSection = () => {
+const DietStateSection = ({
+  dietResponseData,
+}: {
+  dietResponseData: DietResponse;
+}) => {
   const dietNickName = {
     stage1: "열정가득 다이어터",
     stage2: "기세등등 유지어터",
@@ -25,6 +30,22 @@ const DietStateSection = () => {
     stage4: "방신한 다이어터",
     stage5: "위기의 다이어터",
   };
+
+  function getStageName(step: number) {
+    if (step >= 800) {
+      return dietNickName.stage5;
+    } else if (step >= 400) {
+      return dietNickName.stage4;
+    } else if (step >= 200) {
+      return dietNickName.stage3;
+    } else if (step >= 100) {
+      return dietNickName.stage2;
+    } else {
+      return dietNickName.stage1;
+    }
+  }
+
+  const nickName = getStageName(dietResponseData.초과칼로리);
 
   const router = useRouter();
   return (
@@ -38,12 +59,14 @@ const DietStateSection = () => {
     >
       <Box w={"100%"}>
         <Text fontSize={"16px"} color={"#787878"}>
-          200Kcal 초과
+          {dietResponseData?.초과칼로리 > 0
+            ? `${dietResponseData?.초과칼로리} Kcal 초과`
+            : `${-dietResponseData?.초과칼로리} Kcal`}
         </Text>
         <Heading fontSize={"22px"}>
           오늘{" "}
           <Text as={"a"} color={"#40E98E"}>
-            30분 이상 달려야
+            {dietResponseData.운동필요시간}
           </Text>
           <br />
           현재 몸무게 안정권 유지
@@ -53,7 +76,7 @@ const DietStateSection = () => {
         <Card bgColor={"#434343"} margin={"0 auto"}>
           <CardBody padding={"4px 7px"}>
             <Text color={"#40E98E"} textAlign={"center"} fontSize={"9px"}>
-              열정가득 다이어터
+              {nickName}
             </Text>
           </CardBody>
         </Card>

@@ -22,10 +22,10 @@ interface UserPhysicsFormPropsType {
   userInfo: UserInfoType;
 }
 interface PhysicsFormType {
-  age: number;
-  height: number;
-  weight: number;
-  targetweight: string;
+  age: string;
+  height: string;
+  weight: string;
+  targetWeight: string;
 }
 
 const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
@@ -44,18 +44,17 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
     const newUserInfo: UserInfoType = {
       name: userInfo.name,
       gender: userInfo.gender,
-      age: data.age,
-      height: data.height,
-      weight: data.weight,
-      targetweight: parseInt(data.targetweight),
+      age: parseInt(data.age),
+      height: parseInt(data.height),
+      weight: parseInt(data.weight),
+      targetWeight: parseInt(data.targetWeight),
     };
 
-    await postUserInfoMutation(newUserInfo);
+    // await postUserInfoMutation(newUserInfo);
+    // console.log(userId);
+    // localStorage.setItem("userId", userId.user_id);
 
-    console.log(userId);
-
-    localStorage.setItem("userId", userId.user_id);
-
+    localStorage.setItem("userInfo", JSON.stringify(newUserInfo));
     router.push("/main");
   };
 
@@ -145,7 +144,7 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
           </FormLabel>
           <InputGroup>
             <Input
-              {...register("targetweight", { required: true })}
+              {...register("targetWeight", { required: true })}
               type="number"
               h={"48px"}
               focusBorderColor={"#00C27C"}
