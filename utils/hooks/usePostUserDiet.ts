@@ -6,7 +6,7 @@ import { useToast } from "@chakra-ui/react";
 export const usePostUserDiet = () => {
   const toast = useToast();
   const {
-    data,
+    data: userDietResponseData,
     mutateAsync: postUserDietMutation,
     isLoading,
   } = useMutation({
@@ -25,8 +25,10 @@ export const usePostUserDiet = () => {
         });
       }
     },
-    onSuccess: () => {},
   });
 
-  return { data, postUserDietMutation, isLoading };
+  if (userDietResponseData) {
+    localStorage.setItem("userDiet", JSON.stringify(userDietResponseData));
+  }
+  return { userDietResponseData, postUserDietMutation, isLoading };
 };
