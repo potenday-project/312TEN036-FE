@@ -9,8 +9,6 @@ const instacne = axios.create({
   },
 });
 
-const jwtToken = localStorage.getItem(`jwt`);
-
 export interface DietResponse {
   아침: string;
   점심: string;
@@ -34,9 +32,13 @@ export const postKakaoCode = async (code: string) => {
 };
 
 export const postUserInfo = async (userInfo: UserInfoType) => {
+  const jwtToken = localStorage.getItem(`jwt`);
+  console.log(jwtToken);
+
   const res = await instacne.post("", userInfo, {
     headers: { Authorization: `Bearer ${jwtToken}` },
   });
+
   return res.data;
 };
 
