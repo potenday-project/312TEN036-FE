@@ -13,6 +13,7 @@ const MainButton = ({
   color,
   _disabled,
   _hover,
+  isLoading,
 }: ButtonProps) => {
   return (
     <Button
@@ -29,6 +30,7 @@ const MainButton = ({
       type={type}
       _disabled={_disabled}
       _hover={_hover}
+      isLoading={isLoading}
     >
       {children}
     </Button>
