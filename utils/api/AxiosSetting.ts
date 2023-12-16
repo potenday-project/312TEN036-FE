@@ -1,5 +1,6 @@
 import axios from "axios";
 import { UserInfoType } from "../../component/template/SignupTemplate";
+import { redirect } from "next/navigation";
 
 const instacne = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_URL,
@@ -25,20 +26,20 @@ export const getUserInfo = async () => {
 };
 
 export const postKakaoCode = async (code: string) => {
-  const res = await instacne.post(`/auth`, { code });
-
-  console.log(res.data);
-  return res.data;
+  try {
+    const res = await instacne.post(`/auth`, { code });
+    return res.data;
+  } catch (err) {
+    return redirect("/");
+  }
 };
 
 export const postUserInfo = async (userInfo: UserInfoType) => {
   const jwtToken = localStorage.getItem(`jwt`);
   console.log(jwtToken);
-
   const res = await instacne.post("/users", userInfo, {
     headers: { Authorization: `Bearer ${jwtToken}` },
   });
-
   return res.data;
 };
 
