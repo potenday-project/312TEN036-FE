@@ -121,7 +121,7 @@ const ChattingRoom = ({
                   ) : (
                     <>
                       <Text as="a" color={"#00C27C"} fontWeight={"semibold"}>
-                        {dietResponseData.운동필요시간}
+                        운동을 {dietResponseData.운동필요시간}
                       </Text>
                     </>
                   )}
