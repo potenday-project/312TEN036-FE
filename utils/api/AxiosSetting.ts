@@ -20,8 +20,10 @@ export interface DietResponse {
 }
 
 export const getUserInfo = async () => {
-  const res = await instacne.get("");
-  console.log(res);
+  const jwtToken = localStorage.getItem(`jwt`);
+  const res = await instacne.get("/users", {
+    headers: { Authorization: `Bearer ${jwtToken}` },
+  });
   return res;
 };
 
@@ -47,7 +49,7 @@ export const postUserDiet = async (diet: Object) => {
   const query = {
     ["query"]: diet,
   };
-  const res = await instacne.post("/users/6/diet-exercise-advice", query);
+  const res = await instacne.post("/users/8/diet-exercise-advice", query);
   const data: DietResponse = res.data;
   return data;
 };

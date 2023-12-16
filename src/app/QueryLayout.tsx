@@ -2,14 +2,9 @@
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { PropsWithChildren, useState } from "react";
-// import { toast } from "react-toastify";
-
-// const queryErrorHandler = (error: unknown) => {
-//   const title =
-//     error instanceof Error ? error.message : "error connecting to server";
-//   toast(title, { toastId: 1, theme: "dark", type: "error" });
-// };
+import { redirect, useRouter } from "next/navigation";
+import { PropsWithChildren, useEffect, useState } from "react";
+import { useUser } from "../../utils/hooks/useUser";
 
 export default function QueryLayout({ children }: PropsWithChildren) {
   const [queryClient] = useState(
@@ -29,7 +24,11 @@ export default function QueryLayout({ children }: PropsWithChildren) {
       })
   );
 
-  const product = process.env.NODE_ENV === "development";
+  // const jwt = localStorage.getItem("jwt");
+
+  // const { data } = useUser();
+
+  // useEffect(() => {}, [jwt]);
 
   return (
     <QueryClientProvider client={queryClient}>
