@@ -4,7 +4,7 @@ import ChattingRoom, {
   DietMsgType,
 } from "../../../component/card/ChattingRoom";
 import DietStateCard from "../../../component/card/DietStateCard";
-import { redirect, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import TheHeader from "../../../component/header/TheHeader";
 import UserIcon from "../../../component/icon/UserIcon";
 import TextLogoIcon from "../../../component/icon/TextLogoIcon";
@@ -12,19 +12,22 @@ import HealthMountainIcon from "../../../component/icon/HealthMountainIcon";
 import DietStateSection from "../../../component/section/DietStateSection";
 import { usePostUserDiet } from "../../../utils/hooks/usePostUserDiet";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { UserInfoType } from "../../../component/template/SignupTemplate";
+import { DietResponse } from "../../../utils/api/AxiosSetting";
 
-export interface UserPostDietData {
-  msg: string;
-  userId: string | null;
+export interface UserPostDietData extends UserInfoType {
+  query: string;
+  userId?: string | null;
 }
 
 const Page = () => {
   const router = useRouter();
   const [chattingData, setChattingData] = useState<string>("");
+  const [userDiet, setUserDiet] = useState<boolean>(false);
 
   const {
-    data: dietResponseData,
+    userDietResponseData: dietResponseData,
     postUserDietMutation,
     isLoading,
   } = usePostUserDiet();
@@ -36,15 +39,28 @@ const Page = () => {
     reset,
   } = useForm<DietMsgType>();
 
+  useEffect(() => {
+    let userDietData: any = localStorage.getItem("userDiet");
+    setUserDiet(userDietData);
+  }, [userDiet]);
+
   const onSubmit: SubmitHandler<DietMsgType> = async (data) => {
-    const userId = localStorage.getItem("userId");
-    const userInfoData: UserPostDietData = {
-      msg: data.msg,
-      userId,
-    };
-    setChattingData(data.msg);
     reset();
-    await postUserDietMutation(userInfoData);
+    const userInfoString: string | null = localStorage.getItem("userInfo");
+    if (userInfoString !== null) {
+      const userInfo: UserInfoType = JSON.parse(userInfoString);
+      const userInfoData: UserPostDietData = {
+        query: data.msg,
+        name: userInfo.name,
+        age: userInfo.age,
+        weight: userInfo.weight,
+        height: userInfo.height,
+        targetWeight: userInfo.targetWeight,
+        gender: userInfo.gender,
+      };
+      setChattingData(data.msg);
+      await postUserDietMutation(userInfoData);
+    }
   };
 
   return (
@@ -68,7 +84,7 @@ const Page = () => {
           </Text>
         </TheHeader>
         <VStack spacing={"20px"} w={"100%"} h={"100%"}>
-          {false ? (
+          {!userDiet ? (
             <DietStateCard>
               <HStack
                 display={"flex"}
@@ -91,7 +107,7 @@ const Page = () => {
             </DietStateCard>
           ) : (
             <DietStateCard>
-              <DietStateSection />
+              <DietStateSection isLoading={isLoading} />
             </DietStateCard>
           )}
 

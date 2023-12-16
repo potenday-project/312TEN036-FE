@@ -11,7 +11,7 @@ import {
   UseFormRegister,
 } from "react-hook-form";
 import { DietResponse } from "../../utils/api/AxiosSetting";
-import { useState } from "react";
+import RunningIcon from "../icon/RunningIcon";
 
 export interface DietMsgType {
   msg: string;
@@ -97,7 +97,6 @@ const ChattingRoom = ({
               {"ex) 아침은 00 점심은 00 저녁은 00을 먹었어"}
             </Text>
           </ChattingMsgCard>
-
           {chattingData && (
             <UserChattingMsgCard>{chattingData}</UserChattingMsgCard>
           )}
@@ -106,6 +105,23 @@ const ChattingRoom = ({
             isLoading={isLoading}
             dietResponseData={dietResponseData}
           />
+
+          {dietResponseData && (
+            <>
+              <ChattingMsgCard>
+                <HStack spacing={"5px"}>
+                  <RunningIcon />
+                  <Text>
+                    <Text as="a" color={"#00C27C"} fontWeight={"semibold"}>
+                      {dietResponseData.운동필요시간}
+                    </Text>
+                    이상 꼭 하셔야해요.
+                  </Text>
+                </HStack>
+              </ChattingMsgCard>
+              <ChattingMsgCard>{dietResponseData.잔소리}</ChattingMsgCard>
+            </>
+          )}
         </VStack>
       </Flex>
       <ChattingInput

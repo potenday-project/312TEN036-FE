@@ -15,7 +15,7 @@ export default function Home() {
     if (colorMode === "dark") {
       setColorMode("light");
     }
-    const userId = localStorage.getItem("userId");
+    const userId = localStorage.getItem("userInfo");
     if (userId) return router.push("/main");
   }, [colorMode, setColorMode, router]);
 

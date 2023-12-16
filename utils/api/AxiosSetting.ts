@@ -12,10 +12,10 @@ const instacne = axios.create({
 });
 
 export interface DietResponse {
-  아침: string;
-  점심: string;
-  저녁: string;
-  초과칼로리: string;
+  아침: number;
+  점심: number;
+  저녁: number;
+  초과칼로리: number;
   운동필요시간: string;
   잔소리: string;
 }
@@ -51,13 +51,8 @@ export const postUserInfo = async (userInfo: UserInfoType) => {
 };
 
 export const postUserDiet = async (postDietData: UserPostDietData) => {
-  const query = {
-    ["query"]: postDietData.msg,
-  };
-  const res = await instacne.post(
-    `/users/${postDietData.userId}/diet-exercise-advice`,
-    query
-  );
-  const data: DietResponse = res.data;
+  const res = await instacne.post(`/users/diet-exercise-advice`, postDietData);
+
+  const data: DietResponse = await res.data;
   return data;
 };
