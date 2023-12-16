@@ -54,5 +54,5 @@ export const postUserDiet = async (postDietData: UserPostDietData) => {
   const res = await instacne.post(`/users/diet-exercise-advice`, postDietData);
 
   const data: DietResponse = await res.data;
-  return res.data;
+  return data;
 };
