@@ -4,6 +4,7 @@ import {
   ButtonGroup,
   Card,
   CardBody,
+  Flex,
   Heading,
   Text,
   VStack,
@@ -12,6 +13,7 @@ import Image from "next/image";
 import MainButton from "../../component/button/MainButton";
 import { Dispatch, SetStateAction } from "react";
 import MainPageDiet from "../../utils/img/MainPageDiet.png";
+import TextLogoIcon from "../icon/TextLogoIcon";
 
 interface MainFunnelPropsType {
   setFunnel: Dispatch<SetStateAction<string>>;
@@ -39,7 +41,10 @@ const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
           padding={"0px"}
           w={"325px"}
         >
-          식선생에게 식단 알리고
+          <Flex display={"inline-block"}>
+            <TextLogoIcon />
+          </Flex>
+          &nbsp;에게 식단 알리고
           <br />
           <Text as={"a"} color={"#40E98E"} fontWeight={"semibold"}>
             운동량
