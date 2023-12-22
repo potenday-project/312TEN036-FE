@@ -20,8 +20,6 @@ interface MainFunnelPropsType {
 }
 
 const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
-  console.log(process.env.NEXT_PUBLIC_API_URL);
-
   return (
     <>
       <VStack
@@ -29,7 +27,7 @@ const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
         h={"100%"}
         spacing={"16px"}
         as="section"
-        marginTop={"71px"}
+        justifyContent={"center"}
       >
         <Heading
           as={"h1"}
@@ -74,7 +72,7 @@ const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
         <ButtonGroup
           width={"100%"}
           pos={"absolute"}
-          bottom={"5vh"}
+          bottom={"4vh"}
           padding={"0 22px"}
           justifyContent={"center"}
         >

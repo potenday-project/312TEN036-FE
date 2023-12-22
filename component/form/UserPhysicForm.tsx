@@ -50,10 +50,6 @@ const UserPhysicForm = ({ userInfo }: UserPhysicsFormPropsType) => {
       targetWeight: parseInt(data.targetWeight),
     };
 
-    // await postUserInfoMutation(newUserInfo);
-    // console.log(userId);
-    // localStorage.setItem("userId", userId.user_id);
-
     localStorage.setItem("userInfo", JSON.stringify(newUserInfo));
     router.push("/main");
   };
