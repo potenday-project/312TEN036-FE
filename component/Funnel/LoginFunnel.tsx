@@ -14,7 +14,7 @@ const LoginFunnel = () => {
   // };
 
   return (
-    <VStack w={"100%"} h={"100%"} justifyContent={"center"}>
+    <VStack w={"100%"} h={"100vh"} justifyContent={"center"}>
       <Box marginBottom={"150px"}>
         <VerticalLogoIcon />
       </Box>
@@ -26,7 +26,7 @@ const LoginFunnel = () => {
       <ButtonGroup
         width={"100%"}
         pos={"absolute"}
-        bottom={"5vh"}
+        bottom={"4vh"}
         padding={"0 22px"}
         justifyContent={"center"}
       >

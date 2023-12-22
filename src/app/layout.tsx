@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { ChakraLayout } from "@/app/ChakraLayout";
 import QueryLayout from "./QueryLayout";
+import TheHeader from "../../component/header/TheHeader";
+import TheMainHeader from "../../component/header/TheMainHeader";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -43,7 +45,10 @@ export default function RootLayout({
       </head>
       <body suppressHydrationWarning={true}>
         <QueryLayout>
-          <ChakraLayout>{children}</ChakraLayout>
+          <ChakraLayout>
+            {/* <TheMainHeader /> */}
+            {children}
+          </ChakraLayout>
         </QueryLayout>
       </body>
     </html>
