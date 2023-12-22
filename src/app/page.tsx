@@ -28,7 +28,6 @@ export default function Home() {
       pos={"relative"}
       margin={"0 auto"}
       maxW={"420px"}
-      minW={"390px"}
       height={"100vh"}
       padding={"60px 22px"}
       alignItems={"center"}

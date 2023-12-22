@@ -23,7 +23,7 @@ const MainFunnel = ({ setFunnel }: MainFunnelPropsType) => {
   return (
     <>
       <VStack
-        w={"#100%"}
+        w={"100%"}
         h={"100%"}
         spacing={"16px"}
         as="section"
