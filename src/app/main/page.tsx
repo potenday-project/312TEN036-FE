@@ -5,9 +5,6 @@ import ChattingRoom, {
 } from "../../../component/card/ChattingRoom";
 import DietStateCard from "../../../component/card/DietStateCard";
 import { useRouter } from "next/navigation";
-import TheHeader from "../../../component/header/TheHeader";
-import UserIcon from "../../../component/icon/UserIcon";
-import TextLogoIcon from "../../../component/icon/TextLogoIcon";
 import HealthMountainIcon from "../../../component/icon/HealthMountainIcon";
 import DietStateSection from "../../../component/section/DietStateSection";
 import { usePostUserDiet } from "../../../utils/hooks/usePostUserDiet";
@@ -67,21 +64,13 @@ const Page = () => {
       <Flex
         flexDir={"column"}
         w={"100%"}
-        h={"100vh"}
         pos={"relative"}
         margin={"0 auto"}
         maxW={"420px"}
-        minW={"390px"}
         padding={"60px 0px 0px 0px"}
         bgColor={"#2B2C2C"}
         alignItems={"center"}
       >
-        <TheHeader>
-          <TextLogoIcon />
-          <Text onClick={() => router.push("/mypage")} cursor={"pointer"}>
-            <UserIcon />
-          </Text>
-        </TheHeader>
         <VStack spacing={"20px"} w={"100%"} h={"100%"}>
           {!userDiet ? (
             <DietStateCard>
