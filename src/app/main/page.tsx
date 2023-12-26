@@ -5,9 +5,6 @@ import ChattingRoom, {
 } from "../../../component/card/ChattingRoom";
 import DietStateCard from "../../../component/card/DietStateCard";
 import { useRouter } from "next/navigation";
-import TheHeader from "../../../component/header/TheHeader";
-import UserIcon from "../../../component/icon/UserIcon";
-import TextLogoIcon from "../../../component/icon/TextLogoIcon";
 import HealthMountainIcon from "../../../component/icon/HealthMountainIcon";
 import DietStateSection from "../../../component/section/DietStateSection";
 import { usePostUserDiet } from "../../../utils/hooks/usePostUserDiet";
