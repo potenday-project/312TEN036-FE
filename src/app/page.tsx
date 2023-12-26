@@ -24,7 +24,7 @@ export default function Home() {
       as={"main"}
       flexDir={"column"}
       w={"100%"}
-      h={"100vh"}
+      // h={"100vh"}
       pos={"relative"}
       margin={"0 auto"}
       maxW={"420px"}

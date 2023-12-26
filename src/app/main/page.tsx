@@ -67,21 +67,13 @@ const Page = () => {
       <Flex
         flexDir={"column"}
         w={"100%"}
-        h={"100vh"}
         pos={"relative"}
         margin={"0 auto"}
         maxW={"420px"}
-        minW={"390px"}
         padding={"60px 0px 0px 0px"}
         bgColor={"#2B2C2C"}
         alignItems={"center"}
       >
-        <TheHeader>
-          <TextLogoIcon />
-          <Text onClick={() => router.push("/mypage")} cursor={"pointer"}>
-            <UserIcon />
-          </Text>
-        </TheHeader>
         <VStack spacing={"20px"} w={"100%"} h={"100%"}>
           {!userDiet ? (
             <DietStateCard>
