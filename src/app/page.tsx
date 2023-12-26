@@ -24,11 +24,10 @@ export default function Home() {
       as={"main"}
       flexDir={"column"}
       w={"100%"}
-      h={"100vh"}
+      // h={"100vh"}
       pos={"relative"}
       margin={"0 auto"}
       maxW={"420px"}
-      minW={"390px"}
       height={"100vh"}
       padding={"60px 22px"}
       alignItems={"center"}

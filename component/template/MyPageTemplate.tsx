@@ -33,7 +33,6 @@ const MyPageTemplate = () => {
         pos={"relative"}
         margin={"0 auto"}
         maxW={"420px"}
-        minW={"390px"}
         minH={"844px"}
         padding={"60px 22px 0px 22px"}
         alignItems={"center"}

@@ -46,7 +46,7 @@ export default function RootLayout({
       <body suppressHydrationWarning={true}>
         <QueryLayout>
           <ChakraLayout>
-            {/* <TheMainHeader /> */}
+            <TheMainHeader />
             {children}
           </ChakraLayout>
         </QueryLayout>
